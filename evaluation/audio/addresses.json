@@ -1,0 +1,597 @@
+{
+ "_note": "30 spoken-style Indian addresses for TTS -> STT testing. spoken_text is what the voice reads; ground_truth is the intended address. Voices are stock ElevenLabs library voices from the LimeChat catalog (no client or employee clones).",
+ "items": [
+  {
+   "id": "a01",
+   "voice_key": "sharadhi",
+   "voice_id": "7B4TkucyQHy3r9hvAnhg",
+   "voice_name": "Sharadhi 2 - Conversational Kannada",
+   "accent": "Kannada",
+   "style": "english_casual",
+   "spoken_text": "Haan, my address is number forty two, fourteenth main, H S R Layout sector two, near NIFT college, Bangalore, five six zero one zero two.",
+   "ground_truth": {
+    "locality": "HSR Layout",
+    "city": "Bengaluru",
+    "state": "Karnataka",
+    "postal_code": "560102",
+    "components": {
+     "house_number": "42",
+     "street": "14th Main",
+     "sector": "Sector 2"
+    }
+   },
+   "notes": ""
+  },
+  {
+   "id": "a02",
+   "voice_key": "aisiri",
+   "voice_id": "2SDH0owxS12R2YMgMNoG",
+   "voice_name": "Aisiri 2 - Narrative Kannada",
+   "accent": "Kannada",
+   "style": "english_formal",
+   "spoken_text": "Flat 304, Sobha Dewdrop apartments, Bellandur, Bengaluru, Karnataka, 560103.",
+   "ground_truth": {
+    "locality": "Bellandur",
+    "city": "Bengaluru",
+    "state": "Karnataka",
+    "postal_code": "560103",
+    "components": {
+     "unit": "304"
+    }
+   },
+   "notes": ""
+  },
+  {
+   "id": "a03",
+   "voice_key": "pratima",
+   "voice_id": "FZDpfsjLp5bRzmlwdm0P",
+   "voice_name": "Pratima - Natural, Chatty and Relatable",
+   "accent": "Hindi",
+   "style": "hinglish",
+   "spoken_text": "मेरा address है house number 18, fifth cross, Koramangala fourth block, Bangalore. Forum mall के पास।",
+   "ground_truth": {
+    "locality": "Koramangala",
+    "city": "Bengaluru",
+    "state": "Karnataka",
+    "postal_code": null,
+    "components": {
+     "house_number": "18",
+     "cross_road": "5th Cross",
+     "block": "4th Block"
+    }
+   },
+   "notes": ""
+  },
+  {
+   "id": "a04",
+   "voice_key": "aman",
+   "voice_id": "kXyE2gmK6unUTP5uOxmC",
+   "voice_name": "Aman (Indian Unpolished)",
+   "accent": "Indian English",
+   "style": "english_casual",
+   "spoken_text": "Uh, it's 221, hundred feet road, Indiranagar, near the metro station, Bangalore. Pin is five six double zero three eight.",
+   "ground_truth": {
+    "locality": "Indiranagar",
+    "city": "Bengaluru",
+    "state": "Karnataka",
+    "postal_code": "560038",
+    "components": {
+     "house_number": "221"
+    }
+   },
+   "notes": ""
+  },
+  {
+   "id": "a05",
+   "voice_key": "sharadhi",
+   "voice_id": "7B4TkucyQHy3r9hvAnhg",
+   "voice_name": "Sharadhi 2 - Conversational Kannada",
+   "accent": "Kannada",
+   "style": "english_casual",
+   "spoken_text": "Jayanagar ninth block, twenty sixth main, house number twelve, Bengaluru.",
+   "ground_truth": {
+    "locality": "Jayanagar",
+    "city": "Bengaluru",
+    "state": "Karnataka",
+    "postal_code": null,
+    "components": {
+     "house_number": "12",
+     "street": "26th Main",
+     "block": "9th Block"
+    }
+   },
+   "notes": ""
+  },
+  {
+   "id": "a06",
+   "voice_key": "aisiri",
+   "voice_id": "2SDH0owxS12R2YMgMNoG",
+   "voice_name": "Aisiri 2 - Narrative Kannada",
+   "accent": "Kannada",
+   "style": "english_correction",
+   "spoken_text": "Number seven, third cross, Malleshwaram... sorry, eighth cross, Malleshwaram, Bangalore 560003.",
+   "ground_truth": {
+    "locality": "Malleswaram",
+    "city": "Bengaluru",
+    "state": "Karnataka",
+    "postal_code": "560003",
+    "components": {
+     "house_number": "7",
+     "cross_road": "8th Cross"
+    }
+   },
+   "notes": "self-correction: third cross -> eighth cross"
+  },
+  {
+   "id": "a07",
+   "voice_key": "kalyani",
+   "voice_id": "aZaMD7e0iu6aJpSocGIY",
+   "voice_name": "Kalyani - Warm Marathi Conversational",
+   "accent": "Marathi",
+   "style": "english_casual",
+   "spoken_text": "B wing, flat 1203, Lokhandwala complex, Andheri West, Mumbai, four zero zero zero five three.",
+   "ground_truth": {
+    "locality": "Andheri West",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "postal_code": "400053",
+    "components": {
+     "unit": "1203"
+    }
+   },
+   "notes": ""
+  },
+  {
+   "id": "a08",
+   "voice_key": "roopa",
+   "voice_id": "bgvW7tChsyTpexUZy4KR",
+   "voice_name": "Roopa - Marathi upbeat",
+   "accent": "Marathi",
+   "style": "hinglish",
+   "spoken_text": "Bandra West में, Hill Road पर, St. Andrews church के सामने, flat number 6, Mumbai.",
+   "ground_truth": {
+    "locality": "Bandra West",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "postal_code": null,
+    "components": {
+     "unit": "6"
+    }
+   },
+   "notes": ""
+  },
+  {
+   "id": "a09",
+   "voice_key": "sujata",
+   "voice_id": "4mCfn38CsM9hGLvDrPxv",
+   "voice_name": "Sujata - Marathi audiobook",
+   "accent": "Marathi",
+   "style": "english_formal",
+   "spoken_text": "Room number 14, Hiranandani Gardens, Powai, Mumbai 400076.",
+   "ground_truth": {
+    "locality": "Powai",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "postal_code": "400076",
+    "components": {
+     "unit": "14"
+    }
+   },
+   "notes": ""
+  },
+  {
+   "id": "a10",
+   "voice_key": "kalyani",
+   "voice_id": "aZaMD7e0iu6aJpSocGIY",
+   "voice_name": "Kalyani - Warm Marathi Conversational",
+   "accent": "Marathi",
+   "style": "english_casual",
+   "spoken_text": "Plot forty five, lane number three, Kothrud, Pune, four one one zero three eight.",
+   "ground_truth": {
+    "locality": "Kothrud",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "postal_code": "411038",
+    "components": {
+     "plot": "45",
+     "lane": "Lane 3"
+    }
+   },
+   "notes": ""
+  },
+  {
+   "id": "a11",
+   "voice_key": "roopa",
+   "voice_id": "bgvW7tChsyTpexUZy4KR",
+   "voice_name": "Roopa - Marathi upbeat",
+   "accent": "Marathi",
+   "style": "hinglish",
+   "spoken_text": "Viman Nagar, Pune में Symbiosis college के पीछे, building C, flat 402.",
+   "ground_truth": {
+    "locality": "Viman Nagar",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "postal_code": null,
+    "components": {
+     "unit": "402"
+    }
+   },
+   "notes": ""
+  },
+  {
+   "id": "a12",
+   "voice_key": "kanika",
+   "voice_id": "gHu9GtaHOXcSqFTK06ux",
+   "voice_name": "Kanika (Hindi)",
+   "accent": "Hindi",
+   "style": "hinglish",
+   "spoken_text": "मकान नंबर 45, ब्लॉक C, साकेत, नई दिल्ली, एक एक शून्य शून्य एक सात।",
+   "ground_truth": {
+    "locality": "Saket",
+    "city": "Delhi",
+    "state": "Delhi",
+    "postal_code": "110017",
+    "components": {
+     "house_number": "45",
+     "block": "C Block"
+    }
+   },
+   "notes": ""
+  },
+  {
+   "id": "a13",
+   "voice_key": "gaurav",
+   "voice_id": "8sNEbeluclbr4u71MPb0",
+   "voice_name": "Gaurav - Young, Energetic and Lively",
+   "accent": "Hindi",
+   "style": "hinglish",
+   "spoken_text": "Bhaiya, Lajpat Nagar part two, A fourteen, second floor, Central market ke paas, Delhi.",
+   "ground_truth": {
+    "locality": "Lajpat Nagar",
+    "city": "Delhi",
+    "state": "Delhi",
+    "postal_code": null,
+    "components": {
+     "house_number": "A-14",
+     "floor": "2nd Floor"
+    }
+   },
+   "notes": ""
+  },
+  {
+   "id": "a14",
+   "voice_key": "sudhir",
+   "voice_id": "XNJDyPyJ8r4J7de0WJwB",
+   "voice_name": "Sudhir - Warm & Expressive Hindi",
+   "accent": "Hindi",
+   "style": "hindi",
+   "spoken_text": "करोल बाग, गली नंबर चार, मकान नंबर तीन सौ बारह, दिल्ली।",
+   "ground_truth": {
+    "locality": "Karol Bagh",
+    "city": "Delhi",
+    "state": "Delhi",
+    "postal_code": null,
+    "components": {
+     "lane": "Gali No. 4",
+     "house_number": "312"
+    }
+   },
+   "notes": ""
+  },
+  {
+   "id": "a15",
+   "voice_key": "raju",
+   "voice_id": "pzxut4zZz4GImZNlqQ3H",
+   "voice_name": "Raju (Customer Care)",
+   "accent": "Hindi",
+   "style": "hinglish",
+   "spoken_text": "DLF phase two, Gurgaon, tower B, flat 1102, cyber hub ke paas.",
+   "ground_truth": {
+    "locality": "DLF Phase 2",
+    "city": "Gurugram",
+    "state": "Haryana",
+    "postal_code": null,
+    "components": {
+     "unit": "1102"
+    }
+   },
+   "notes": ""
+  },
+  {
+   "id": "a16",
+   "voice_key": "neha",
+   "voice_id": "QTKSa2Iyv0yoxvXY2V8a",
+   "voice_name": "Neha",
+   "accent": "Hindi",
+   "style": "hinglish",
+   "spoken_text": "Vaishali sector four, Ghaziabad, house number 2 sau 17, mahagun mall ke saamne.",
+   "ground_truth": {
+    "locality": "Vaishali",
+    "city": "Ghaziabad",
+    "state": "Uttar Pradesh",
+    "postal_code": null,
+    "components": {
+     "house_number": "217",
+     "sector": "Sector 4"
+    }
+   },
+   "notes": ""
+  },
+  {
+   "id": "a17",
+   "voice_key": "vanishree",
+   "voice_id": "OUBMjq0LvBjb07bhwD3H",
+   "voice_name": "Vanishree - Tamil conversational",
+   "accent": "Tamil",
+   "style": "english_casual",
+   "spoken_text": "Number 12, second street, Anna Nagar East, Chennai, six double zero one zero two.",
+   "ground_truth": {
+    "locality": "Anna Nagar East",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "postal_code": "600102",
+    "components": {
+     "house_number": "12",
+     "street": "2nd Street"
+    }
+   },
+   "notes": ""
+  },
+  {
+   "id": "a18",
+   "voice_key": "thendral",
+   "voice_id": "dOQi5SePW2oLH7pdyeq3",
+   "voice_name": "Thendral - Tamil female expressive",
+   "accent": "Tamil",
+   "style": "english_formal",
+   "spoken_text": "Door number 8, Kasturba Nagar, Adyar, Chennai 600020.",
+   "ground_truth": {
+    "locality": "Adyar",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "postal_code": "600020",
+    "components": {
+     "house_number": "8"
+    }
+   },
+   "notes": ""
+  },
+  {
+   "id": "a19",
+   "voice_key": "vanishree",
+   "voice_id": "OUBMjq0LvBjb07bhwD3H",
+   "voice_name": "Vanishree - Tamil conversational",
+   "accent": "Tamil",
+   "style": "english_casual",
+   "spoken_text": "Mylapore, near Kapaleeshwarar temple, number 23, Chennai.",
+   "ground_truth": {
+    "locality": "Mylapore",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "postal_code": null,
+    "components": {
+     "house_number": "23"
+    }
+   },
+   "notes": ""
+  },
+  {
+   "id": "a20",
+   "voice_key": "vijaya",
+   "voice_id": "GGBhcpAgpjSrBIr5MQwR",
+   "voice_name": "Vijaya - Telugu slow",
+   "accent": "Telugu",
+   "style": "english_formal",
+   "spoken_text": "Plot number 22, road number 36, Jubilee Hills, Hyderabad.",
+   "ground_truth": {
+    "locality": "Jubilee Hills",
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "postal_code": null,
+    "components": {
+     "plot": "22",
+     "street": "Road No. 36"
+    }
+   },
+   "notes": ""
+  },
+  {
+   "id": "a21",
+   "voice_key": "vijaya",
+   "voice_id": "GGBhcpAgpjSrBIr5MQwR",
+   "voice_name": "Vijaya - Telugu slow",
+   "accent": "Telugu",
+   "style": "english_casual",
+   "spoken_text": "Flat 501, My Home Avatar, Gachibowli, Hyderabad, five zero zero zero three two.",
+   "ground_truth": {
+    "locality": "Gachibowli",
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "postal_code": "500032",
+    "components": {
+     "unit": "501"
+    }
+   },
+   "notes": ""
+  },
+  {
+   "id": "a22",
+   "voice_key": "saavi",
+   "voice_id": "H8bdWZHK2OgZwTN7ponr",
+   "voice_name": "Saavi (Indian English)",
+   "accent": "Indian English",
+   "style": "english_casual",
+   "spoken_text": "KPHB colony, Kukatpally, phase three, house number 14, Hyderabad.",
+   "ground_truth": {
+    "locality": "Kukatpally",
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "postal_code": null,
+    "components": {
+     "house_number": "14",
+     "phase": "Phase 3"
+    }
+   },
+   "notes": ""
+  },
+  {
+   "id": "a23",
+   "voice_key": "suman",
+   "voice_id": "WiaIVvI1gDL4vT4y7qUU",
+   "voice_name": "Suman (Bengali & Hindi)",
+   "accent": "Bengali",
+   "style": "english_casual",
+   "spoken_text": "CK block, Salt Lake sector two, house number 145, Kolkata, seven double zero zero nine one.",
+   "ground_truth": {
+    "locality": [
+     "Bidhan Nagar CK Market",
+     "Bidhan Nagar"
+    ],
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "postal_code": "700091",
+    "components": {
+     "house_number": "145",
+     "sector": "Sector 2"
+    }
+   },
+   "notes": "Salt Lake is officially Bidhan Nagar"
+  },
+  {
+   "id": "a24",
+   "voice_key": "biju",
+   "voice_id": "FhOnCtjmaAIRIS1Dg2bk",
+   "voice_name": "Biju S - Casual Bengali",
+   "accent": "Bengali",
+   "style": "hinglish",
+   "spoken_text": "Ballygunge, Gariahat ke paas, 12 by 3, Kolkata.",
+   "ground_truth": {
+    "locality": "Ballygunge",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "postal_code": null,
+    "components": {
+     "house_number": "12/3"
+    }
+   },
+   "notes": ""
+  },
+  {
+   "id": "a25",
+   "voice_key": "suman",
+   "voice_id": "WiaIVvI1gDL4vT4y7qUU",
+   "voice_name": "Suman (Bengali & Hindi)",
+   "accent": "Bengali",
+   "style": "english_formal",
+   "spoken_text": "Behala, Diamond Harbour road, number 56, Kolkata 700034.",
+   "ground_truth": {
+    "locality": "Behala",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "postal_code": "700034",
+    "components": {
+     "house_number": "56"
+    }
+   },
+   "notes": ""
+  },
+  {
+   "id": "a26",
+   "voice_key": "gargi",
+   "voice_id": "P3JECz9WQeXyyodBL3ZD",
+   "voice_name": "Gargi - Regional E-com Customer Care",
+   "accent": "Gujarati-accented Hindi",
+   "style": "hinglish",
+   "spoken_text": "Navrangpura, Ahmedabad, CG road ke paas, Swastik society, bungalow number 9.",
+   "ground_truth": {
+    "locality": "Navrangpura",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "postal_code": null,
+    "components": {
+     "house_number": "9"
+    }
+   },
+   "notes": ""
+  },
+  {
+   "id": "a27",
+   "voice_key": "gargi",
+   "voice_id": "P3JECz9WQeXyyodBL3ZD",
+   "voice_name": "Gargi - Regional E-com Customer Care",
+   "accent": "Gujarati-accented Hindi",
+   "style": "english_casual",
+   "spoken_text": "Adajan, Surat, flat 203, Shree Ram apartment, near Star Bazaar.",
+   "ground_truth": {
+    "locality": "Adajan",
+    "city": "Surat",
+    "state": "Gujarat",
+    "postal_code": null,
+    "components": {
+     "unit": "203"
+    }
+   },
+   "notes": ""
+  },
+  {
+   "id": "a28",
+   "voice_key": "pratima",
+   "voice_id": "FZDpfsjLp5bRzmlwdm0P",
+   "voice_name": "Pratima - Natural, Chatty and Relatable",
+   "accent": "Hindi",
+   "style": "hinglish",
+   "spoken_text": "Gomti Nagar, Lucknow, Vipul Khand two, house number 3 by 112.",
+   "ground_truth": {
+    "locality": "Gomti Nagar",
+    "city": "Lucknow",
+    "state": "Uttar Pradesh",
+    "postal_code": null,
+    "components": {
+     "house_number": "3/112"
+    }
+   },
+   "notes": ""
+  },
+  {
+   "id": "a29",
+   "voice_key": "anika",
+   "voice_id": "90ipbRoKi4CpHXvKVtl0",
+   "voice_name": "Anika (Indian English)",
+   "accent": "Indian English",
+   "style": "english_casual",
+   "spoken_text": "Malviya Nagar, Jaipur, sector three, plot number 77, near Gaurav Tower.",
+   "ground_truth": {
+    "locality": "Malviya Nagar",
+    "city": "Jaipur",
+    "state": "Rajasthan",
+    "postal_code": null,
+    "components": {
+     "plot": "77",
+     "sector": "Sector 3"
+    }
+   },
+   "notes": ""
+  },
+  {
+   "id": "a30",
+   "voice_key": "gaurav",
+   "voice_id": "8sNEbeluclbr4u71MPb0",
+   "voice_name": "Gaurav - Young, Energetic and Lively",
+   "accent": "Hindi",
+   "style": "hinglish",
+   "spoken_text": "Arey wo BTM layout second stage hai na, sixteenth main, wahan pe house number 9, Bangalore.",
+   "ground_truth": {
+    "locality": "BTM Layout",
+    "city": "Bengaluru",
+    "state": "Karnataka",
+    "postal_code": null,
+    "components": {
+     "house_number": "9",
+     "street": "16th Main",
+     "stage": "2nd Stage"
+    }
+   },
+   "notes": "coverage gap: BTM Layout is not an India Post office name"
+  }
+ ]
+}

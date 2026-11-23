@@ -18,3 +18,6 @@ data/cache/
 *.osm.pbf
 evaluation/results/*.tmp.json
 .DS_Store
+
+# generated TTS audio (regenerate with evaluation/audio/generate_audio.py)
+evaluation/audio/output/
