@@ -133,6 +133,14 @@ class AddressResolver:
         result = self._assemble(text, nz, ex, ctx, admin_mentions, ranked, top, corrections, warnings, unparsed,
                                 from_landmark, hints)
         result.metadata.llm_used = llm_used
+        if self.geo_fallback is not None and result.resolution_level == "locality" and result.normalized_address:
+            r = self.geo_fallback.refine(result.normalized_address, result.geolocation.latitude,
+                                         result.geolocation.longitude, result.components.postal_code)
+            if r is not None:
+                result.geolocation = M.Geolocation(
+                    latitude=r.latitude, longitude=r.longitude, accuracy="external_geocoder", source=r.provider,
+                    accuracy_note="Geocoded by an external provider and checked to lie within the resolved area.")
+                result.metadata.external_geocoder_used = True
         result.metadata.processing_time_ms = round((time.perf_counter() - t0) * 1000, 2)
         return result
 

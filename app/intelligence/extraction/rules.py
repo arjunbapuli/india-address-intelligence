@@ -185,6 +185,14 @@ def extract(tokens: list[str], gaz: Gazetteer | None = None) -> Extraction:
             take(i, i + 3)
             i += 3
             continue
+        # "flat 302", "house 12b", "plot 45", "shop 3" (without "no")
+        if t in ("flat", "house", "plot", "shop", "door", "apartment", "room") and free(i + 1) and UNIT_ID.match(nx) \
+                and not PIN.match(nx) and nx2 not in ("main", "cross", "floor"):
+            comp = {"flat": "unit", "apartment": "unit", "room": "unit", "shop": "unit", "plot": "plot"}.get(t, "house_number")
+            ex.components.setdefault(comp, _fmt_unit_label(nx))
+            take(i, i + 2)
+            i += 2
+            continue
         if t == "no" and free(i + 1) and UNIT_ID.match(nx):
             ex.components.setdefault("house_number", _fmt_unit_label(nx))
             take(i, i + 2)
