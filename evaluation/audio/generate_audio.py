@@ -55,10 +55,15 @@ def synthesize(text: str, voice_id: str, model: str, key: str, retries: int = 4)
 
 
 def to_phone_quality(mp3: Path, wav: Path) -> bool:
-    if not shutil.which("ffmpeg"):
+    """8 kHz mono mu-law WAV (telephony). Uses ffmpeg, or afconvert on macOS."""
+    if shutil.which("ffmpeg"):
+        cmd = ["ffmpeg", "-loglevel", "error", "-y", "-i", str(mp3), "-ac", "1", "-ar", "8000",
+               "-c:a", "pcm_mulaw", str(wav)]
+    elif shutil.which("afconvert"):
+        cmd = ["afconvert", "-f", "WAVE", "-d", "ulaw@8000", "-c", "1", str(mp3), str(wav)]
+    else:
         return False
-    subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-i", str(mp3), "-ac", "1", "-ar", "8000",
-                    "-c:a", "pcm_mulaw", str(wav)], check=True)
+    subprocess.run(cmd, check=True)
     return True
 
 
