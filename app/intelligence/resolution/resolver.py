@@ -89,16 +89,27 @@ class AddressResolver:
         spans = [(s.start, s.end) for s in ex.claimed_spans] + [(s.start, s.end) for s in ex.free_spans]
         mentions, unmatched = find_mentions(g, nz.tokens, spans, allow_fuzzy=False)
 
+        mentions, dropped = self._apply_admin_markers(mentions, ex)
+        unmatched = sorted(unmatched + dropped)
         ctx, admin_mentions = self._admin_context(mentions, ex, hints, warnings)
         # Fuzzy pass on whatever exact/alias/phonetic lookup could not explain, scoped by admin evidence
         scope = g.keys_for_places(g.localities_in_districts(ctx.scope_districts)) if ctx.scope_districts else None
         if unmatched:
             more, unmatched = find_mentions(g, nz.tokens, unmatched, allow_fuzzy=True, scope_keys=scope)
+            more, dropped_more = self._apply_admin_markers(more, ex)
+            unmatched = sorted(unmatched + dropped_more)
             mentions = sorted(mentions + more, key=lambda m: m.start)
             if more:
                 ctx, admin_mentions = self._admin_context(mentions, ex, hints, warnings)
 
         locality_mentions = [m for m in mentions if not self._is_admin_mention(m)]
+        # "vaishali ghaziabad", "bodh gaya bihar": a name that is a district/city elsewhere but a locality
+        # inside the place the user also named is read as the locality.
+        demoted = self._demote_admin_mentions(mentions, admin_mentions)
+        if demoted:
+            locality_mentions = sorted(locality_mentions + demoted, key=lambda m: m.start)
+            ctx, admin_mentions = self._admin_context([m for m in mentions if m not in demoted], ex, hints, warnings)
+            scope = g.keys_for_places(g.localities_in_districts(ctx.scope_districts)) if ctx.scope_districts else None
         # An exact name match elsewhere in India must not hide an approximate match inside the city
         # the user named ("indra nagar bangalore": exact 'Indra Nagar' exists in other states).
         if scope:
@@ -212,6 +223,56 @@ class AddressResolver:
         local = [c for c in m.candidates if g.places[c.place_id].type in LOCAL]
         best_local = max((c.similarity for c in local), default=0.0)
         return best_admin >= 0.85 and best_admin >= best_local
+
+    def _apply_admin_markers(self, mentions: list[Mention], ex: Extraction
+                             ) -> tuple[list[Mention], list[tuple[int, int]]]:
+        """'village X' must be a locality reading of X; 'district Y' must be a district reading of Y.
+        Returns (kept mentions, spans of village names we could not verify — preserved as unparsed text)."""
+        if not ex.admin_markers:
+            return mentions, []
+        g = self.g
+        out = []
+        dropped: list[tuple[int, int]] = []
+        for m in mentions:
+            kind = next((k for k, sp in ex.admin_markers if sp.start <= m.start and m.end <= sp.end), None)
+            if kind in ("village", "post_office"):
+                m.candidates = [c for c in m.candidates if g.places[c.place_id].type in LOCAL]
+            elif kind == "district":
+                m.candidates = [c for c in m.candidates if g.places[c.place_id].type == "district"] or m.candidates
+            if m.candidates:
+                out.append(m)
+            else:
+                dropped.append((m.start, m.end))
+        return out, dropped
+
+    def _demote_admin_mentions(self, mentions: list[Mention], admin_mentions: list[_AdminMention]) -> list[Mention]:
+        if len(admin_mentions) < 2:
+            return []
+        g = self.g
+        out = []
+        for am in admin_mentions:
+            m = am.mention
+            others = [o for o in admin_mentions if o is not am]
+            scope_states, scope_districts = set(), set()
+            for o in others:
+                for p, _ in o.places:
+                    scope_states.add(p.state)
+                    if p.type == "city" and p.id in g.cities:
+                        scope_districts.update((g.cities[p.id].state, d) for d in g.cities[p.id].districts)
+                    elif p.type == "district":
+                        scope_districts.add((p.state, p.name))
+            # Is the admin reading itself consistent with the others? Then keep it ("Pune, Maharashtra").
+            if any(p.state in scope_states and (not scope_districts or p.type == "state"
+                   or (p.state, p.district) in scope_districts or (p.state, p.name) in scope_districts)
+                   for p, _ in am.places):
+                continue
+            local = [c for c in m.candidates if g.places[c.place_id].type in LOCAL and c.match_type == "exact"]
+            fits = [c for c in local if (g.places[c.place_id].state, g.places[c.place_id].district) in scope_districts
+                    or (not scope_districts and g.places[c.place_id].state in scope_states)]
+            if fits:
+                m.candidates = fits
+                out.append(m)
+        return out
 
     def _admin_context(self, mentions: list[Mention], ex: Extraction, hints: Hints, warnings: list[str]
                        ) -> tuple[AdminContext, list[_AdminMention]]:
@@ -470,6 +531,15 @@ class AddressResolver:
                 elif info is not None:
                     city_name = info.name
                     ver["city"] = "inferred"
+            if city_name is None:
+                # City said in the input but absorbed into a longer place name ("Model Town Ludhiana")
+                said = compact_key(text)
+                for cid in g.city_by_district.get((p.state, p.district), []):
+                    info = g.cities[cid]
+                    if len(compact_key(info.name)) >= 4 and compact_key(info.name) in said:
+                        city_name = info.name
+                        ver["city"] = "verified"
+                        break
             comp.city = city_name
 
             # Secondary locality mention in the same district -> sub_locality
@@ -812,6 +882,8 @@ class AddressResolver:
             parts.append(c.sub_locality)
         if c.locality:
             parts.append(c.locality)
+        if c.sub_district:
+            parts.append(f"{c.sub_district} Tehsil")
         if c.city:
             parts.append(c.city)
         elif c.district:

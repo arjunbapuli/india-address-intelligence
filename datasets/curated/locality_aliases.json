@@ -84,6 +84,12 @@
    "locality": "Parel",
    "pincode": "400012",
    "type": "alternate_name"
+  },
+  {
+   "alias": "Ooty",
+   "locality": "Udagamandalam",
+   "pincode": "643001",
+   "type": "alternate_name"
   }
  ]
 }

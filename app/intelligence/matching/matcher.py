@@ -98,6 +98,11 @@ def lookup_window(g: Gazetteer, words: list[str], allow_fuzzy: bool, scope_keys:
         for k, score in g.fuzzy_keys(text, limit=10, score_cutoff=fuzzy_cutoff_scoped, choices=list(scope_keys)):
             for pid in scope_keys[k]:
                 cands.append(Candidate(pid, "fuzzy", round(score / 100.0, 3), matched_key=k))
+    if not cands and scope_keys and len(key) >= 5:
+        pref = [k for k in scope_keys if k.startswith(key) and len(k) <= len(key) + 8]
+        for k in pref[:5]:
+            for pid in scope_keys[k]:
+                cands.append(Candidate(pid, "fuzzy", round(0.8 + 0.1 * len(key) / len(k), 3), matched_key=k))
     if not cands and len(key) >= 5:
         for k, score in g.fuzzy_keys(text, limit=8, score_cutoff=fuzzy_cutoff_global):
             for h in g.exact.get(k, ()):

@@ -158,9 +158,7 @@
    "districts": [
     "UDUPI"
    ],
-   "aliases": [
-    "Manipal"
-   ],
+   "aliases": [],
    "tier": 2,
    "infer_districts": []
   },
@@ -874,9 +872,7 @@
    "districts": [
     "MATHURA"
    ],
-   "aliases": [
-    "Vrindavan"
-   ],
+   "aliases": [],
    "tier": 2,
    "infer_districts": []
   },
@@ -1181,9 +1177,7 @@
    "districts": [
     "GAYA"
    ],
-   "aliases": [
-    "Bodh Gaya"
-   ],
+   "aliases": [],
    "tier": 2,
    "infer_districts": []
   },
@@ -1559,8 +1553,7 @@
     "KANGRA"
    ],
    "aliases": [
-    "Dharamsala",
-    "McLeod Ganj"
+    "Dharamsala"
    ],
    "tier": 2,
    "infer_districts": []

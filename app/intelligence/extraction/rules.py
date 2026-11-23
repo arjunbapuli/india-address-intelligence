@@ -69,6 +69,7 @@ class Extraction:
     free_spans: list[Span] = field(default_factory=list)
     claimed_spans: list[Span] = field(default_factory=list)
     pin_candidates: list[str] = field(default_factory=list)
+    admin_markers: list[tuple[str, Span]] = field(default_factory=list)
     notes: list[str] = field(default_factory=list)
 
 
@@ -152,6 +153,28 @@ def extract(tokens: list[str], gaz: Gazetteer | None = None) -> Extraction:
         nx = tokens[i + 1] if i + 1 < n else ""
         nx2 = tokens[i + 2] if i + 2 < n else ""
 
+        # Rural / administrative markers: "village X", "tehsil X", "district X", "po X"
+        at_segment_start = i == 0 or tokens[i - 1] == ","
+        if at_segment_start and t in ("village", "gram", "vill", "tehsil", "tahsil", "taluk", "taluka", "mandal",
+                                      "district", "dist", "po", "post") and free(i + 1) and nx not in (",", "") \
+                and not nx.isdigit():
+            j = i + 1
+            if t == "post" and nx == "office":
+                j += 1
+            k = j
+            while k < n and free(k) and tokens[k] != "," and k - j < 3 and tokens[k] not in (
+                    "village", "tehsil", "taluk", "district", "dist", "po", "post", "near"):
+                k += 1
+            if k > j:
+                kind = {"village": "village", "gram": "village", "vill": "village", "po": "post_office",
+                        "post": "post_office", "district": "district", "dist": "district"}.get(t, "sub_district")
+                ex.admin_markers.append((kind, Span(j, k)))
+                used[i] = True  # the marker word itself; the name stays free for gazetteer matching
+                if kind == "sub_district":
+                    ex.components.setdefault("sub_district", smart_title(" ".join(tokens[j:k])))
+                    take(j, k)
+                i = k
+                continue
         # care of <name> : drop the person's name, it is not part of the address
         if t == "care" and nx == "of":
             j = i + 2
@@ -351,7 +374,12 @@ def _named_slots(tokens: list[str], run: Span, ex: Extraction, take, gaz: Gazett
             if is_generic_only(name_words[:-1]):
                 continue
             ex.streets.append(smart_title(" ".join(name_words)))
-            take(run.start + start, run.start + end)
+            suffix_from = idx if w != "main" else idx
+            if all(_is_known_place_word(gaz, x) for x in words[start:suffix_from]):
+                # "Velacheri Main Road": keep the road name AND leave 'Velacheri' free to match the locality
+                take(run.start + suffix_from, run.start + end)
+            else:
+                take(run.start + start, run.start + end)
             _rest_slots(tokens, Span(run.start + end, run.end), ex, take, gaz)
             if start > 0:
                 _rest_slots(tokens, Span(run.start, run.start + start), ex, take, gaz)

@@ -26,6 +26,7 @@ class AddressComponents(BaseModel):
     pocket: str | None = None
     locality: str | None = Field(None, description="Locality / neighbourhood / village matched in the gazetteer.")
     sub_locality: str | None = None
+    sub_district: str | None = Field(None, description="Tehsil / taluk / mandal when stated (unverified).")
     landmark: str | None = None
     city: str | None = None
     district: str | None = None

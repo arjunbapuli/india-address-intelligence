@@ -1,0 +1,6052 @@
+{
+ "dataset": "test.jsonl",
+ "overall": {
+  "n": 108,
+  "locality_accuracy": 0.7347,
+  "no_invented_locality": 0.9,
+  "state_accuracy": 0.9903,
+  "city_accuracy": 0.9759,
+  "district_accuracy": 1.0,
+  "pincode_accuracy": 1.0,
+  "component_accuracy": 1.0,
+  "exact_match_accuracy": 0.7315,
+  "auto_resolution_rate": 0.5278,
+  "locality_level_rate": 0.7315,
+  "incorrect_correction_rate": 0.4167,
+  "corrections_evaluated": 12,
+  "false_confidence_rate": 0.0,
+  "precision_when_auto_resolved": 1.0,
+  "expected_status_accuracy": 0.8,
+  "calibration": [
+   {
+    "bin": "0.0-0.4",
+    "n": 3,
+    "avg_confidence": 0.0,
+    "accuracy": 0.667
+   },
+   {
+    "bin": "0.4-0.6",
+    "n": 3,
+    "avg_confidence": 0.531,
+    "accuracy": 0.667
+   },
+   {
+    "bin": "0.6-0.8",
+    "n": 39,
+    "avg_confidence": 0.707,
+    "accuracy": 0.41
+   },
+   {
+    "bin": "0.8-0.9",
+    "n": 9,
+    "avg_confidence": 0.841,
+    "accuracy": 0.778
+   },
+   {
+    "bin": "0.9-1.0",
+    "n": 54,
+    "avg_confidence": 0.953,
+    "accuracy": 1.0
+   }
+  ],
+  "expected_calibration_error": 0.1581,
+  "median_latency_ms": 1.12
+ },
+ "excluding_coverage_gaps": {
+  "n": 94,
+  "locality_accuracy": 0.8256,
+  "no_invented_locality": 0.875,
+  "state_accuracy": 0.9888,
+  "city_accuracy": 0.9714,
+  "district_accuracy": 1.0,
+  "pincode_accuracy": 1.0,
+  "component_accuracy": 1.0,
+  "exact_match_accuracy": 0.8085,
+  "auto_resolution_rate": 0.6064,
+  "locality_level_rate": 0.8085,
+  "incorrect_correction_rate": 0.3,
+  "corrections_evaluated": 10,
+  "false_confidence_rate": 0.0,
+  "precision_when_auto_resolved": 1.0,
+  "expected_status_accuracy": 0.8,
+  "calibration": [
+   {
+    "bin": "0.0-0.4",
+    "n": 3,
+    "avg_confidence": 0.0,
+    "accuracy": 0.667
+   },
+   {
+    "bin": "0.4-0.6",
+    "n": 3,
+    "avg_confidence": 0.531,
+    "accuracy": 0.667
+   },
+   {
+    "bin": "0.6-0.8",
+    "n": 26,
+    "avg_confidence": 0.701,
+    "accuracy": 0.5
+   },
+   {
+    "bin": "0.8-0.9",
+    "n": 8,
+    "avg_confidence": 0.845,
+    "accuracy": 0.875
+   },
+   {
+    "bin": "0.9-1.0",
+    "n": 54,
+    "avg_confidence": 0.953,
+    "accuracy": 1.0
+   }
+  ],
+  "expected_calibration_error": 0.1106,
+  "median_latency_ms": 1.1
+ },
+ "coverage_gaps_only": {
+  "n": 14,
+  "locality_accuracy": 0.0833,
+  "no_invented_locality": 1.0,
+  "state_accuracy": 1.0,
+  "city_accuracy": 1.0,
+  "district_accuracy": null,
+  "pincode_accuracy": null,
+  "component_accuracy": null,
+  "exact_match_accuracy": 0.2143,
+  "auto_resolution_rate": 0.0,
+  "locality_level_rate": 0.2143,
+  "incorrect_correction_rate": 1.0,
+  "corrections_evaluated": 2,
+  "false_confidence_rate": null,
+  "precision_when_auto_resolved": null,
+  "expected_status_accuracy": null,
+  "calibration": [
+   {
+    "bin": "0.6-0.8",
+    "n": 13,
+    "avg_confidence": 0.719,
+    "accuracy": 0.231
+   },
+   {
+    "bin": "0.8-0.9",
+    "n": 1,
+    "avg_confidence": 0.811,
+    "accuracy": 0.0
+   }
+  ],
+  "expected_calibration_error": 0.5114,
+  "median_latency_ms": 4.82
+ },
+ "by_category": {
+  "abbreviation": {
+   "n": 3,
+   "locality_accuracy": 0.6667,
+   "no_invented_locality": null,
+   "state_accuracy": 1.0,
+   "city_accuracy": 1.0,
+   "district_accuracy": null,
+   "pincode_accuracy": null,
+   "component_accuracy": null,
+   "exact_match_accuracy": 0.6667,
+   "auto_resolution_rate": 0.6667,
+   "locality_level_rate": 0.6667,
+   "incorrect_correction_rate": null,
+   "corrections_evaluated": 0,
+   "false_confidence_rate": 0.0,
+   "precision_when_auto_resolved": 1.0,
+   "expected_status_accuracy": null,
+   "calibration": [
+    {
+     "bin": "0.6-0.8",
+     "n": 1,
+     "avg_confidence": 0.72,
+     "accuracy": 0.0
+    },
+    {
+     "bin": "0.9-1.0",
+     "n": 2,
+     "avg_confidence": 0.963,
+     "accuracy": 1.0
+    }
+   ],
+   "expected_calibration_error": 0.2647,
+   "median_latency_ms": 2.04
+  },
+  "alias": {
+   "n": 16,
+   "locality_accuracy": 0.6875,
+   "no_invented_locality": null,
+   "state_accuracy": 1.0,
+   "city_accuracy": 1.0,
+   "district_accuracy": null,
+   "pincode_accuracy": 1.0,
+   "component_accuracy": 1.0,
+   "exact_match_accuracy": 0.6875,
+   "auto_resolution_rate": 0.6875,
+   "locality_level_rate": 0.6875,
+   "incorrect_correction_rate": null,
+   "corrections_evaluated": 0,
+   "false_confidence_rate": 0.0,
+   "precision_when_auto_resolved": 1.0,
+   "expected_status_accuracy": null,
+   "calibration": [
+    {
+     "bin": "0.6-0.8",
+     "n": 5,
+     "avg_confidence": 0.708,
+     "accuracy": 0.0
+    },
+    {
+     "bin": "0.9-1.0",
+     "n": 11,
+     "avg_confidence": 0.963,
+     "accuracy": 1.0
+    }
+   ],
+   "expected_calibration_error": 0.2467,
+   "median_latency_ms": 1.42
+  },
+  "ambiguous": {
+   "n": 4,
+   "locality_accuracy": null,
+   "no_invented_locality": 0.75,
+   "state_accuracy": 1.0,
+   "city_accuracy": null,
+   "district_accuracy": 1.0,
+   "pincode_accuracy": null,
+   "component_accuracy": null,
+   "exact_match_accuracy": 0.5,
+   "auto_resolution_rate": 0.0,
+   "locality_level_rate": 0.75,
+   "incorrect_correction_rate": 1.0,
+   "corrections_evaluated": 1,
+   "false_confidence_rate": null,
+   "precision_when_auto_resolved": null,
+   "expected_status_accuracy": 0.6667,
+   "calibration": [
+    {
+     "bin": "0.6-0.8",
+     "n": 4,
+     "avg_confidence": 0.693,
+     "accuracy": 0.75
+    }
+   ],
+   "expected_calibration_error": 0.057,
+   "median_latency_ms": 0.4
+  },
+  "conservative": {
+   "n": 2,
+   "locality_accuracy": null,
+   "no_invented_locality": 1.0,
+   "state_accuracy": null,
+   "city_accuracy": null,
+   "district_accuracy": null,
+   "pincode_accuracy": null,
+   "component_accuracy": 1.0,
+   "exact_match_accuracy": 1.0,
+   "auto_resolution_rate": 0.0,
+   "locality_level_rate": 0.0,
+   "incorrect_correction_rate": null,
+   "corrections_evaluated": 0,
+   "false_confidence_rate": null,
+   "precision_when_auto_resolved": null,
+   "expected_status_accuracy": 1.0,
+   "calibration": [
+    {
+     "bin": "0.0-0.4",
+     "n": 2,
+     "avg_confidence": 0.0,
+     "accuracy": 1.0
+    }
+   ],
+   "expected_calibration_error": 1.0,
+   "median_latency_ms": 0.17
+  },
+  "correct": {
+   "n": 44,
+   "locality_accuracy": 0.7727,
+   "no_invented_locality": null,
+   "state_accuracy": 1.0,
+   "city_accuracy": 0.973,
+   "district_accuracy": null,
+   "pincode_accuracy": 1.0,
+   "component_accuracy": 1.0,
+   "exact_match_accuracy": 0.75,
+   "auto_resolution_rate": 0.7045,
+   "locality_level_rate": 0.7727,
+   "incorrect_correction_rate": null,
+   "corrections_evaluated": 0,
+   "false_confidence_rate": 0.0,
+   "precision_when_auto_resolved": 1.0,
+   "expected_status_accuracy": null,
+   "calibration": [
+    {
+     "bin": "0.6-0.8",
+     "n": 12,
+     "avg_confidence": 0.706,
+     "accuracy": 0.167
+    },
+    {
+     "bin": "0.8-0.9",
+     "n": 1,
+     "avg_confidence": 0.832,
+     "accuracy": 1.0
+    },
+    {
+     "bin": "0.9-1.0",
+     "n": 31,
+     "avg_confidence": 0.953,
+     "accuracy": 1.0
+    }
+   ],
+   "expected_calibration_error": 0.1841,
+   "median_latency_ms": 1.0
+  },
+  "coverage": {
+   "n": 4,
+   "locality_accuracy": 0.0,
+   "no_invented_locality": null,
+   "state_accuracy": 1.0,
+   "city_accuracy": 1.0,
+   "district_accuracy": null,
+   "pincode_accuracy": null,
+   "component_accuracy": null,
+   "exact_match_accuracy": 0.0,
+   "auto_resolution_rate": 0.0,
+   "locality_level_rate": 0.5,
+   "incorrect_correction_rate": 1.0,
+   "corrections_evaluated": 2,
+   "false_confidence_rate": null,
+   "precision_when_auto_resolved": null,
+   "expected_status_accuracy": null,
+   "calibration": [
+    {
+     "bin": "0.6-0.8",
+     "n": 3,
+     "avg_confidence": 0.744,
+     "accuracy": 0.0
+    },
+    {
+     "bin": "0.8-0.9",
+     "n": 1,
+     "avg_confidence": 0.811,
+     "accuracy": 0.0
+    }
+   ],
+   "expected_calibration_error": 0.761,
+   "median_latency_ms": 4.82
+  },
+  "hindi_script": {
+   "n": 2,
+   "locality_accuracy": 1.0,
+   "no_invented_locality": null,
+   "state_accuracy": 1.0,
+   "city_accuracy": 1.0,
+   "district_accuracy": null,
+   "pincode_accuracy": null,
+   "component_accuracy": 1.0,
+   "exact_match_accuracy": 1.0,
+   "auto_resolution_rate": 0.5,
+   "locality_level_rate": 1.0,
+   "incorrect_correction_rate": 0.0,
+   "corrections_evaluated": 1,
+   "false_confidence_rate": 0.0,
+   "precision_when_auto_resolved": 1.0,
+   "expected_status_accuracy": null,
+   "calibration": [
+    {
+     "bin": "0.4-0.6",
+     "n": 1,
+     "avg_confidence": 0.57,
+     "accuracy": 1.0
+    },
+    {
+     "bin": "0.9-1.0",
+     "n": 1,
+     "avg_confidence": 0.926,
+     "accuracy": 1.0
+    }
+   ],
+   "expected_calibration_error": 0.252,
+   "median_latency_ms": 1.0
+  },
+  "hinglish": {
+   "n": 5,
+   "locality_accuracy": 0.8,
+   "no_invented_locality": null,
+   "state_accuracy": 1.0,
+   "city_accuracy": 1.0,
+   "district_accuracy": null,
+   "pincode_accuracy": null,
+   "component_accuracy": 1.0,
+   "exact_match_accuracy": 0.8,
+   "auto_resolution_rate": 0.4,
+   "locality_level_rate": 0.8,
+   "incorrect_correction_rate": null,
+   "corrections_evaluated": 0,
+   "false_confidence_rate": 0.0,
+   "precision_when_auto_resolved": 1.0,
+   "expected_status_accuracy": null,
+   "calibration": [
+    {
+     "bin": "0.6-0.8",
+     "n": 3,
+     "avg_confidence": 0.693,
+     "accuracy": 0.667
+    },
+    {
+     "bin": "0.9-1.0",
+     "n": 2,
+     "avg_confidence": 0.908,
+     "accuracy": 1.0
+    }
+   ],
+   "expected_calibration_error": 0.0528,
+   "median_latency_ms": 1.22
+  },
+  "incomplete": {
+   "n": 9,
+   "locality_accuracy": 0.6667,
+   "no_invented_locality": 1.0,
+   "state_accuracy": 0.8889,
+   "city_accuracy": 1.0,
+   "district_accuracy": null,
+   "pincode_accuracy": null,
+   "component_accuracy": null,
+   "exact_match_accuracy": 0.7778,
+   "auto_resolution_rate": 0.3333,
+   "locality_level_rate": 0.4444,
+   "incorrect_correction_rate": null,
+   "corrections_evaluated": 0,
+   "false_confidence_rate": 0.0,
+   "precision_when_auto_resolved": 1.0,
+   "expected_status_accuracy": null,
+   "calibration": [
+    {
+     "bin": "0.0-0.4",
+     "n": 1,
+     "avg_confidence": 0.0,
+     "accuracy": 0.0
+    },
+    {
+     "bin": "0.6-0.8",
+     "n": 5,
+     "avg_confidence": 0.703,
+     "accuracy": 0.8
+    },
+    {
+     "bin": "0.8-0.9",
+     "n": 1,
+     "avg_confidence": 0.854,
+     "accuracy": 1.0
+    },
+    {
+     "bin": "0.9-1.0",
+     "n": 2,
+     "avg_confidence": 0.966,
+     "accuracy": 1.0
+    }
+   ],
+   "expected_calibration_error": 0.0776,
+   "median_latency_ms": 0.88
+  },
+  "kannada_script": {
+   "n": 1,
+   "locality_accuracy": 1.0,
+   "no_invented_locality": null,
+   "state_accuracy": 1.0,
+   "city_accuracy": 1.0,
+   "district_accuracy": null,
+   "pincode_accuracy": null,
+   "component_accuracy": null,
+   "exact_match_accuracy": 1.0,
+   "auto_resolution_rate": 0.0,
+   "locality_level_rate": 1.0,
+   "incorrect_correction_rate": 0.0,
+   "corrections_evaluated": 1,
+   "false_confidence_rate": null,
+   "precision_when_auto_resolved": null,
+   "expected_status_accuracy": null,
+   "calibration": [
+    {
+     "bin": "0.8-0.9",
+     "n": 1,
+     "avg_confidence": 0.835,
+     "accuracy": 1.0
+    }
+   ],
+   "expected_calibration_error": 0.165,
+   "median_latency_ms": 1.47
+  },
+  "landmark": {
+   "n": 5,
+   "locality_accuracy": 1.0,
+   "no_invented_locality": 1.0,
+   "state_accuracy": 1.0,
+   "city_accuracy": 1.0,
+   "district_accuracy": null,
+   "pincode_accuracy": null,
+   "component_accuracy": null,
+   "exact_match_accuracy": 1.0,
+   "auto_resolution_rate": 0.2,
+   "locality_level_rate": 0.8,
+   "incorrect_correction_rate": null,
+   "corrections_evaluated": 0,
+   "false_confidence_rate": 0.0,
+   "precision_when_auto_resolved": 1.0,
+   "expected_status_accuracy": 1.0,
+   "calibration": [
+    {
+     "bin": "0.6-0.8",
+     "n": 4,
+     "avg_confidence": 0.679,
+     "accuracy": 1.0
+    },
+    {
+     "bin": "0.8-0.9",
+     "n": 1,
+     "avg_confidence": 0.854,
+     "accuracy": 1.0
+    }
+   ],
+   "expected_calibration_error": 0.286,
+   "median_latency_ms": 0.89
+  },
+  "number": {
+   "n": 1,
+   "locality_accuracy": 1.0,
+   "no_invented_locality": null,
+   "state_accuracy": 1.0,
+   "city_accuracy": 1.0,
+   "district_accuracy": null,
+   "pincode_accuracy": null,
+   "component_accuracy": null,
+   "exact_match_accuracy": 1.0,
+   "auto_resolution_rate": 0.0,
+   "locality_level_rate": 1.0,
+   "incorrect_correction_rate": 0.0,
+   "corrections_evaluated": 1,
+   "false_confidence_rate": null,
+   "precision_when_auto_resolved": null,
+   "expected_status_accuracy": null,
+   "calibration": [
+    {
+     "bin": "0.6-0.8",
+     "n": 1,
+     "avg_confidence": 0.663,
+     "accuracy": 1.0
+    }
+   ],
+   "expected_calibration_error": 0.337,
+   "median_latency_ms": 3.09
+  },
+  "number_words": {
+   "n": 5,
+   "locality_accuracy": 1.0,
+   "no_invented_locality": null,
+   "state_accuracy": 1.0,
+   "city_accuracy": 1.0,
+   "district_accuracy": null,
+   "pincode_accuracy": 1.0,
+   "component_accuracy": 1.0,
+   "exact_match_accuracy": 1.0,
+   "auto_resolution_rate": 0.6,
+   "locality_level_rate": 1.0,
+   "incorrect_correction_rate": 0.0,
+   "corrections_evaluated": 2,
+   "false_confidence_rate": 0.0,
+   "precision_when_auto_resolved": 1.0,
+   "expected_status_accuracy": null,
+   "calibration": [
+    {
+     "bin": "0.6-0.8",
+     "n": 1,
+     "avg_confidence": 0.72,
+     "accuracy": 1.0
+    },
+    {
+     "bin": "0.8-0.9",
+     "n": 1,
+     "avg_confidence": 0.835,
+     "accuracy": 1.0
+    },
+    {
+     "bin": "0.9-1.0",
+     "n": 3,
+     "avg_confidence": 0.954,
+     "accuracy": 1.0
+    }
+   ],
+   "expected_calibration_error": 0.1166,
+   "median_latency_ms": 1.16
+  },
+  "pin_conflict": {
+   "n": 2,
+   "locality_accuracy": 1.0,
+   "no_invented_locality": null,
+   "state_accuracy": 1.0,
+   "city_accuracy": 1.0,
+   "district_accuracy": null,
+   "pincode_accuracy": null,
+   "component_accuracy": null,
+   "exact_match_accuracy": 1.0,
+   "auto_resolution_rate": 0.0,
+   "locality_level_rate": 1.0,
+   "incorrect_correction_rate": null,
+   "corrections_evaluated": 0,
+   "false_confidence_rate": null,
+   "precision_when_auto_resolved": null,
+   "expected_status_accuracy": null,
+   "calibration": [
+    {
+     "bin": "0.4-0.6",
+     "n": 1,
+     "avg_confidence": 0.472,
+     "accuracy": 1.0
+    },
+    {
+     "bin": "0.6-0.8",
+     "n": 1,
+     "avg_confidence": 0.786,
+     "accuracy": 1.0
+    }
+   ],
+   "expected_calibration_error": 0.371,
+   "median_latency_ms": 5.21
+  },
+  "rural": {
+   "n": 1,
+   "locality_accuracy": null,
+   "no_invented_locality": 0.0,
+   "state_accuracy": 1.0,
+   "city_accuracy": null,
+   "district_accuracy": 1.0,
+   "pincode_accuracy": null,
+   "component_accuracy": null,
+   "exact_match_accuracy": 0.0,
+   "auto_resolution_rate": 0.0,
+   "locality_level_rate": 1.0,
+   "incorrect_correction_rate": 1.0,
+   "corrections_evaluated": 1,
+   "false_confidence_rate": null,
+   "precision_when_auto_resolved": null,
+   "expected_status_accuracy": null,
+   "calibration": [
+    {
+     "bin": "0.6-0.8",
+     "n": 1,
+     "avg_confidence": 0.78,
+     "accuracy": 0.0
+    }
+   ],
+   "expected_calibration_error": 0.78,
+   "median_latency_ms": 1.74
+  },
+  "spelling": {
+   "n": 5,
+   "locality_accuracy": 0.6,
+   "no_invented_locality": null,
+   "state_accuracy": 1.0,
+   "city_accuracy": 1.0,
+   "district_accuracy": null,
+   "pincode_accuracy": null,
+   "component_accuracy": 1.0,
+   "exact_match_accuracy": 0.6,
+   "auto_resolution_rate": 0.4,
+   "locality_level_rate": 0.8,
+   "incorrect_correction_rate": 0.3333,
+   "corrections_evaluated": 3,
+   "false_confidence_rate": 0.0,
+   "precision_when_auto_resolved": 1.0,
+   "expected_status_accuracy": null,
+   "calibration": [
+    {
+     "bin": "0.6-0.8",
+     "n": 1,
+     "avg_confidence": 0.72,
+     "accuracy": 0.0
+    },
+    {
+     "bin": "0.8-0.9",
+     "n": 3,
+     "avg_confidence": 0.849,
+     "accuracy": 0.667
+    },
+    {
+     "bin": "0.9-1.0",
+     "n": 1,
+     "avg_confidence": 0.927,
+     "accuracy": 1.0
+    }
+   ],
+   "expected_calibration_error": 0.2682,
+   "median_latency_ms": 1.45
+  },
+  "stt": {
+   "n": 9,
+   "locality_accuracy": 0.875,
+   "no_invented_locality": 1.0,
+   "state_accuracy": 1.0,
+   "city_accuracy": 1.0,
+   "district_accuracy": null,
+   "pincode_accuracy": 1.0,
+   "component_accuracy": 1.0,
+   "exact_match_accuracy": 0.8889,
+   "auto_resolution_rate": 0.4444,
+   "locality_level_rate": 0.8889,
+   "incorrect_correction_rate": 0.25,
+   "corrections_evaluated": 4,
+   "false_confidence_rate": 0.0,
+   "precision_when_auto_resolved": 1.0,
+   "expected_status_accuracy": null,
+   "calibration": [
+    {
+     "bin": "0.6-0.8",
+     "n": 2,
+     "avg_confidence": 0.72,
+     "accuracy": 1.0
+    },
+    {
+     "bin": "0.8-0.9",
+     "n": 3,
+     "avg_confidence": 0.83,
+     "accuracy": 0.667
+    },
+    {
+     "bin": "0.9-1.0",
+     "n": 4,
+     "avg_confidence": 0.959,
+     "accuracy": 1.0
+    }
+   ],
+   "expected_calibration_error": 0.135,
+   "median_latency_ms": 0.97
+  },
+  "tamil_script": {
+   "n": 1,
+   "locality_accuracy": 0.0,
+   "no_invented_locality": null,
+   "state_accuracy": 1.0,
+   "city_accuracy": 0.0,
+   "district_accuracy": null,
+   "pincode_accuracy": null,
+   "component_accuracy": null,
+   "exact_match_accuracy": 0.0,
+   "auto_resolution_rate": 0.0,
+   "locality_level_rate": 1.0,
+   "incorrect_correction_rate": 1.0,
+   "corrections_evaluated": 1,
+   "false_confidence_rate": null,
+   "precision_when_auto_resolved": null,
+   "expected_status_accuracy": null,
+   "calibration": [
+    {
+     "bin": "0.4-0.6",
+     "n": 1,
+     "avg_confidence": 0.551,
+     "accuracy": 0.0
+    }
+   ],
+   "expected_calibration_error": 0.551,
+   "median_latency_ms": 12.63
+  }
+ },
+ "failures": [
+  {
+   "id": "t006",
+   "categories": [
+    "hinglish"
+   ],
+   "coverage_gap": false,
+   "original": "mera ghar hebbal mein hai, bangalore",
+   "normalized_transcript": "mera ghar hebbal , hai , bangalore",
+   "resolved_address": "Bengaluru, Karnataka, India",
+   "ground_truth": {
+    "locality": [
+     "Hebbal",
+     "Hebbal Kempapura"
+    ],
+    "city": "Bengaluru",
+    "district": null,
+    "state": "Karnataka",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "city": "Bengaluru",
+    "district": "Bengaluru Urban",
+    "state": "Karnataka"
+   },
+   "status": "partially_resolved",
+   "confidence": 0.72,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": false,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": false,
+   "corrected_place": false,
+   "latency_ms": 1.75
+  },
+  {
+   "id": "t007",
+   "categories": [
+    "stt",
+    "spelling"
+   ],
+   "coverage_gap": false,
+   "original": "doddanekundi marathalli ORR bangalore",
+   "normalized_transcript": "doddanekundi marathalli orr bangalore",
+   "resolved_address": "Orr, Doddanekkundi, Bengaluru, Karnataka 560037, India",
+   "ground_truth": {
+    "locality": [
+     "Doddanekundi",
+     "Marathahalli Colony"
+    ],
+    "city": "Bengaluru",
+    "district": null,
+    "state": "Karnataka",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "locality": "Doddanekkundi",
+    "city": "Bengaluru",
+    "district": "Bengaluru Urban",
+    "state": "Karnataka",
+    "postal_code": "560037"
+   },
+   "status": "partially_resolved",
+   "confidence": 0.831,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": false,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": false,
+   "corrected_place": true,
+   "latency_ms": 1.91
+  },
+  {
+   "id": "t021",
+   "categories": [
+    "correct"
+   ],
+   "coverage_gap": true,
+   "original": "dharampeth nagpur",
+   "normalized_transcript": "dharampeth nagpur",
+   "resolved_address": "Dharampeth, Nagpur, Maharashtra, India",
+   "ground_truth": {
+    "locality": [
+     "Dharampeth"
+    ],
+    "city": "Nagpur",
+    "district": null,
+    "state": "Maharashtra",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "city": "Nagpur",
+    "district": "Nagpur",
+    "state": "Maharashtra"
+   },
+   "status": "partially_resolved",
+   "confidence": 0.72,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": false,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": false,
+   "corrected_place": false,
+   "latency_ms": 9.56
+  },
+  {
+   "id": "t032",
+   "categories": [
+    "correct"
+   ],
+   "coverage_gap": false,
+   "original": "vaishali ghaziabad",
+   "normalized_transcript": "vaishali ghaziabad",
+   "resolved_address": "Ghaziabad, Uttar Pradesh, India",
+   "ground_truth": {
+    "locality": [
+     "Vaishali"
+    ],
+    "city": "Ghaziabad",
+    "district": null,
+    "state": "Uttar Pradesh",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "city": "Ghaziabad",
+    "district": "Ghaziabad",
+    "state": "Uttar Pradesh"
+   },
+   "status": "partially_resolved",
+   "confidence": 0.72,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": false,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": false,
+   "corrected_place": false,
+   "latency_ms": 0.71
+  },
+  {
+   "id": "t038",
+   "categories": [
+    "incomplete"
+   ],
+   "coverage_gap": false,
+   "original": "velacheri main road",
+   "normalized_transcript": "velacheri main road",
+   "resolved_address": "Velacheri Main Road, India",
+   "ground_truth": {
+    "locality": [
+     "Velacheri"
+    ],
+    "city": null,
+    "district": null,
+    "state": "Tamil Nadu",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "street": "Velacheri Main Road"
+   },
+   "status": "unresolved",
+   "confidence": 0.0,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": false,
+    "state": false
+   },
+   "component_checks": {},
+   "geo_correct": false,
+   "corrected_place": false,
+   "latency_ms": 0.19
+  },
+  {
+   "id": "t039",
+   "categories": [
+    "abbreviation"
+   ],
+   "coverage_gap": false,
+   "original": "RS puram coimbatore",
+   "normalized_transcript": "rs puram coimbatore",
+   "resolved_address": "Coimbatore, Tamil Nadu, India",
+   "ground_truth": {
+    "locality": [
+     "RSPuram East",
+     "RS Puram"
+    ],
+    "city": "Coimbatore",
+    "district": null,
+    "state": "Tamil Nadu",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "city": "Coimbatore",
+    "district": "Coimbatore",
+    "state": "Tamil Nadu"
+   },
+   "status": "partially_resolved",
+   "confidence": 0.72,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": false,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": false,
+   "corrected_place": false,
+   "latency_ms": 16.64
+  },
+  {
+   "id": "t045",
+   "categories": [
+    "incomplete"
+   ],
+   "coverage_gap": false,
+   "original": "secunderabad",
+   "normalized_transcript": "secunderabad",
+   "resolved_address": "Secunderabad, Telangana, India",
+   "ground_truth": {
+    "locality": [
+     "Secunderabad"
+    ],
+    "city": null,
+    "district": null,
+    "state": "Telangana",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "city": "Secunderabad",
+    "state": "Telangana"
+   },
+   "status": "partially_resolved",
+   "confidence": 0.72,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": false,
+    "state": true
+   },
+   "component_checks": {},
+   "geo_correct": false,
+   "corrected_place": false,
+   "latency_ms": 0.36
+  },
+  {
+   "id": "t050",
+   "categories": [
+    "alias"
+   ],
+   "coverage_gap": false,
+   "original": "park street calcutta",
+   "normalized_transcript": "park street calcutta",
+   "resolved_address": "Kolkata, West Bengal, India",
+   "ground_truth": {
+    "locality": [
+     "Park Street"
+    ],
+    "city": "Kolkata",
+    "district": null,
+    "state": "West Bengal",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "city": "Kolkata",
+    "state": "West Bengal"
+   },
+   "status": "partially_resolved",
+   "confidence": 0.72,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": false,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": false,
+   "corrected_place": false,
+   "latency_ms": 2.92
+  },
+  {
+   "id": "t058",
+   "categories": [
+    "correct"
+   ],
+   "coverage_gap": true,
+   "original": "c scheme jaipur",
+   "normalized_transcript": "c scheme jaipur",
+   "resolved_address": "C Scheme, Jaipur, Rajasthan, India",
+   "ground_truth": {
+    "locality": [
+     "C Scheme",
+     "C-scheme"
+    ],
+    "city": "Jaipur",
+    "district": null,
+    "state": "Rajasthan",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "city": "Jaipur",
+    "district": "Jaipur",
+    "state": "Rajasthan"
+   },
+   "status": "partially_resolved",
+   "confidence": 0.72,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": false,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": false,
+   "corrected_place": false,
+   "latency_ms": 30.27
+  },
+  {
+   "id": "t060",
+   "categories": [
+    "correct"
+   ],
+   "coverage_gap": true,
+   "original": "arera colony bhopal",
+   "normalized_transcript": "arera colony bhopal",
+   "resolved_address": "Bhopal, Madhya Pradesh, India",
+   "ground_truth": {
+    "locality": [
+     "Arera Colony"
+    ],
+    "city": "Bhopal",
+    "district": null,
+    "state": "Madhya Pradesh",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "city": "Bhopal",
+    "district": "Bhopal",
+    "state": "Madhya Pradesh"
+   },
+   "status": "partially_resolved",
+   "confidence": 0.72,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": false,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": false,
+   "corrected_place": false,
+   "latency_ms": 9.51
+  },
+  {
+   "id": "t062",
+   "categories": [
+    "correct"
+   ],
+   "coverage_gap": true,
+   "original": "hazratganj lucknow",
+   "normalized_transcript": "hazratganj lucknow",
+   "resolved_address": "Lucknow, Uttar Pradesh, India",
+   "ground_truth": {
+    "locality": [
+     "Hazratganj"
+    ],
+    "city": "Lucknow",
+    "district": null,
+    "state": "Uttar Pradesh",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "city": "Lucknow",
+    "district": "Lucknow",
+    "state": "Uttar Pradesh"
+   },
+   "status": "partially_resolved",
+   "confidence": 0.72,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": false,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": false,
+   "corrected_place": false,
+   "latency_ms": 9.05
+  },
+  {
+   "id": "t064",
+   "categories": [
+    "alias"
+   ],
+   "coverage_gap": false,
+   "original": "civil lines allahabad",
+   "normalized_transcript": "civil lines allahabad",
+   "resolved_address": "Prayagraj, Uttar Pradesh, India",
+   "ground_truth": {
+    "locality": [
+     "Civil Lines",
+     "Allahabad Civil Lines"
+    ],
+    "city": "Prayagraj",
+    "district": null,
+    "state": "Uttar Pradesh",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "city": "Prayagraj",
+    "district": "Prayagraj",
+    "state": "Uttar Pradesh"
+   },
+   "status": "partially_resolved",
+   "confidence": 0.72,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": false,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": false,
+   "corrected_place": false,
+   "latency_ms": 8.6
+  },
+  {
+   "id": "t067",
+   "categories": [
+    "alias"
+   ],
+   "coverage_gap": false,
+   "original": "pattom trivandrum",
+   "normalized_transcript": "pattom trivandrum",
+   "resolved_address": "Thiruvananthapuram, Kerala, India",
+   "ground_truth": {
+    "locality": [
+     "Pattom Palace",
+     "Pattom"
+    ],
+    "city": "Thiruvananthapuram",
+    "district": null,
+    "state": "Kerala",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "city": "Thiruvananthapuram",
+    "district": "Thiruvananthapuram",
+    "state": "Kerala"
+   },
+   "status": "partially_resolved",
+   "confidence": 0.72,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": false,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": false,
+   "corrected_place": false,
+   "latency_ms": 11.17
+  },
+  {
+   "id": "t068",
+   "categories": [
+    "correct"
+   ],
+   "coverage_gap": true,
+   "original": "sector 17 chandigarh",
+   "normalized_transcript": "sector 17 chandigarh",
+   "resolved_address": "Sector 17, Chandigarh, India",
+   "ground_truth": {
+    "locality": [
+     "Sector 17 Chandigarh",
+     "Sector 17"
+    ],
+    "city": "Chandigarh",
+    "district": null,
+    "state": "Chandigarh",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "sector": "Sector 17",
+    "city": "Chandigarh",
+    "district": "Chandigarh",
+    "state": "Chandigarh"
+   },
+   "status": "partially_resolved",
+   "confidence": 0.72,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": false,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": false,
+   "corrected_place": false,
+   "latency_ms": 0.37
+  },
+  {
+   "id": "t069",
+   "categories": [
+    "correct"
+   ],
+   "coverage_gap": false,
+   "original": "model town ludhiana",
+   "normalized_transcript": "model town ludhiana",
+   "resolved_address": "Model Town, Ludhiana District, Punjab 141002, India",
+   "ground_truth": {
+    "locality": [
+     "Model Town"
+    ],
+    "city": "Ludhiana",
+    "district": null,
+    "state": "Punjab",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "locality": "Model Town",
+    "district": "Ludhiana",
+    "state": "Punjab",
+    "postal_code": "141002"
+   },
+   "status": "partially_resolved",
+   "confidence": 0.832,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": true,
+    "state": true,
+    "city": false
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 0.62
+  },
+  {
+   "id": "t070",
+   "categories": [
+    "correct"
+   ],
+   "coverage_gap": true,
+   "original": "ranjit avenue amritsar",
+   "normalized_transcript": "ranjit avenue amritsar",
+   "resolved_address": "Ranjit Avenue, Amritsar, Punjab, India",
+   "ground_truth": {
+    "locality": [
+     "Ranjit Avenue"
+    ],
+    "city": "Amritsar",
+    "district": null,
+    "state": "Punjab",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "street": "Ranjit Avenue",
+    "city": "Amritsar",
+    "district": "Amritsar",
+    "state": "Punjab"
+   },
+   "status": "partially_resolved",
+   "confidence": 0.72,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": false,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": false,
+   "corrected_place": false,
+   "latency_ms": 0.63
+  },
+  {
+   "id": "t071",
+   "categories": [
+    "correct"
+   ],
+   "coverage_gap": true,
+   "original": "boring road patna",
+   "normalized_transcript": "boring road patna",
+   "resolved_address": "Boring Road, Patna, Bihar, India",
+   "ground_truth": {
+    "locality": [
+     "Boring Road"
+    ],
+    "city": "Patna",
+    "district": null,
+    "state": "Bihar",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "street": "Boring Road",
+    "city": "Patna",
+    "district": "Patna",
+    "state": "Bihar"
+   },
+   "status": "partially_resolved",
+   "confidence": 0.72,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": false,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": false,
+   "corrected_place": false,
+   "latency_ms": 0.87
+  },
+  {
+   "id": "t074",
+   "categories": [
+    "alias"
+   ],
+   "coverage_gap": false,
+   "original": "panjim goa",
+   "normalized_transcript": "panjim goa",
+   "resolved_address": "Panaji, Goa, India",
+   "ground_truth": {
+    "locality": [
+     "Panaji"
+    ],
+    "city": "Panaji",
+    "district": null,
+    "state": "Goa",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "city": "Panaji",
+    "district": "North Goa",
+    "state": "Goa"
+   },
+   "status": "partially_resolved",
+   "confidence": 0.72,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": false,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": false,
+   "corrected_place": false,
+   "latency_ms": 0.4
+  },
+  {
+   "id": "t075",
+   "categories": [
+    "correct"
+   ],
+   "coverage_gap": false,
+   "original": "rajpur road dehradun",
+   "normalized_transcript": "rajpur road dehradun",
+   "resolved_address": "Rajpur Road, Dehradun, Uttarakhand, India",
+   "ground_truth": {
+    "locality": [
+     "Rajpur Road",
+     "Rajpur"
+    ],
+    "city": "Dehradun",
+    "district": null,
+    "state": "Uttarakhand",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "street": "Rajpur Road",
+    "city": "Dehradun",
+    "district": "Dehradun",
+    "state": "Uttarakhand"
+   },
+   "status": "partially_resolved",
+   "confidence": 0.72,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": false,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": false,
+   "corrected_place": false,
+   "latency_ms": 0.47
+  },
+  {
+   "id": "t076",
+   "categories": [
+    "correct"
+   ],
+   "coverage_gap": false,
+   "original": "manipal udupi",
+   "normalized_transcript": "manipal udupi",
+   "resolved_address": "Udupi, Karnataka, India",
+   "ground_truth": {
+    "locality": [
+     "Manipal"
+    ],
+    "city": null,
+    "district": null,
+    "state": "Karnataka",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "city": "Udupi",
+    "district": "Udupi",
+    "state": "Karnataka"
+   },
+   "status": "partially_resolved",
+   "confidence": 0.72,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": false,
+    "state": true
+   },
+   "component_checks": {},
+   "geo_correct": false,
+   "corrected_place": false,
+   "latency_ms": 0.61
+  },
+  {
+   "id": "t079",
+   "categories": [
+    "spelling"
+   ],
+   "coverage_gap": false,
+   "original": "bodh gaya bihar",
+   "normalized_transcript": "bodh gaya bihar",
+   "resolved_address": "Gaya, Bihar, India",
+   "ground_truth": {
+    "locality": [
+     "Bodhgaya",
+     "Bodh Gaya"
+    ],
+    "city": null,
+    "district": null,
+    "state": "Bihar",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "city": "Gaya",
+    "district": "Gaya",
+    "state": "Bihar"
+   },
+   "status": "partially_resolved",
+   "confidence": 0.72,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": false,
+    "state": true
+   },
+   "component_checks": {},
+   "geo_correct": false,
+   "corrected_place": false,
+   "latency_ms": 0.73
+  },
+  {
+   "id": "t081",
+   "categories": [
+    "alias"
+   ],
+   "coverage_gap": false,
+   "original": "ooty nilgiris",
+   "normalized_transcript": "ooty nilgiris",
+   "resolved_address": "Ooty, The Nilgiris District, Tamil Nadu, India",
+   "ground_truth": {
+    "locality": [
+     "Udagamandalam",
+     "Udhagamandalam"
+    ],
+    "city": null,
+    "district": null,
+    "state": "Tamil Nadu",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "district": "The Nilgiris",
+    "state": "Tamil Nadu"
+   },
+   "status": "partially_resolved",
+   "confidence": 0.66,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": false,
+    "state": true
+   },
+   "component_checks": {},
+   "geo_correct": false,
+   "corrected_place": false,
+   "latency_ms": 0.5
+  },
+  {
+   "id": "t084",
+   "categories": [
+    "rural",
+    "ambiguous"
+   ],
+   "coverage_gap": false,
+   "original": "village rampur, tehsil sadar, district mandi",
+   "normalized_transcript": "village rampur , tehsil sadar , district mandi",
+   "resolved_address": "Tehsil, Sudhar, Mandi District, Himachal Pradesh 175012, India",
+   "ground_truth": {
+    "locality": null,
+    "city": null,
+    "district": "Mandi",
+    "state": "Himachal Pradesh",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "locality": "Sudhar",
+    "district": "Mandi",
+    "state": "Himachal Pradesh",
+    "postal_code": "175012"
+   },
+   "status": "partially_resolved",
+   "confidence": 0.78,
+   "needs_confirmation": true,
+   "checks": {
+    "no_invented_locality": false,
+    "state": true,
+    "district": true
+   },
+   "component_checks": {},
+   "geo_correct": false,
+   "corrected_place": true,
+   "latency_ms": 1.74
+  },
+  {
+   "id": "t096",
+   "categories": [
+    "tamil_script"
+   ],
+   "coverage_gap": false,
+   "original": "அடையார் சென்னை",
+   "normalized_transcript": "adhaiyar jhennai",
+   "resolved_address": "Jhennai, Adaiyur, Salem District, Tamil Nadu, India",
+   "ground_truth": {
+    "locality": [
+     "Adyar"
+    ],
+    "city": "Chennai",
+    "district": null,
+    "state": "Tamil Nadu",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "locality": "Adaiyur",
+    "district": "Salem",
+    "state": "Tamil Nadu"
+   },
+   "status": "ambiguous",
+   "confidence": 0.551,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": false,
+    "state": true,
+    "city": false
+   },
+   "component_checks": {},
+   "geo_correct": false,
+   "corrected_place": true,
+   "latency_ms": 12.63
+  },
+  {
+   "id": "t098",
+   "categories": [
+    "ambiguous"
+   ],
+   "coverage_gap": false,
+   "original": "gandhi nagar",
+   "normalized_transcript": "gandhi nagar",
+   "resolved_address": "Gandhinagar, Gujarat, India",
+   "ground_truth": {
+    "locality": null,
+    "city": null,
+    "district": null,
+    "state": "",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "city": "Gandhinagar",
+    "district": "Gandhinagar",
+    "state": "Gujarat"
+   },
+   "status": "partially_resolved",
+   "confidence": 0.72,
+   "needs_confirmation": true,
+   "checks": {
+    "no_invented_locality": true,
+    "expected_status": false
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 0.57
+  },
+  {
+   "id": "t105",
+   "categories": [
+    "coverage"
+   ],
+   "coverage_gap": true,
+   "original": "btm layout 2nd stage bangalore",
+   "normalized_transcript": "btm layout 2nd stage bangalore",
+   "resolved_address": "2nd Stage, Btm Layout, Bengaluru, Karnataka, India",
+   "ground_truth": {
+    "locality": [
+     "BTM Layout"
+    ],
+    "city": "Bengaluru",
+    "district": null,
+    "state": "Karnataka",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "stage": "2nd Stage",
+    "city": "Bengaluru",
+    "district": "Bengaluru Urban",
+    "state": "Karnataka"
+   },
+   "status": "partially_resolved",
+   "confidence": 0.72,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": false,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": false,
+   "corrected_place": false,
+   "latency_ms": 9.04
+  },
+  {
+   "id": "t106",
+   "categories": [
+    "coverage"
+   ],
+   "coverage_gap": true,
+   "original": "hinjewadi phase 1 pune",
+   "normalized_transcript": "hinjewadi phase 1 pune",
+   "resolved_address": "Phase 1, Shindewadi, Pune, Maharashtra, India",
+   "ground_truth": {
+    "locality": [
+     "Hinjewadi",
+     "Hinjawadi"
+    ],
+    "city": "Pune",
+    "district": null,
+    "state": "Maharashtra",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "phase": "Phase 1",
+    "locality": "Shindewadi",
+    "city": "Pune",
+    "district": "Pune",
+    "state": "Maharashtra"
+   },
+   "status": "partially_resolved",
+   "confidence": 0.811,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": false,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": false,
+   "corrected_place": true,
+   "latency_ms": 1.89
+  },
+  {
+   "id": "t107",
+   "categories": [
+    "coverage"
+   ],
+   "coverage_gap": true,
+   "original": "koregaon park pune",
+   "normalized_transcript": "koregaon park pune",
+   "resolved_address": "Karegaon, Pune, Maharashtra, India",
+   "ground_truth": {
+    "locality": [
+     "Koregaon Park"
+    ],
+    "city": "Pune",
+    "district": null,
+    "state": "Maharashtra",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "locality": "Karegaon",
+    "city": "Pune",
+    "district": "Pune",
+    "state": "Maharashtra"
+   },
+   "status": "partially_resolved",
+   "confidence": 0.793,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": false,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": false,
+   "corrected_place": true,
+   "latency_ms": 1.6
+  },
+  {
+   "id": "t108",
+   "categories": [
+    "coverage"
+   ],
+   "coverage_gap": true,
+   "original": "indirapuram ghaziabad",
+   "normalized_transcript": "indirapuram ghaziabad",
+   "resolved_address": "Ghaziabad, Uttar Pradesh, India",
+   "ground_truth": {
+    "locality": [
+     "Indirapuram"
+    ],
+    "city": "Ghaziabad",
+    "district": null,
+    "state": "Uttar Pradesh",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "city": "Ghaziabad",
+    "district": "Ghaziabad",
+    "state": "Uttar Pradesh"
+   },
+   "status": "partially_resolved",
+   "confidence": 0.72,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": false,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": false,
+   "corrected_place": false,
+   "latency_ms": 7.74
+  }
+ ],
+ "cases": [
+  {
+   "id": "t001",
+   "categories": [
+    "correct",
+    "alias"
+   ],
+   "coverage_gap": false,
+   "original": "No 27, 4th cross, Malleshwaram, Bangalore 560003",
+   "normalized_transcript": "no 27 , 4th cross , malleshwaram , bangalore 560003",
+   "resolved_address": "No. 27, 4th Cross, Malleswaram, Bengaluru, Karnataka 560003, India",
+   "ground_truth": {
+    "locality": [
+     "Malleswaram"
+    ],
+    "city": "Bengaluru",
+    "district": null,
+    "state": "Karnataka",
+    "postal_code": "560003",
+    "components": {
+     "house_number": "27",
+     "cross_road": "4th Cross"
+    }
+   },
+   "predicted": {
+    "house_number": "27",
+    "cross_road": "4th Cross",
+    "locality": "Malleswaram",
+    "city": "Bengaluru",
+    "district": "Bengaluru Urban",
+    "state": "Karnataka",
+    "postal_code": "560003"
+   },
+   "status": "exact_match",
+   "confidence": 0.99,
+   "needs_confirmation": false,
+   "checks": {
+    "locality": true,
+    "state": true,
+    "city": true,
+    "postal_code": true
+   },
+   "component_checks": {
+    "house_number": true,
+    "cross_road": true
+   },
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 0.83
+  },
+  {
+   "id": "t002",
+   "categories": [
+    "alias",
+    "spelling"
+   ],
+   "coverage_gap": false,
+   "original": "flat 1104 tower b prestige lakeside habitat varthur bengaluru",
+   "normalized_transcript": "flat 1104 tower b prestige lakeside habitat varthur bengaluru",
+   "resolved_address": "Flat 1104, Tower B Prestige Lakeside Habitat, Vartur, Bengaluru, Karnataka 560087, India",
+   "ground_truth": {
+    "locality": [
+     "Vartur"
+    ],
+    "city": "Bengaluru",
+    "district": null,
+    "state": "Karnataka",
+    "postal_code": null,
+    "components": {
+     "unit": "1104"
+    }
+   },
+   "predicted": {
+    "unit": "1104",
+    "locality": "Vartur",
+    "city": "Bengaluru",
+    "district": "Bengaluru Urban",
+    "state": "Karnataka",
+    "postal_code": "560087"
+   },
+   "status": "resolved",
+   "confidence": 0.927,
+   "needs_confirmation": false,
+   "checks": {
+    "locality": true,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {
+    "unit": true
+   },
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 109.16
+  },
+  {
+   "id": "t003",
+   "categories": [
+    "number_words"
+   ],
+   "coverage_gap": false,
+   "original": "jayanagar nine block bangalore",
+   "normalized_transcript": "jayanagar 9th block bangalore",
+   "resolved_address": "9th Block, Jayanagar, Bengaluru, Karnataka 560041, India",
+   "ground_truth": {
+    "locality": [
+     "Jayanagar"
+    ],
+    "city": "Bengaluru",
+    "district": null,
+    "state": "Karnataka",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "block": "9th Block",
+    "locality": "Jayanagar",
+    "city": "Bengaluru",
+    "district": "Bengaluru Urban",
+    "state": "Karnataka",
+    "postal_code": "560041"
+   },
+   "status": "resolved",
+   "confidence": 0.906,
+   "needs_confirmation": false,
+   "checks": {
+    "locality": true,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 1.16
+  },
+  {
+   "id": "t004",
+   "categories": [
+    "correct"
+   ],
+   "coverage_gap": false,
+   "original": "basavanagudi gandhi bazaar main road",
+   "normalized_transcript": "basavanagudi gandhi bazaar main road",
+   "resolved_address": "Basavanagudi, Bengaluru, Karnataka, India",
+   "ground_truth": {
+    "locality": [
+     "Basavanagudi"
+    ],
+    "city": null,
+    "district": null,
+    "state": "Karnataka",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "locality": "Basavanagudi",
+    "city": "Bengaluru",
+    "district": "Bengaluru Urban",
+    "state": "Karnataka"
+   },
+   "status": "ambiguous",
+   "confidence": 0.636,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": true,
+    "state": true
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 0.48
+  },
+  {
+   "id": "t005",
+   "categories": [
+    "correct"
+   ],
+   "coverage_gap": false,
+   "original": "yelahanka new town, sector a, bengaluru",
+   "normalized_transcript": "yelahanka new town , sector a , bengaluru",
+   "resolved_address": "Sector A, Yelahanka, Bengaluru, Karnataka 560064, India",
+   "ground_truth": {
+    "locality": [
+     "Yelahanka New Town",
+     "Yelahanka"
+    ],
+    "city": "Bengaluru",
+    "district": null,
+    "state": "Karnataka",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "sector": "Sector A",
+    "locality": "Yelahanka",
+    "city": "Bengaluru",
+    "district": "Bengaluru Urban",
+    "state": "Karnataka",
+    "postal_code": "560064"
+   },
+   "status": "resolved",
+   "confidence": 0.906,
+   "needs_confirmation": false,
+   "checks": {
+    "locality": true,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 1.12
+  },
+  {
+   "id": "t006",
+   "categories": [
+    "hinglish"
+   ],
+   "coverage_gap": false,
+   "original": "mera ghar hebbal mein hai, bangalore",
+   "normalized_transcript": "mera ghar hebbal , hai , bangalore",
+   "resolved_address": "Bengaluru, Karnataka, India",
+   "ground_truth": {
+    "locality": [
+     "Hebbal",
+     "Hebbal Kempapura"
+    ],
+    "city": "Bengaluru",
+    "district": null,
+    "state": "Karnataka",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "city": "Bengaluru",
+    "district": "Bengaluru Urban",
+    "state": "Karnataka"
+   },
+   "status": "partially_resolved",
+   "confidence": 0.72,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": false,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": false,
+   "corrected_place": false,
+   "latency_ms": 1.75
+  },
+  {
+   "id": "t007",
+   "categories": [
+    "stt",
+    "spelling"
+   ],
+   "coverage_gap": false,
+   "original": "doddanekundi marathalli ORR bangalore",
+   "normalized_transcript": "doddanekundi marathalli orr bangalore",
+   "resolved_address": "Orr, Doddanekkundi, Bengaluru, Karnataka 560037, India",
+   "ground_truth": {
+    "locality": [
+     "Doddanekundi",
+     "Marathahalli Colony"
+    ],
+    "city": "Bengaluru",
+    "district": null,
+    "state": "Karnataka",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "locality": "Doddanekkundi",
+    "city": "Bengaluru",
+    "district": "Bengaluru Urban",
+    "state": "Karnataka",
+    "postal_code": "560037"
+   },
+   "status": "partially_resolved",
+   "confidence": 0.831,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": false,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": false,
+   "corrected_place": true,
+   "latency_ms": 1.91
+  },
+  {
+   "id": "t008",
+   "categories": [
+    "number_words"
+   ],
+   "coverage_gap": false,
+   "original": "banashankari third stage bangalore 560085",
+   "normalized_transcript": "banashankari 3rd stage bangalore 560085",
+   "resolved_address": "Banashankari 3rd Stage, Bengaluru, Karnataka 560085, India",
+   "ground_truth": {
+    "locality": [
+     "Banashankari 3rd Stage",
+     "Banashankari"
+    ],
+    "city": "Bengaluru",
+    "district": null,
+    "state": "Karnataka",
+    "postal_code": "560085",
+    "components": {}
+   },
+   "predicted": {
+    "locality": "Banashankari 3rd Stage",
+    "city": "Bengaluru",
+    "district": "Bengaluru Urban",
+    "state": "Karnataka",
+    "postal_code": "560085"
+   },
+   "status": "exact_match",
+   "confidence": 0.99,
+   "needs_confirmation": false,
+   "checks": {
+    "locality": true,
+    "state": true,
+    "city": true,
+    "postal_code": true
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 0.96
+  },
+  {
+   "id": "t009",
+   "categories": [
+    "landmark"
+   ],
+   "coverage_gap": false,
+   "original": "kadugodi near whitefield railway station",
+   "normalized_transcript": "kadugodi near whitefield railway station",
+   "resolved_address": "Near Whitefield, Kadugodi, Bengaluru, Karnataka, India",
+   "ground_truth": {
+    "locality": [
+     "Kadugodi",
+     "Whitefield"
+    ],
+    "city": null,
+    "district": null,
+    "state": "Karnataka",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "locality": "Kadugodi",
+    "landmark": "Whitefield",
+    "city": "Bengaluru",
+    "district": "Bengaluru Urban",
+    "state": "Karnataka"
+   },
+   "status": "ambiguous",
+   "confidence": 0.636,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": true,
+    "state": true
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 0.36
+  },
+  {
+   "id": "t010",
+   "categories": [
+    "abbreviation"
+   ],
+   "coverage_gap": false,
+   "original": "RT nagar, bangalore",
+   "normalized_transcript": "rt nagar , bangalore",
+   "resolved_address": "RT Nagar, Bengaluru, Karnataka 560032, India",
+   "ground_truth": {
+    "locality": [
+     "RT Nagar"
+    ],
+    "city": "Bengaluru",
+    "district": null,
+    "state": "Karnataka",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "locality": "RT Nagar",
+    "city": "Bengaluru",
+    "district": "Bengaluru Urban",
+    "state": "Karnataka",
+    "postal_code": "560032"
+   },
+   "status": "resolved",
+   "confidence": 0.966,
+   "needs_confirmation": false,
+   "checks": {
+    "locality": true,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 1.49
+  },
+  {
+   "id": "t011",
+   "categories": [
+    "alias"
+   ],
+   "coverage_gap": false,
+   "original": "Electronic City phase 1 Bangalore",
+   "normalized_transcript": "electronic city phase 1 bangalore",
+   "resolved_address": "Phase 1, Electronics City, Bengaluru, Karnataka 560100, India",
+   "ground_truth": {
+    "locality": [
+     "Electronics City"
+    ],
+    "city": "Bengaluru",
+    "district": null,
+    "state": "Karnataka",
+    "postal_code": null,
+    "components": {
+     "phase": "Phase 1"
+    }
+   },
+   "predicted": {
+    "phase": "Phase 1",
+    "locality": "Electronics City",
+    "city": "Bengaluru",
+    "district": "Bengaluru Urban",
+    "state": "Karnataka",
+    "postal_code": "560100"
+   },
+   "status": "resolved",
+   "confidence": 0.927,
+   "needs_confirmation": false,
+   "checks": {
+    "locality": true,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {
+    "phase": true
+   },
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 1.46
+  },
+  {
+   "id": "t012",
+   "categories": [
+    "landmark"
+   ],
+   "coverage_gap": false,
+   "original": "domlur layout, behind esi hospital",
+   "normalized_transcript": "domlur layout , behind esi hospital",
+   "resolved_address": "Near Esi Hospital, Domlur, Bengaluru, Karnataka 560071, India",
+   "ground_truth": {
+    "locality": [
+     "Domlur"
+    ],
+    "city": null,
+    "district": null,
+    "state": "Karnataka",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "locality": "Domlur",
+    "landmark": "Esi Hospital",
+    "city": "Bengaluru",
+    "district": "Bengaluru Urban",
+    "state": "Karnataka",
+    "postal_code": "560071"
+   },
+   "status": "resolved",
+   "confidence": 0.854,
+   "needs_confirmation": false,
+   "checks": {
+    "locality": true,
+    "state": true
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 0.89
+  },
+  {
+   "id": "t013",
+   "categories": [
+    "correct"
+   ],
+   "coverage_gap": false,
+   "original": "B wing 302, Lokhandwala complex, Andheri west, Mumbai 400053",
+   "normalized_transcript": "b wing 302 , lokhandwala complex , andheri west , mumbai 400053",
+   "resolved_address": "Lokhandwala Complex, 302, Andheri West, Mumbai, Maharashtra 400053, India",
+   "ground_truth": {
+    "locality": [
+     "Andheri",
+     "Andheri West",
+     "Azad Nagar"
+    ],
+    "city": "Mumbai",
+    "district": null,
+    "state": "Maharashtra",
+    "postal_code": "400053",
+    "components": {}
+   },
+   "predicted": {
+    "building": "Lokhandwala Complex",
+    "locality": "Andheri West",
+    "city": "Mumbai",
+    "district": "Mumbai Suburban",
+    "state": "Maharashtra",
+    "postal_code": "400053"
+   },
+   "status": "exact_match",
+   "confidence": 0.99,
+   "needs_confirmation": false,
+   "checks": {
+    "locality": true,
+    "state": true,
+    "city": true,
+    "postal_code": true
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 16.34
+  },
+  {
+   "id": "t014",
+   "categories": [
+    "correct"
+   ],
+   "coverage_gap": false,
+   "original": "bandra west mumbai",
+   "normalized_transcript": "bandra west mumbai",
+   "resolved_address": "Bandra West, Mumbai, Maharashtra, India",
+   "ground_truth": {
+    "locality": [
+     "Bandra West"
+    ],
+    "city": "Mumbai",
+    "district": null,
+    "state": "Maharashtra",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "locality": "Bandra West",
+    "city": "Mumbai",
+    "district": "Mumbai Suburban",
+    "state": "Maharashtra"
+   },
+   "status": "resolved",
+   "confidence": 0.966,
+   "needs_confirmation": false,
+   "checks": {
+    "locality": true,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 0.89
+  },
+  {
+   "id": "t015",
+   "categories": [
+    "alias"
+   ],
+   "coverage_gap": false,
+   "original": "Powai hiranandani gardens mumbai 400076",
+   "normalized_transcript": "powai hiranandani gardens mumbai 400076",
+   "resolved_address": "Hiranandani Gardens, Powai Iit, Mumbai, Maharashtra 400076, India",
+   "ground_truth": {
+    "locality": [
+     "Powai Iit",
+     "Powai"
+    ],
+    "city": "Mumbai",
+    "district": null,
+    "state": "Maharashtra",
+    "postal_code": "400076",
+    "components": {}
+   },
+   "predicted": {
+    "locality": "Powai Iit",
+    "city": "Mumbai",
+    "district": "Mumbai Suburban",
+    "state": "Maharashtra",
+    "postal_code": "400076"
+   },
+   "status": "exact_match",
+   "confidence": 0.99,
+   "needs_confirmation": false,
+   "checks": {
+    "locality": true,
+    "state": true,
+    "city": true,
+    "postal_code": true
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 18.63
+  },
+  {
+   "id": "t016",
+   "categories": [
+    "incomplete"
+   ],
+   "coverage_gap": false,
+   "original": "chembur naka, mumbai 71",
+   "normalized_transcript": "chembur naka , mumbai 71",
+   "resolved_address": "Naka, 71, Chembur, Mumbai, Maharashtra, India",
+   "ground_truth": {
+    "locality": [
+     "Chembur"
+    ],
+    "city": "Mumbai",
+    "district": null,
+    "state": "Maharashtra",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "locality": "Chembur",
+    "city": "Mumbai",
+    "district": "Mumbai Suburban",
+    "state": "Maharashtra"
+   },
+   "status": "resolved",
+   "confidence": 0.966,
+   "needs_confirmation": false,
+   "checks": {
+    "locality": true,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 0.95
+  },
+  {
+   "id": "t017",
+   "categories": [
+    "correct"
+   ],
+   "coverage_gap": false,
+   "original": "kothrud pune 411038",
+   "normalized_transcript": "kothrud pune 411038",
+   "resolved_address": "Kothrud, Pune, Maharashtra 411038, India",
+   "ground_truth": {
+    "locality": [
+     "Kothrud"
+    ],
+    "city": "Pune",
+    "district": null,
+    "state": "Maharashtra",
+    "postal_code": "411038",
+    "components": {}
+   },
+   "predicted": {
+    "locality": "Kothrud",
+    "city": "Pune",
+    "district": "Pune",
+    "state": "Maharashtra",
+    "postal_code": "411038"
+   },
+   "status": "exact_match",
+   "confidence": 0.99,
+   "needs_confirmation": false,
+   "checks": {
+    "locality": true,
+    "state": true,
+    "city": true,
+    "postal_code": true
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 1.25
+  },
+  {
+   "id": "t018",
+   "categories": [
+    "correct"
+   ],
+   "coverage_gap": false,
+   "original": "viman nagar, pune",
+   "normalized_transcript": "viman nagar , pune",
+   "resolved_address": "Viman Nagar, Pune, Maharashtra 411014, India",
+   "ground_truth": {
+    "locality": [
+     "Viman Nagar"
+    ],
+    "city": "Pune",
+    "district": null,
+    "state": "Maharashtra",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "locality": "Viman Nagar",
+    "city": "Pune",
+    "district": "Pune",
+    "state": "Maharashtra",
+    "postal_code": "411014"
+   },
+   "status": "resolved",
+   "confidence": 0.96,
+   "needs_confirmation": false,
+   "checks": {
+    "locality": true,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 1.85
+  },
+  {
+   "id": "t019",
+   "categories": [
+    "correct"
+   ],
+   "coverage_gap": false,
+   "original": "Vashi sector 17 navi mumbai",
+   "normalized_transcript": "vashi sector 17 navi mumbai",
+   "resolved_address": "Sector 17, Vashi, Navi Mumbai, Maharashtra, India",
+   "ground_truth": {
+    "locality": [
+     "Vashi"
+    ],
+    "city": "Navi Mumbai",
+    "district": null,
+    "state": "Maharashtra",
+    "postal_code": null,
+    "components": {
+     "sector": "Sector 17"
+    }
+   },
+   "predicted": {
+    "sector": "Sector 17",
+    "locality": "Vashi",
+    "city": "Navi Mumbai",
+    "district": "Thane",
+    "state": "Maharashtra"
+   },
+   "status": "resolved",
+   "confidence": 0.906,
+   "needs_confirmation": false,
+   "checks": {
+    "locality": true,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {
+    "sector": true
+   },
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 1.13
+  },
+  {
+   "id": "t020",
+   "categories": [
+    "incomplete"
+   ],
+   "coverage_gap": false,
+   "original": "kharghar sector 20",
+   "normalized_transcript": "kharghar sector 20",
+   "resolved_address": "Sector 20, Kharghar, Raigad District, Maharashtra 410210, India",
+   "ground_truth": {
+    "locality": [
+     "Kharghar"
+    ],
+    "city": null,
+    "district": null,
+    "state": "Maharashtra",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "sector": "Sector 20",
+    "locality": "Kharghar",
+    "district": "Raigad",
+    "state": "Maharashtra",
+    "postal_code": "410210"
+   },
+   "status": "resolved",
+   "confidence": 0.854,
+   "needs_confirmation": false,
+   "checks": {
+    "locality": true,
+    "state": true
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 0.56
+  },
+  {
+   "id": "t021",
+   "categories": [
+    "correct"
+   ],
+   "coverage_gap": true,
+   "original": "dharampeth nagpur",
+   "normalized_transcript": "dharampeth nagpur",
+   "resolved_address": "Dharampeth, Nagpur, Maharashtra, India",
+   "ground_truth": {
+    "locality": [
+     "Dharampeth"
+    ],
+    "city": "Nagpur",
+    "district": null,
+    "state": "Maharashtra",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "city": "Nagpur",
+    "district": "Nagpur",
+    "state": "Maharashtra"
+   },
+   "status": "partially_resolved",
+   "confidence": 0.72,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": false,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": false,
+   "corrected_place": false,
+   "latency_ms": 9.56
+  },
+  {
+   "id": "t022",
+   "categories": [
+    "correct"
+   ],
+   "coverage_gap": false,
+   "original": "malad east mumbai",
+   "normalized_transcript": "malad east mumbai",
+   "resolved_address": "Malad East, Mumbai, Maharashtra, India",
+   "ground_truth": {
+    "locality": [
+     "Malad East",
+     "Malad"
+    ],
+    "city": "Mumbai",
+    "district": null,
+    "state": "Maharashtra",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "locality": "Malad East",
+    "city": "Mumbai",
+    "district": "Mumbai Suburban",
+    "state": "Maharashtra"
+   },
+   "status": "resolved",
+   "confidence": 0.966,
+   "needs_confirmation": false,
+   "checks": {
+    "locality": true,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 0.64
+  },
+  {
+   "id": "t023",
+   "categories": [
+    "correct"
+   ],
+   "coverage_gap": false,
+   "original": "H.No 45, Block C, Saket, New Delhi 110017",
+   "normalized_transcript": "house no 45 , block c , saket , new delhi 110017",
+   "resolved_address": "No. 45, Block C, Saket, Delhi, Delhi 110017, India",
+   "ground_truth": {
+    "locality": [
+     "Saket"
+    ],
+    "city": "Delhi",
+    "district": null,
+    "state": "Delhi",
+    "postal_code": "110017",
+    "components": {
+     "house_number": "45"
+    }
+   },
+   "predicted": {
+    "house_number": "45",
+    "block": "Block C",
+    "locality": "Saket",
+    "city": "Delhi",
+    "district": "South Delhi",
+    "state": "Delhi",
+    "postal_code": "110017"
+   },
+   "status": "exact_match",
+   "confidence": 0.99,
+   "needs_confirmation": false,
+   "checks": {
+    "locality": true,
+    "state": true,
+    "city": true,
+    "postal_code": true
+   },
+   "component_checks": {
+    "house_number": true
+   },
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 0.54
+  },
+  {
+   "id": "t024",
+   "categories": [
+    "spelling"
+   ],
+   "coverage_gap": false,
+   "original": "karol bag delhi",
+   "normalized_transcript": "karol bag delhi",
+   "resolved_address": "Karol Bagh, Delhi, Delhi 110005, India",
+   "ground_truth": {
+    "locality": [
+     "Karol Bagh"
+    ],
+    "city": "Delhi",
+    "district": null,
+    "state": "Delhi",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "locality": "Karol Bagh",
+    "city": "Delhi",
+    "district": "Central Delhi",
+    "state": "Delhi",
+    "postal_code": "110005"
+   },
+   "status": "resolved",
+   "confidence": 0.894,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": true,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": true,
+   "latency_ms": 1.45
+  },
+  {
+   "id": "t025",
+   "categories": [
+    "correct"
+   ],
+   "coverage_gap": false,
+   "original": "connaught place new delhi",
+   "normalized_transcript": "connaught place new delhi",
+   "resolved_address": "Connaught Place, Delhi, Delhi 110001, India",
+   "ground_truth": {
+    "locality": [
+     "Connaught Place"
+    ],
+    "city": "Delhi",
+    "district": null,
+    "state": "Delhi",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "locality": "Connaught Place",
+    "city": "Delhi",
+    "district": "New Delhi",
+    "state": "Delhi",
+    "postal_code": "110001"
+   },
+   "status": "resolved",
+   "confidence": 0.96,
+   "needs_confirmation": false,
+   "checks": {
+    "locality": true,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 1.26
+  },
+  {
+   "id": "t026",
+   "categories": [
+    "incomplete"
+   ],
+   "coverage_gap": false,
+   "original": "hauz khas village delhi 16",
+   "normalized_transcript": "hauz khas village delhi 16",
+   "resolved_address": "16, Hauz Khas, Delhi, Delhi 110016, India",
+   "ground_truth": {
+    "locality": [
+     "Hauz Khas"
+    ],
+    "city": "Delhi",
+    "district": null,
+    "state": "Delhi",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "locality": "Hauz Khas",
+    "city": "Delhi",
+    "district": "South Delhi",
+    "state": "Delhi",
+    "postal_code": "110016"
+   },
+   "status": "resolved",
+   "confidence": 0.966,
+   "needs_confirmation": false,
+   "checks": {
+    "locality": true,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 1.22
+  },
+  {
+   "id": "t027",
+   "categories": [
+    "correct"
+   ],
+   "coverage_gap": false,
+   "original": "greater kailash part 1, delhi",
+   "normalized_transcript": "greater kailash part 1 , delhi",
+   "resolved_address": "Part 1, Greater Kailash, Delhi, Delhi 110048, India",
+   "ground_truth": {
+    "locality": [
+     "Greater Kailash"
+    ],
+    "city": "Delhi",
+    "district": null,
+    "state": "Delhi",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "locality": "Greater Kailash",
+    "city": "Delhi",
+    "district": "South Delhi",
+    "state": "Delhi",
+    "postal_code": "110048"
+   },
+   "status": "resolved",
+   "confidence": 0.906,
+   "needs_confirmation": false,
+   "checks": {
+    "locality": true,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 11.45
+  },
+  {
+   "id": "t028",
+   "categories": [
+    "correct"
+   ],
+   "coverage_gap": false,
+   "original": "vasant kunj pocket a delhi",
+   "normalized_transcript": "vasant kunj pocket a delhi",
+   "resolved_address": "Pocket A, Vasant Kunj, Delhi, Delhi 110070, India",
+   "ground_truth": {
+    "locality": [
+     "Vasant Kunj",
+     "Vasant Kunj PktA"
+    ],
+    "city": "Delhi",
+    "district": null,
+    "state": "Delhi",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "pocket": "Pocket A",
+    "locality": "Vasant Kunj",
+    "city": "Delhi",
+    "district": "New Delhi",
+    "state": "Delhi",
+    "postal_code": "110070"
+   },
+   "status": "resolved",
+   "confidence": 0.966,
+   "needs_confirmation": false,
+   "checks": {
+    "locality": true,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 1.26
+  },
+  {
+   "id": "t029",
+   "categories": [
+    "hinglish"
+   ],
+   "coverage_gap": false,
+   "original": "chandni chowk ke paas, purani dilli",
+   "normalized_transcript": "chandni chowk _nearpost_ , purani dilli",
+   "resolved_address": "Chandni Chowk, Delhi, Delhi 110006, India",
+   "ground_truth": {
+    "locality": [
+     "Chandni Chowk"
+    ],
+    "city": null,
+    "district": null,
+    "state": "Delhi",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "locality": "Chandni Chowk",
+    "city": "Delhi",
+    "district": "North Delhi",
+    "state": "Delhi",
+    "postal_code": "110006"
+   },
+   "status": "resolved",
+   "confidence": 0.9,
+   "needs_confirmation": false,
+   "checks": {
+    "locality": true,
+    "state": true
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 1.4
+  },
+  {
+   "id": "t030",
+   "categories": [
+    "alias"
+   ],
+   "coverage_gap": false,
+   "original": "dlf phase 2 gurgaon",
+   "normalized_transcript": "dlf phase 2 gurgaon",
+   "resolved_address": "DLF Phase 2, Gurugram, Haryana 122008, India",
+   "ground_truth": {
+    "locality": [
+     "DLF Phase 2"
+    ],
+    "city": "Gurugram",
+    "district": null,
+    "state": "Haryana",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "locality": "DLF Phase 2",
+    "city": "Gurugram",
+    "district": "Gurugram",
+    "state": "Haryana",
+    "postal_code": "122008"
+   },
+   "status": "resolved",
+   "confidence": 0.966,
+   "needs_confirmation": false,
+   "checks": {
+    "locality": true,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 0.58
+  },
+  {
+   "id": "t031",
+   "categories": [
+    "incomplete"
+   ],
+   "coverage_gap": false,
+   "original": "sector 15 noida",
+   "normalized_transcript": "sector 15 noida",
+   "resolved_address": "Sector 15, Noida, Uttar Pradesh, India",
+   "ground_truth": {
+    "locality": null,
+    "city": "Noida",
+    "district": null,
+    "state": "Uttar Pradesh",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "sector": "Sector 15",
+    "city": "Noida",
+    "district": "Gautam Buddha Nagar",
+    "state": "Uttar Pradesh"
+   },
+   "status": "partially_resolved",
+   "confidence": 0.72,
+   "needs_confirmation": true,
+   "checks": {
+    "no_invented_locality": true,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 2.81
+  },
+  {
+   "id": "t032",
+   "categories": [
+    "correct"
+   ],
+   "coverage_gap": false,
+   "original": "vaishali ghaziabad",
+   "normalized_transcript": "vaishali ghaziabad",
+   "resolved_address": "Ghaziabad, Uttar Pradesh, India",
+   "ground_truth": {
+    "locality": [
+     "Vaishali"
+    ],
+    "city": "Ghaziabad",
+    "district": null,
+    "state": "Uttar Pradesh",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "city": "Ghaziabad",
+    "district": "Ghaziabad",
+    "state": "Uttar Pradesh"
+   },
+   "status": "partially_resolved",
+   "confidence": 0.72,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": false,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": false,
+   "corrected_place": false,
+   "latency_ms": 0.71
+  },
+  {
+   "id": "t033",
+   "categories": [
+    "hinglish",
+    "landmark"
+   ],
+   "coverage_gap": false,
+   "original": "kalkaji mandir ke saamne, delhi",
+   "normalized_transcript": "kalkaji mandir _opppost_ , delhi",
+   "resolved_address": "Near Mandir, Kalkaji, Delhi, India",
+   "ground_truth": {
+    "locality": [
+     "Kalkaji"
+    ],
+    "city": null,
+    "district": null,
+    "state": "Delhi",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "locality": "Kalkaji",
+    "landmark": "Mandir",
+    "city": "Delhi",
+    "district": "South Delhi",
+    "state": "Delhi"
+   },
+   "status": "ambiguous",
+   "confidence": 0.724,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": true,
+    "state": true
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 1.12
+  },
+  {
+   "id": "t034",
+   "categories": [
+    "alias"
+   ],
+   "coverage_gap": false,
+   "original": "T nagar chennai 600017",
+   "normalized_transcript": "t nagar chennai 600017",
+   "resolved_address": "Thygarayanagar, Chennai, Tamil Nadu 600017, India",
+   "ground_truth": {
+    "locality": [
+     "Thygarayanagar"
+    ],
+    "city": "Chennai",
+    "district": null,
+    "state": "Tamil Nadu",
+    "postal_code": "600017",
+    "components": {}
+   },
+   "predicted": {
+    "locality": "Thygarayanagar",
+    "city": "Chennai",
+    "district": "Chennai",
+    "state": "Tamil Nadu",
+    "postal_code": "600017"
+   },
+   "status": "exact_match",
+   "confidence": 0.99,
+   "needs_confirmation": false,
+   "checks": {
+    "locality": true,
+    "state": true,
+    "city": true,
+    "postal_code": true
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 0.53
+  },
+  {
+   "id": "t035",
+   "categories": [
+    "number_words"
+   ],
+   "coverage_gap": false,
+   "original": "No 12, second street, anna nagar east, chennai",
+   "normalized_transcript": "no 12 , 2nd street , anna nagar east , chennai",
+   "resolved_address": "No. 12, 2nd Street, Anna Nagar East, Chennai, Tamil Nadu, India",
+   "ground_truth": {
+    "locality": [
+     "Anna Nagar East"
+    ],
+    "city": "Chennai",
+    "district": null,
+    "state": "Tamil Nadu",
+    "postal_code": null,
+    "components": {
+     "house_number": "12",
+     "street": "2nd Street"
+    }
+   },
+   "predicted": {
+    "house_number": "12",
+    "street": "2nd Street",
+    "locality": "Anna Nagar East",
+    "city": "Chennai",
+    "district": "Chennai",
+    "state": "Tamil Nadu"
+   },
+   "status": "resolved",
+   "confidence": 0.966,
+   "needs_confirmation": false,
+   "checks": {
+    "locality": true,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {
+    "house_number": true,
+    "street": true
+   },
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 1.61
+  },
+  {
+   "id": "t036",
+   "categories": [
+    "correct"
+   ],
+   "coverage_gap": false,
+   "original": "mylapore, chennai",
+   "normalized_transcript": "mylapore , chennai",
+   "resolved_address": "Mylapore, Chennai, Tamil Nadu 600004, India",
+   "ground_truth": {
+    "locality": [
+     "Mylapore"
+    ],
+    "city": "Chennai",
+    "district": null,
+    "state": "Tamil Nadu",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "locality": "Mylapore",
+    "city": "Chennai",
+    "district": "Chennai",
+    "state": "Tamil Nadu",
+    "postal_code": "600004"
+   },
+   "status": "resolved",
+   "confidence": 0.966,
+   "needs_confirmation": false,
+   "checks": {
+    "locality": true,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 1.55
+  },
+  {
+   "id": "t037",
+   "categories": [
+    "correct"
+   ],
+   "coverage_gap": false,
+   "original": "adyar chennai 600020",
+   "normalized_transcript": "adyar chennai 600020",
+   "resolved_address": "Adyar, Chennai, Tamil Nadu 600020, India",
+   "ground_truth": {
+    "locality": [
+     "Adyar"
+    ],
+    "city": "Chennai",
+    "district": null,
+    "state": "Tamil Nadu",
+    "postal_code": "600020",
+    "components": {}
+   },
+   "predicted": {
+    "locality": "Adyar",
+    "city": "Chennai",
+    "district": "Chennai",
+    "state": "Tamil Nadu",
+    "postal_code": "600020"
+   },
+   "status": "exact_match",
+   "confidence": 0.99,
+   "needs_confirmation": false,
+   "checks": {
+    "locality": true,
+    "state": true,
+    "city": true,
+    "postal_code": true
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 0.48
+  },
+  {
+   "id": "t038",
+   "categories": [
+    "incomplete"
+   ],
+   "coverage_gap": false,
+   "original": "velacheri main road",
+   "normalized_transcript": "velacheri main road",
+   "resolved_address": "Velacheri Main Road, India",
+   "ground_truth": {
+    "locality": [
+     "Velacheri"
+    ],
+    "city": null,
+    "district": null,
+    "state": "Tamil Nadu",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "street": "Velacheri Main Road"
+   },
+   "status": "unresolved",
+   "confidence": 0.0,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": false,
+    "state": false
+   },
+   "component_checks": {},
+   "geo_correct": false,
+   "corrected_place": false,
+   "latency_ms": 0.19
+  },
+  {
+   "id": "t039",
+   "categories": [
+    "abbreviation"
+   ],
+   "coverage_gap": false,
+   "original": "RS puram coimbatore",
+   "normalized_transcript": "rs puram coimbatore",
+   "resolved_address": "Coimbatore, Tamil Nadu, India",
+   "ground_truth": {
+    "locality": [
+     "RSPuram East",
+     "RS Puram"
+    ],
+    "city": "Coimbatore",
+    "district": null,
+    "state": "Tamil Nadu",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "city": "Coimbatore",
+    "district": "Coimbatore",
+    "state": "Tamil Nadu"
+   },
+   "status": "partially_resolved",
+   "confidence": 0.72,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": false,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": false,
+   "corrected_place": false,
+   "latency_ms": 16.64
+  },
+  {
+   "id": "t040",
+   "categories": [
+    "correct"
+   ],
+   "coverage_gap": false,
+   "original": "anna nagar madurai",
+   "normalized_transcript": "anna nagar madurai",
+   "resolved_address": "Anna Nagar, Madurai, Tamil Nadu 625020, India",
+   "ground_truth": {
+    "locality": [
+     "Anna Nagar"
+    ],
+    "city": "Madurai",
+    "district": null,
+    "state": "Tamil Nadu",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "locality": "Anna Nagar",
+    "city": "Madurai",
+    "district": "Madurai",
+    "state": "Tamil Nadu",
+    "postal_code": "625020"
+   },
+   "status": "resolved",
+   "confidence": 0.9,
+   "needs_confirmation": false,
+   "checks": {
+    "locality": true,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 1.32
+  },
+  {
+   "id": "t041",
+   "categories": [
+    "correct"
+   ],
+   "coverage_gap": false,
+   "original": "Plot 22, Jubilee hills road no 36, hyderabad",
+   "normalized_transcript": "plot 22 , jubilee hills road no 36 , hyderabad",
+   "resolved_address": "Plot 22, Road No. 36, Jubilee Hills, Hyderabad, Telangana 500033, India",
+   "ground_truth": {
+    "locality": [
+     "Jubilee Hills"
+    ],
+    "city": "Hyderabad",
+    "district": null,
+    "state": "Telangana",
+    "postal_code": null,
+    "components": {
+     "plot": "22",
+     "street": "Road No. 36"
+    }
+   },
+   "predicted": {
+    "plot": "22",
+    "street": "Road No. 36",
+    "locality": "Jubilee Hills",
+    "city": "Hyderabad",
+    "district": "Hyderabad",
+    "state": "Telangana",
+    "postal_code": "500033"
+   },
+   "status": "resolved",
+   "confidence": 0.966,
+   "needs_confirmation": false,
+   "checks": {
+    "locality": true,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {
+    "plot": true,
+    "street": true
+   },
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 1.66
+  },
+  {
+   "id": "t042",
+   "categories": [
+    "correct"
+   ],
+   "coverage_gap": false,
+   "original": "gachibowli hyderabad 500032",
+   "normalized_transcript": "gachibowli hyderabad 500032",
+   "resolved_address": "Gachibowli, Hyderabad, Telangana 500032, India",
+   "ground_truth": {
+    "locality": [
+     "Gachibowli"
+    ],
+    "city": "Hyderabad",
+    "district": null,
+    "state": "Telangana",
+    "postal_code": "500032",
+    "components": {}
+   },
+   "predicted": {
+    "locality": "Gachibowli",
+    "city": "Hyderabad",
+    "district": "Hyderabad",
+    "state": "Telangana",
+    "postal_code": "500032"
+   },
+   "status": "exact_match",
+   "confidence": 0.99,
+   "needs_confirmation": false,
+   "checks": {
+    "locality": true,
+    "state": true,
+    "city": true,
+    "postal_code": true
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 0.73
+  },
+  {
+   "id": "t043",
+   "categories": [
+    "incomplete"
+   ],
+   "coverage_gap": false,
+   "original": "kukatpally housing board colony",
+   "normalized_transcript": "kukatpally housing board colony",
+   "resolved_address": "Kukatpally, Medchal-Malkajgiri District, Telangana, India",
+   "ground_truth": {
+    "locality": [
+     "Kukatpally"
+    ],
+    "city": null,
+    "district": null,
+    "state": "Telangana",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "locality": "Kukatpally",
+    "district": "Medchal-Malkajgiri",
+    "state": "Telangana"
+   },
+   "status": "ambiguous",
+   "confidence": 0.636,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": true,
+    "state": true
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 0.23
+  },
+  {
+   "id": "t044",
+   "categories": [
+    "hinglish"
+   ],
+   "coverage_gap": false,
+   "original": "charminar ke paas, hyderabad",
+   "normalized_transcript": "charminar _nearpost_ , hyderabad",
+   "resolved_address": "Near Charminar, Charminar, Hyderabad, Telangana 500002, India",
+   "ground_truth": {
+    "locality": [
+     "Charminar"
+    ],
+    "city": "Hyderabad",
+    "district": null,
+    "state": "Telangana",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "locality": "Charminar",
+    "landmark": "Charminar",
+    "city": "Hyderabad",
+    "district": "Hyderabad",
+    "state": "Telangana",
+    "postal_code": "500002"
+   },
+   "status": "resolved",
+   "confidence": 0.916,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": true,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 1.22
+  },
+  {
+   "id": "t045",
+   "categories": [
+    "incomplete"
+   ],
+   "coverage_gap": false,
+   "original": "secunderabad",
+   "normalized_transcript": "secunderabad",
+   "resolved_address": "Secunderabad, Telangana, India",
+   "ground_truth": {
+    "locality": [
+     "Secunderabad"
+    ],
+    "city": null,
+    "district": null,
+    "state": "Telangana",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "city": "Secunderabad",
+    "state": "Telangana"
+   },
+   "status": "partially_resolved",
+   "confidence": 0.72,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": false,
+    "state": true
+   },
+   "component_checks": {},
+   "geo_correct": false,
+   "corrected_place": false,
+   "latency_ms": 0.36
+  },
+  {
+   "id": "t046",
+   "categories": [
+    "abbreviation",
+    "alias"
+   ],
+   "coverage_gap": false,
+   "original": "MVP colony vizag",
+   "normalized_transcript": "mvp colony vizag",
+   "resolved_address": "M.V.P.Colony, Visakhapatnam, Andhra Pradesh 530017, India",
+   "ground_truth": {
+    "locality": [
+     "MVP Colony",
+     "Mvp Colony"
+    ],
+    "city": "Visakhapatnam",
+    "district": null,
+    "state": "Andhra Pradesh",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "locality": "M.V.P.Colony",
+    "city": "Visakhapatnam",
+    "district": "Visakhapatnam",
+    "state": "Andhra Pradesh",
+    "postal_code": "530017"
+   },
+   "status": "resolved",
+   "confidence": 0.96,
+   "needs_confirmation": false,
+   "checks": {
+    "locality": true,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 2.04
+  },
+  {
+   "id": "t047",
+   "categories": [
+    "landmark"
+   ],
+   "coverage_gap": true,
+   "original": "benz circle vijayawada",
+   "normalized_transcript": "benz circle vijayawada",
+   "resolved_address": "Benz Circle, Vijayawada, Andhra Pradesh, India",
+   "ground_truth": {
+    "locality": null,
+    "city": "Vijayawada",
+    "district": null,
+    "state": "Andhra Pradesh",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "city": "Vijayawada",
+    "state": "Andhra Pradesh"
+   },
+   "status": "partially_resolved",
+   "confidence": 0.72,
+   "needs_confirmation": true,
+   "checks": {
+    "no_invented_locality": true,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 15.7
+  },
+  {
+   "id": "t048",
+   "categories": [
+    "alias"
+   ],
+   "coverage_gap": false,
+   "original": "salt lake sector 1 kolkata 700064",
+   "normalized_transcript": "salt lake sector 1 kolkata 700064",
+   "resolved_address": "Sector 1, Bidhan Nagar, Kolkata, West Bengal 700064, India",
+   "ground_truth": {
+    "locality": [
+     "Bidhan Nagar"
+    ],
+    "city": "Kolkata",
+    "district": null,
+    "state": "West Bengal",
+    "postal_code": "700064",
+    "components": {}
+   },
+   "predicted": {
+    "sector": "Sector 1",
+    "locality": "Bidhan Nagar",
+    "city": "Kolkata",
+    "district": "North 24 Parganas",
+    "state": "West Bengal",
+    "postal_code": "700064"
+   },
+   "status": "exact_match",
+   "confidence": 0.99,
+   "needs_confirmation": false,
+   "checks": {
+    "locality": true,
+    "state": true,
+    "city": true,
+    "postal_code": true
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 1.37
+  },
+  {
+   "id": "t049",
+   "categories": [
+    "correct"
+   ],
+   "coverage_gap": false,
+   "original": "ballygunge kolkata",
+   "normalized_transcript": "ballygunge kolkata",
+   "resolved_address": "Ballygunge, Kolkata, West Bengal 700019, India",
+   "ground_truth": {
+    "locality": [
+     "Ballygunge"
+    ],
+    "city": "Kolkata",
+    "district": null,
+    "state": "West Bengal",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "locality": "Ballygunge",
+    "city": "Kolkata",
+    "district": "Kolkata",
+    "state": "West Bengal",
+    "postal_code": "700019"
+   },
+   "status": "resolved",
+   "confidence": 0.966,
+   "needs_confirmation": false,
+   "checks": {
+    "locality": true,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 3.6
+  },
+  {
+   "id": "t050",
+   "categories": [
+    "alias"
+   ],
+   "coverage_gap": false,
+   "original": "park street calcutta",
+   "normalized_transcript": "park street calcutta",
+   "resolved_address": "Kolkata, West Bengal, India",
+   "ground_truth": {
+    "locality": [
+     "Park Street"
+    ],
+    "city": "Kolkata",
+    "district": null,
+    "state": "West Bengal",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "city": "Kolkata",
+    "state": "West Bengal"
+   },
+   "status": "partially_resolved",
+   "confidence": 0.72,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": false,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": false,
+   "corrected_place": false,
+   "latency_ms": 2.92
+  },
+  {
+   "id": "t051",
+   "categories": [
+    "number"
+   ],
+   "coverage_gap": false,
+   "original": "new town action area 1 kolkata",
+   "normalized_transcript": "new town action area 1 kolkata",
+   "resolved_address": "New Town Action Area I 1, Kolkata, West Bengal, India",
+   "ground_truth": {
+    "locality": [
+     "New Town Action Area I",
+     "New Town"
+    ],
+    "city": "Kolkata",
+    "district": null,
+    "state": "West Bengal",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "locality": "New Town Action Area I 1",
+    "city": "Kolkata",
+    "district": "North 24 Parganas",
+    "state": "West Bengal"
+   },
+   "status": "ambiguous",
+   "confidence": 0.663,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": true,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": true,
+   "latency_ms": 3.09
+  },
+  {
+   "id": "t052",
+   "categories": [
+    "correct"
+   ],
+   "coverage_gap": false,
+   "original": "behala, kolkata 700034",
+   "normalized_transcript": "behala , kolkata 700034",
+   "resolved_address": "Behala, Kolkata, West Bengal 700034, India",
+   "ground_truth": {
+    "locality": [
+     "Behala"
+    ],
+    "city": "Kolkata",
+    "district": null,
+    "state": "West Bengal",
+    "postal_code": "700034",
+    "components": {}
+   },
+   "predicted": {
+    "locality": "Behala",
+    "city": "Kolkata",
+    "district": "Kolkata",
+    "state": "West Bengal",
+    "postal_code": "700034"
+   },
+   "status": "exact_match",
+   "confidence": 0.99,
+   "needs_confirmation": false,
+   "checks": {
+    "locality": true,
+    "state": true,
+    "city": true,
+    "postal_code": true
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 0.55
+  },
+  {
+   "id": "t053",
+   "categories": [
+    "alias"
+   ],
+   "coverage_gap": false,
+   "original": "navrangpura amdavad",
+   "normalized_transcript": "navrangpura amdavad",
+   "resolved_address": "Navrangpura, Ahmedabad, Gujarat 380009, India",
+   "ground_truth": {
+    "locality": [
+     "Navrangpura"
+    ],
+    "city": "Ahmedabad",
+    "district": null,
+    "state": "Gujarat",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "locality": "Navrangpura",
+    "city": "Ahmedabad",
+    "district": "Ahmedabad",
+    "state": "Gujarat",
+    "postal_code": "380009"
+   },
+   "status": "resolved",
+   "confidence": 0.966,
+   "needs_confirmation": false,
+   "checks": {
+    "locality": true,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 1.49
+  },
+  {
+   "id": "t054",
+   "categories": [
+    "incomplete"
+   ],
+   "coverage_gap": true,
+   "original": "satellite road ahmedabad",
+   "normalized_transcript": "satellite road ahmedabad",
+   "resolved_address": "Satellite Road, Ahmedabad, Gujarat, India",
+   "ground_truth": {
+    "locality": null,
+    "city": "Ahmedabad",
+    "district": null,
+    "state": "Gujarat",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "street": "Satellite Road",
+    "city": "Ahmedabad",
+    "state": "Gujarat"
+   },
+   "status": "partially_resolved",
+   "confidence": 0.72,
+   "needs_confirmation": true,
+   "checks": {
+    "no_invented_locality": true,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 0.88
+  },
+  {
+   "id": "t055",
+   "categories": [
+    "correct"
+   ],
+   "coverage_gap": false,
+   "original": "adajan surat",
+   "normalized_transcript": "adajan surat",
+   "resolved_address": "Adajan, Surat, Gujarat 395009, India",
+   "ground_truth": {
+    "locality": [
+     "Adajan"
+    ],
+    "city": "Surat",
+    "district": null,
+    "state": "Gujarat",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "locality": "Adajan",
+    "city": "Surat",
+    "district": "Surat",
+    "state": "Gujarat",
+    "postal_code": "395009"
+   },
+   "status": "resolved",
+   "confidence": 0.96,
+   "needs_confirmation": false,
+   "checks": {
+    "locality": true,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 1.07
+  },
+  {
+   "id": "t056",
+   "categories": [
+    "alias"
+   ],
+   "coverage_gap": false,
+   "original": "alkapuri baroda",
+   "normalized_transcript": "alkapuri baroda",
+   "resolved_address": "Alkapuri, Vadodara, Gujarat 390007, India",
+   "ground_truth": {
+    "locality": [
+     "Alkapuri"
+    ],
+    "city": "Vadodara",
+    "district": null,
+    "state": "Gujarat",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "locality": "Alkapuri",
+    "city": "Vadodara",
+    "district": "Vadodara",
+    "state": "Gujarat",
+    "postal_code": "390007"
+   },
+   "status": "resolved",
+   "confidence": 0.96,
+   "needs_confirmation": false,
+   "checks": {
+    "locality": true,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 1.11
+  },
+  {
+   "id": "t057",
+   "categories": [
+    "correct"
+   ],
+   "coverage_gap": false,
+   "original": "malviya nagar jaipur",
+   "normalized_transcript": "malviya nagar jaipur",
+   "resolved_address": "Malviya Nagar, Jaipur, Rajasthan 302017, India",
+   "ground_truth": {
+    "locality": [
+     "Malviya Nagar"
+    ],
+    "city": "Jaipur",
+    "district": null,
+    "state": "Rajasthan",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "locality": "Malviya Nagar",
+    "city": "Jaipur",
+    "district": "Jaipur",
+    "state": "Rajasthan",
+    "postal_code": "302017"
+   },
+   "status": "resolved",
+   "confidence": 0.906,
+   "needs_confirmation": false,
+   "checks": {
+    "locality": true,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 1.57
+  },
+  {
+   "id": "t058",
+   "categories": [
+    "correct"
+   ],
+   "coverage_gap": true,
+   "original": "c scheme jaipur",
+   "normalized_transcript": "c scheme jaipur",
+   "resolved_address": "C Scheme, Jaipur, Rajasthan, India",
+   "ground_truth": {
+    "locality": [
+     "C Scheme",
+     "C-scheme"
+    ],
+    "city": "Jaipur",
+    "district": null,
+    "state": "Rajasthan",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "city": "Jaipur",
+    "district": "Jaipur",
+    "state": "Rajasthan"
+   },
+   "status": "partially_resolved",
+   "confidence": 0.72,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": false,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": false,
+   "corrected_place": false,
+   "latency_ms": 30.27
+  },
+  {
+   "id": "t059",
+   "categories": [
+    "correct"
+   ],
+   "coverage_gap": false,
+   "original": "vijay nagar indore",
+   "normalized_transcript": "vijay nagar indore",
+   "resolved_address": "Vijay Nagar, Indore, Madhya Pradesh 452010, India",
+   "ground_truth": {
+    "locality": [
+     "Vijay Nagar"
+    ],
+    "city": "Indore",
+    "district": null,
+    "state": "Madhya Pradesh",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "locality": "Vijay Nagar",
+    "city": "Indore",
+    "district": "Indore",
+    "state": "Madhya Pradesh",
+    "postal_code": "452010"
+   },
+   "status": "resolved",
+   "confidence": 0.906,
+   "needs_confirmation": false,
+   "checks": {
+    "locality": true,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 0.8
+  },
+  {
+   "id": "t060",
+   "categories": [
+    "correct"
+   ],
+   "coverage_gap": true,
+   "original": "arera colony bhopal",
+   "normalized_transcript": "arera colony bhopal",
+   "resolved_address": "Bhopal, Madhya Pradesh, India",
+   "ground_truth": {
+    "locality": [
+     "Arera Colony"
+    ],
+    "city": "Bhopal",
+    "district": null,
+    "state": "Madhya Pradesh",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "city": "Bhopal",
+    "district": "Bhopal",
+    "state": "Madhya Pradesh"
+   },
+   "status": "partially_resolved",
+   "confidence": 0.72,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": false,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": false,
+   "corrected_place": false,
+   "latency_ms": 9.51
+  },
+  {
+   "id": "t061",
+   "categories": [
+    "correct"
+   ],
+   "coverage_gap": false,
+   "original": "gomti nagar extension lucknow",
+   "normalized_transcript": "gomti nagar extension lucknow",
+   "resolved_address": "Gomti Nagar Extension, Lucknow, Uttar Pradesh 226010, India",
+   "ground_truth": {
+    "locality": [
+     "Gomti Nagar Extension",
+     "Gomti Nagar"
+    ],
+    "city": "Lucknow",
+    "district": null,
+    "state": "Uttar Pradesh",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "locality": "Gomti Nagar Extension",
+    "city": "Lucknow",
+    "district": "Lucknow",
+    "state": "Uttar Pradesh",
+    "postal_code": "226010"
+   },
+   "status": "resolved",
+   "confidence": 0.96,
+   "needs_confirmation": false,
+   "checks": {
+    "locality": true,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 1.01
+  },
+  {
+   "id": "t062",
+   "categories": [
+    "correct"
+   ],
+   "coverage_gap": true,
+   "original": "hazratganj lucknow",
+   "normalized_transcript": "hazratganj lucknow",
+   "resolved_address": "Lucknow, Uttar Pradesh, India",
+   "ground_truth": {
+    "locality": [
+     "Hazratganj"
+    ],
+    "city": "Lucknow",
+    "district": null,
+    "state": "Uttar Pradesh",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "city": "Lucknow",
+    "district": "Lucknow",
+    "state": "Uttar Pradesh"
+   },
+   "status": "partially_resolved",
+   "confidence": 0.72,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": false,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": false,
+   "corrected_place": false,
+   "latency_ms": 9.05
+  },
+  {
+   "id": "t063",
+   "categories": [
+    "correct"
+   ],
+   "coverage_gap": false,
+   "original": "lanka varanasi",
+   "normalized_transcript": "lanka varanasi",
+   "resolved_address": "Lanka, Varanasi, Uttar Pradesh 221005, India",
+   "ground_truth": {
+    "locality": [
+     "Lanka"
+    ],
+    "city": "Varanasi",
+    "district": null,
+    "state": "Uttar Pradesh",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "locality": "Lanka",
+    "city": "Varanasi",
+    "district": "Varanasi",
+    "state": "Uttar Pradesh",
+    "postal_code": "221005"
+   },
+   "status": "resolved",
+   "confidence": 0.9,
+   "needs_confirmation": false,
+   "checks": {
+    "locality": true,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 0.99
+  },
+  {
+   "id": "t064",
+   "categories": [
+    "alias"
+   ],
+   "coverage_gap": false,
+   "original": "civil lines allahabad",
+   "normalized_transcript": "civil lines allahabad",
+   "resolved_address": "Prayagraj, Uttar Pradesh, India",
+   "ground_truth": {
+    "locality": [
+     "Civil Lines",
+     "Allahabad Civil Lines"
+    ],
+    "city": "Prayagraj",
+    "district": null,
+    "state": "Uttar Pradesh",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "city": "Prayagraj",
+    "district": "Prayagraj",
+    "state": "Uttar Pradesh"
+   },
+   "status": "partially_resolved",
+   "confidence": 0.72,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": false,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": false,
+   "corrected_place": false,
+   "latency_ms": 8.6
+  },
+  {
+   "id": "t065",
+   "categories": [
+    "correct"
+   ],
+   "coverage_gap": false,
+   "original": "kakkanad kochi",
+   "normalized_transcript": "kakkanad kochi",
+   "resolved_address": "Kakkanad, Kochi, Kerala, India",
+   "ground_truth": {
+    "locality": [
+     "Kakkanad"
+    ],
+    "city": "Kochi",
+    "district": null,
+    "state": "Kerala",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "locality": "Kakkanad",
+    "city": "Kochi",
+    "district": "Ernakulam",
+    "state": "Kerala"
+   },
+   "status": "resolved",
+   "confidence": 0.966,
+   "needs_confirmation": false,
+   "checks": {
+    "locality": true,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 1.19
+  },
+  {
+   "id": "t066",
+   "categories": [
+    "alias"
+   ],
+   "coverage_gap": false,
+   "original": "edappally ernakulam",
+   "normalized_transcript": "edappally ernakulam",
+   "resolved_address": "Edapally, Kochi, Kerala 682024, India",
+   "ground_truth": {
+    "locality": [
+     "Edapally"
+    ],
+    "city": null,
+    "district": null,
+    "state": "Kerala",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "locality": "Edapally",
+    "city": "Kochi",
+    "district": "Ernakulam",
+    "state": "Kerala",
+    "postal_code": "682024"
+   },
+   "status": "resolved",
+   "confidence": 0.927,
+   "needs_confirmation": false,
+   "checks": {
+    "locality": true,
+    "state": true
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 1.1
+  },
+  {
+   "id": "t067",
+   "categories": [
+    "alias"
+   ],
+   "coverage_gap": false,
+   "original": "pattom trivandrum",
+   "normalized_transcript": "pattom trivandrum",
+   "resolved_address": "Thiruvananthapuram, Kerala, India",
+   "ground_truth": {
+    "locality": [
+     "Pattom Palace",
+     "Pattom"
+    ],
+    "city": "Thiruvananthapuram",
+    "district": null,
+    "state": "Kerala",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "city": "Thiruvananthapuram",
+    "district": "Thiruvananthapuram",
+    "state": "Kerala"
+   },
+   "status": "partially_resolved",
+   "confidence": 0.72,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": false,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": false,
+   "corrected_place": false,
+   "latency_ms": 11.17
+  },
+  {
+   "id": "t068",
+   "categories": [
+    "correct"
+   ],
+   "coverage_gap": true,
+   "original": "sector 17 chandigarh",
+   "normalized_transcript": "sector 17 chandigarh",
+   "resolved_address": "Sector 17, Chandigarh, India",
+   "ground_truth": {
+    "locality": [
+     "Sector 17 Chandigarh",
+     "Sector 17"
+    ],
+    "city": "Chandigarh",
+    "district": null,
+    "state": "Chandigarh",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "sector": "Sector 17",
+    "city": "Chandigarh",
+    "district": "Chandigarh",
+    "state": "Chandigarh"
+   },
+   "status": "partially_resolved",
+   "confidence": 0.72,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": false,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": false,
+   "corrected_place": false,
+   "latency_ms": 0.37
+  },
+  {
+   "id": "t069",
+   "categories": [
+    "correct"
+   ],
+   "coverage_gap": false,
+   "original": "model town ludhiana",
+   "normalized_transcript": "model town ludhiana",
+   "resolved_address": "Model Town, Ludhiana District, Punjab 141002, India",
+   "ground_truth": {
+    "locality": [
+     "Model Town"
+    ],
+    "city": "Ludhiana",
+    "district": null,
+    "state": "Punjab",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "locality": "Model Town",
+    "district": "Ludhiana",
+    "state": "Punjab",
+    "postal_code": "141002"
+   },
+   "status": "partially_resolved",
+   "confidence": 0.832,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": true,
+    "state": true,
+    "city": false
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 0.62
+  },
+  {
+   "id": "t070",
+   "categories": [
+    "correct"
+   ],
+   "coverage_gap": true,
+   "original": "ranjit avenue amritsar",
+   "normalized_transcript": "ranjit avenue amritsar",
+   "resolved_address": "Ranjit Avenue, Amritsar, Punjab, India",
+   "ground_truth": {
+    "locality": [
+     "Ranjit Avenue"
+    ],
+    "city": "Amritsar",
+    "district": null,
+    "state": "Punjab",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "street": "Ranjit Avenue",
+    "city": "Amritsar",
+    "district": "Amritsar",
+    "state": "Punjab"
+   },
+   "status": "partially_resolved",
+   "confidence": 0.72,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": false,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": false,
+   "corrected_place": false,
+   "latency_ms": 0.63
+  },
+  {
+   "id": "t071",
+   "categories": [
+    "correct"
+   ],
+   "coverage_gap": true,
+   "original": "boring road patna",
+   "normalized_transcript": "boring road patna",
+   "resolved_address": "Boring Road, Patna, Bihar, India",
+   "ground_truth": {
+    "locality": [
+     "Boring Road"
+    ],
+    "city": "Patna",
+    "district": null,
+    "state": "Bihar",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "street": "Boring Road",
+    "city": "Patna",
+    "district": "Patna",
+    "state": "Bihar"
+   },
+   "status": "partially_resolved",
+   "confidence": 0.72,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": false,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": false,
+   "corrected_place": false,
+   "latency_ms": 0.87
+  },
+  {
+   "id": "t072",
+   "categories": [
+    "correct"
+   ],
+   "coverage_gap": false,
+   "original": "dispur guwahati",
+   "normalized_transcript": "dispur guwahati",
+   "resolved_address": "Dispur, Guwahati, Assam 781005, India",
+   "ground_truth": {
+    "locality": [
+     "Dispur"
+    ],
+    "city": "Guwahati",
+    "district": null,
+    "state": "Assam",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "locality": "Dispur",
+    "city": "Guwahati",
+    "district": "Kamrup Metro",
+    "state": "Assam",
+    "postal_code": "781005"
+   },
+   "status": "resolved",
+   "confidence": 0.966,
+   "needs_confirmation": false,
+   "checks": {
+    "locality": true,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 0.65
+  },
+  {
+   "id": "t073",
+   "categories": [
+    "correct"
+   ],
+   "coverage_gap": false,
+   "original": "saheed nagar bhubaneswar",
+   "normalized_transcript": "saheed nagar bhubaneswar",
+   "resolved_address": "Saheed Nagar, Bhubaneswar, Odisha 751007, India",
+   "ground_truth": {
+    "locality": [
+     "Saheed Nagar",
+     "Sahid Nagar"
+    ],
+    "city": "Bhubaneswar",
+    "district": null,
+    "state": "Odisha",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "locality": "Saheed Nagar",
+    "city": "Bhubaneswar",
+    "district": "Khordha",
+    "state": "Odisha",
+    "postal_code": "751007"
+   },
+   "status": "resolved",
+   "confidence": 0.966,
+   "needs_confirmation": false,
+   "checks": {
+    "locality": true,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 0.97
+  },
+  {
+   "id": "t074",
+   "categories": [
+    "alias"
+   ],
+   "coverage_gap": false,
+   "original": "panjim goa",
+   "normalized_transcript": "panjim goa",
+   "resolved_address": "Panaji, Goa, India",
+   "ground_truth": {
+    "locality": [
+     "Panaji"
+    ],
+    "city": "Panaji",
+    "district": null,
+    "state": "Goa",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "city": "Panaji",
+    "district": "North Goa",
+    "state": "Goa"
+   },
+   "status": "partially_resolved",
+   "confidence": 0.72,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": false,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": false,
+   "corrected_place": false,
+   "latency_ms": 0.4
+  },
+  {
+   "id": "t075",
+   "categories": [
+    "correct"
+   ],
+   "coverage_gap": false,
+   "original": "rajpur road dehradun",
+   "normalized_transcript": "rajpur road dehradun",
+   "resolved_address": "Rajpur Road, Dehradun, Uttarakhand, India",
+   "ground_truth": {
+    "locality": [
+     "Rajpur Road",
+     "Rajpur"
+    ],
+    "city": "Dehradun",
+    "district": null,
+    "state": "Uttarakhand",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "street": "Rajpur Road",
+    "city": "Dehradun",
+    "district": "Dehradun",
+    "state": "Uttarakhand"
+   },
+   "status": "partially_resolved",
+   "confidence": 0.72,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": false,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": false,
+   "corrected_place": false,
+   "latency_ms": 0.47
+  },
+  {
+   "id": "t076",
+   "categories": [
+    "correct"
+   ],
+   "coverage_gap": false,
+   "original": "manipal udupi",
+   "normalized_transcript": "manipal udupi",
+   "resolved_address": "Udupi, Karnataka, India",
+   "ground_truth": {
+    "locality": [
+     "Manipal"
+    ],
+    "city": null,
+    "district": null,
+    "state": "Karnataka",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "city": "Udupi",
+    "district": "Udupi",
+    "state": "Karnataka"
+   },
+   "status": "partially_resolved",
+   "confidence": 0.72,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": false,
+    "state": true
+   },
+   "component_checks": {},
+   "geo_correct": false,
+   "corrected_place": false,
+   "latency_ms": 0.61
+  },
+  {
+   "id": "t077",
+   "categories": [
+    "correct"
+   ],
+   "coverage_gap": false,
+   "original": "shirdi ahmednagar",
+   "normalized_transcript": "shirdi ahmednagar",
+   "resolved_address": "Shirdi, Ahmednagar District, Maharashtra 423109, India",
+   "ground_truth": {
+    "locality": [
+     "Shirdi"
+    ],
+    "city": null,
+    "district": null,
+    "state": "Maharashtra",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "locality": "Shirdi",
+    "district": "Ahmednagar",
+    "state": "Maharashtra",
+    "postal_code": "423109"
+   },
+   "status": "resolved",
+   "confidence": 0.906,
+   "needs_confirmation": false,
+   "checks": {
+    "locality": true,
+    "state": true
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 1.69
+  },
+  {
+   "id": "t078",
+   "categories": [
+    "correct"
+   ],
+   "coverage_gap": false,
+   "original": "pushkar ajmer rajasthan",
+   "normalized_transcript": "pushkar ajmer rajasthan",
+   "resolved_address": "Pushkar, Ajmer, Rajasthan 305022, India",
+   "ground_truth": {
+    "locality": [
+     "Pushkar"
+    ],
+    "city": null,
+    "district": null,
+    "state": "Rajasthan",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "locality": "Pushkar",
+    "city": "Ajmer",
+    "district": "Ajmer",
+    "state": "Rajasthan",
+    "postal_code": "305022"
+   },
+   "status": "resolved",
+   "confidence": 0.966,
+   "needs_confirmation": false,
+   "checks": {
+    "locality": true,
+    "state": true
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 1.16
+  },
+  {
+   "id": "t079",
+   "categories": [
+    "spelling"
+   ],
+   "coverage_gap": false,
+   "original": "bodh gaya bihar",
+   "normalized_transcript": "bodh gaya bihar",
+   "resolved_address": "Gaya, Bihar, India",
+   "ground_truth": {
+    "locality": [
+     "Bodhgaya",
+     "Bodh Gaya"
+    ],
+    "city": null,
+    "district": null,
+    "state": "Bihar",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "city": "Gaya",
+    "district": "Gaya",
+    "state": "Bihar"
+   },
+   "status": "partially_resolved",
+   "confidence": 0.72,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": false,
+    "state": true
+   },
+   "component_checks": {},
+   "geo_correct": false,
+   "corrected_place": false,
+   "latency_ms": 0.73
+  },
+  {
+   "id": "t080",
+   "categories": [
+    "correct"
+   ],
+   "coverage_gap": false,
+   "original": "munnar idukki kerala",
+   "normalized_transcript": "munnar idukki kerala",
+   "resolved_address": "Munnar, Idukki District, Kerala 685612, India",
+   "ground_truth": {
+    "locality": [
+     "Munnar"
+    ],
+    "city": null,
+    "district": null,
+    "state": "Kerala",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "locality": "Munnar",
+    "district": "Idukki",
+    "state": "Kerala",
+    "postal_code": "685612"
+   },
+   "status": "resolved",
+   "confidence": 0.966,
+   "needs_confirmation": false,
+   "checks": {
+    "locality": true,
+    "state": true
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 0.91
+  },
+  {
+   "id": "t081",
+   "categories": [
+    "alias"
+   ],
+   "coverage_gap": false,
+   "original": "ooty nilgiris",
+   "normalized_transcript": "ooty nilgiris",
+   "resolved_address": "Ooty, The Nilgiris District, Tamil Nadu, India",
+   "ground_truth": {
+    "locality": [
+     "Udagamandalam",
+     "Udhagamandalam"
+    ],
+    "city": null,
+    "district": null,
+    "state": "Tamil Nadu",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "district": "The Nilgiris",
+    "state": "Tamil Nadu"
+   },
+   "status": "partially_resolved",
+   "confidence": 0.66,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": false,
+    "state": true
+   },
+   "component_checks": {},
+   "geo_correct": false,
+   "corrected_place": false,
+   "latency_ms": 0.5
+  },
+  {
+   "id": "t082",
+   "categories": [
+    "correct"
+   ],
+   "coverage_gap": true,
+   "original": "hampi hospet",
+   "normalized_transcript": "hampi hospet",
+   "resolved_address": "Hampi, Vijayanagara District, Karnataka, India",
+   "ground_truth": {
+    "locality": [
+     "Hampi",
+     "Kamalapuram",
+     "Kamalapur"
+    ],
+    "city": null,
+    "district": null,
+    "state": "Karnataka",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "locality": "Hampi",
+    "district": "Vijayanagara",
+    "state": "Karnataka"
+   },
+   "status": "ambiguous",
+   "confidence": 0.636,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": true,
+    "state": true
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 0.23
+  },
+  {
+   "id": "t083",
+   "categories": [
+    "correct"
+   ],
+   "coverage_gap": false,
+   "original": "kasauli solan himachal",
+   "normalized_transcript": "kasauli solan himachal",
+   "resolved_address": "Kasauli, Solan District, Himachal Pradesh 173204, India",
+   "ground_truth": {
+    "locality": [
+     "Kasauli"
+    ],
+    "city": null,
+    "district": null,
+    "state": "Himachal Pradesh",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "locality": "Kasauli",
+    "district": "Solan",
+    "state": "Himachal Pradesh",
+    "postal_code": "173204"
+   },
+   "status": "resolved",
+   "confidence": 0.906,
+   "needs_confirmation": false,
+   "checks": {
+    "locality": true,
+    "state": true
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 0.67
+  },
+  {
+   "id": "t084",
+   "categories": [
+    "rural",
+    "ambiguous"
+   ],
+   "coverage_gap": false,
+   "original": "village rampur, tehsil sadar, district mandi",
+   "normalized_transcript": "village rampur , tehsil sadar , district mandi",
+   "resolved_address": "Tehsil, Sudhar, Mandi District, Himachal Pradesh 175012, India",
+   "ground_truth": {
+    "locality": null,
+    "city": null,
+    "district": "Mandi",
+    "state": "Himachal Pradesh",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "locality": "Sudhar",
+    "district": "Mandi",
+    "state": "Himachal Pradesh",
+    "postal_code": "175012"
+   },
+   "status": "partially_resolved",
+   "confidence": 0.78,
+   "needs_confirmation": true,
+   "checks": {
+    "no_invented_locality": false,
+    "state": true,
+    "district": true
+   },
+   "component_checks": {},
+   "geo_correct": false,
+   "corrected_place": true,
+   "latency_ms": 1.74
+  },
+  {
+   "id": "t085",
+   "categories": [
+    "stt",
+    "number_words"
+   ],
+   "coverage_gap": false,
+   "original": "ninety two, fifth main, indra nagar, bangalore",
+   "normalized_transcript": "92 , 5th main , indra nagar , bangalore",
+   "resolved_address": "No. 92, 5th Main, Indiranagar, Bengaluru, Karnataka 560038, India",
+   "ground_truth": {
+    "locality": [
+     "Indiranagar"
+    ],
+    "city": "Bengaluru",
+    "district": null,
+    "state": "Karnataka",
+    "postal_code": null,
+    "components": {
+     "house_number": "92",
+     "street": "5th Main"
+    }
+   },
+   "predicted": {
+    "house_number": "92",
+    "street": "5th Main",
+    "locality": "Indiranagar",
+    "city": "Bengaluru",
+    "district": "Bengaluru Urban",
+    "state": "Karnataka",
+    "postal_code": "560038"
+   },
+   "status": "partially_resolved",
+   "confidence": 0.835,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": true,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {
+    "house_number": true,
+    "street": true
+   },
+   "geo_correct": true,
+   "corrected_place": true,
+   "latency_ms": 1.17
+  },
+  {
+   "id": "t086",
+   "categories": [
+    "stt"
+   ],
+   "coverage_gap": false,
+   "original": "koramangala for block bangalore",
+   "normalized_transcript": "koramangala for block bangalore",
+   "resolved_address": "Koramangala, Bengaluru, Karnataka, India",
+   "ground_truth": {
+    "locality": [
+     "Koramangala"
+    ],
+    "city": "Bengaluru",
+    "district": null,
+    "state": "Karnataka",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "locality": "Koramangala",
+    "city": "Bengaluru",
+    "district": "Bengaluru Urban",
+    "state": "Karnataka"
+   },
+   "status": "resolved",
+   "confidence": 0.966,
+   "needs_confirmation": false,
+   "checks": {
+    "locality": true,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 0.95
+  },
+  {
+   "id": "t087",
+   "categories": [
+    "stt",
+    "number_words"
+   ],
+   "coverage_gap": false,
+   "original": "jay nagar fourth block bengaluru five six zero zero one one",
+   "normalized_transcript": "jay nagar 4th block bengaluru 560011",
+   "resolved_address": "4th Block, Jayanagar, Bengaluru, Karnataka 560011, India",
+   "ground_truth": {
+    "locality": [
+     "Jayanagar"
+    ],
+    "city": "Bengaluru",
+    "district": null,
+    "state": "Karnataka",
+    "postal_code": "560011",
+    "components": {}
+   },
+   "predicted": {
+    "block": "4th Block",
+    "locality": "Jayanagar",
+    "city": "Bengaluru",
+    "district": "Bengaluru Urban",
+    "state": "Karnataka",
+    "postal_code": "560011"
+   },
+   "status": "partially_resolved",
+   "confidence": 0.72,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": true,
+    "state": true,
+    "city": true,
+    "postal_code": true
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": true,
+   "latency_ms": 0.85
+  },
+  {
+   "id": "t088",
+   "categories": [
+    "stt"
+   ],
+   "coverage_gap": false,
+   "original": "hsr layout sector too bangalore",
+   "normalized_transcript": "hsr layout sector 2 bangalore",
+   "resolved_address": "Sector 2, HSR Layout, Bengaluru, Karnataka 560102, India",
+   "ground_truth": {
+    "locality": [
+     "HSR Layout"
+    ],
+    "city": "Bengaluru",
+    "district": null,
+    "state": "Karnataka",
+    "postal_code": null,
+    "components": {
+     "sector": "Sector 2"
+    }
+   },
+   "predicted": {
+    "sector": "Sector 2",
+    "locality": "HSR Layout",
+    "city": "Bengaluru",
+    "district": "Bengaluru Urban",
+    "state": "Karnataka",
+    "postal_code": "560102"
+   },
+   "status": "resolved",
+   "confidence": 0.936,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": true,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {
+    "sector": true
+   },
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 0.97
+  },
+  {
+   "id": "t089",
+   "categories": [
+    "stt"
+   ],
+   "coverage_gap": false,
+   "original": "band ra west mumbai",
+   "normalized_transcript": "band ra west mumbai",
+   "resolved_address": "Bandra West, Mumbai, Maharashtra, India",
+   "ground_truth": {
+    "locality": [
+     "Bandra West"
+    ],
+    "city": "Mumbai",
+    "district": null,
+    "state": "Maharashtra",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "locality": "Bandra West",
+    "city": "Mumbai",
+    "district": "Mumbai Suburban",
+    "state": "Maharashtra"
+   },
+   "status": "resolved",
+   "confidence": 0.966,
+   "needs_confirmation": false,
+   "checks": {
+    "locality": true,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 0.64
+  },
+  {
+   "id": "t090",
+   "categories": [
+    "stt"
+   ],
+   "coverage_gap": false,
+   "original": "kora mangala bangalore",
+   "normalized_transcript": "kora mangala bangalore",
+   "resolved_address": "Koramangala, Bengaluru, Karnataka, India",
+   "ground_truth": {
+    "locality": [
+     "Koramangala"
+    ],
+    "city": "Bengaluru",
+    "district": null,
+    "state": "Karnataka",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "locality": "Koramangala",
+    "city": "Bengaluru",
+    "district": "Bengaluru Urban",
+    "state": "Karnataka"
+   },
+   "status": "resolved",
+   "confidence": 0.966,
+   "needs_confirmation": false,
+   "checks": {
+    "locality": true,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 0.77
+  },
+  {
+   "id": "t091",
+   "categories": [
+    "stt",
+    "incomplete"
+   ],
+   "coverage_gap": false,
+   "original": "sexy area ghaziabad",
+   "normalized_transcript": "sexy area ghaziabad",
+   "resolved_address": "Sexy Area, Ghaziabad, Uttar Pradesh, India",
+   "ground_truth": {
+    "locality": null,
+    "city": "Ghaziabad",
+    "district": null,
+    "state": "Uttar Pradesh",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "city": "Ghaziabad",
+    "district": "Ghaziabad",
+    "state": "Uttar Pradesh"
+   },
+   "status": "partially_resolved",
+   "confidence": 0.72,
+   "needs_confirmation": true,
+   "checks": {
+    "no_invented_locality": true,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 13.78
+  },
+  {
+   "id": "t092",
+   "categories": [
+    "stt",
+    "spelling"
+   ],
+   "coverage_gap": false,
+   "original": "whight field bangalore",
+   "normalized_transcript": "whight field bangalore",
+   "resolved_address": "Whitefield, Bengaluru, Karnataka 560066, India",
+   "ground_truth": {
+    "locality": [
+     "Whitefield"
+    ],
+    "city": "Bengaluru",
+    "district": null,
+    "state": "Karnataka",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "locality": "Whitefield",
+    "city": "Bengaluru",
+    "district": "Bengaluru Urban",
+    "state": "Karnataka",
+    "postal_code": "560066"
+   },
+   "status": "partially_resolved",
+   "confidence": 0.823,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": true,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": true,
+   "latency_ms": 1.3
+  },
+  {
+   "id": "t093",
+   "categories": [
+    "hinglish"
+   ],
+   "coverage_gap": false,
+   "original": "bhaiya Lajpat Nagar mein delivery karna, A-14, second floor",
+   "normalized_transcript": "lajpat nagar , delivery karna , a-14 , 2nd floor",
+   "resolved_address": "2nd Floor, A-14, Lajpat Nagar, Delhi, India",
+   "ground_truth": {
+    "locality": [
+     "Lajpat Nagar"
+    ],
+    "city": null,
+    "district": null,
+    "state": "Delhi",
+    "postal_code": null,
+    "components": {
+     "floor": "2nd Floor"
+    }
+   },
+   "predicted": {
+    "floor": "2nd Floor",
+    "locality": "Lajpat Nagar",
+    "city": "Delhi",
+    "district": "South Delhi",
+    "state": "Delhi"
+   },
+   "status": "ambiguous",
+   "confidence": 0.636,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": true,
+    "state": true
+   },
+   "component_checks": {
+    "floor": true
+   },
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 0.85
+  },
+  {
+   "id": "t094",
+   "categories": [
+    "hindi_script"
+   ],
+   "coverage_gap": false,
+   "original": "मकान नंबर 12, करोल बाग, नई दिल्ली",
+   "normalized_transcript": "house no 12 , karol bag , nai dilli",
+   "resolved_address": "No. 12, Karol Bagh, Delhi, India",
+   "ground_truth": {
+    "locality": [
+     "Karol Bagh"
+    ],
+    "city": "Delhi",
+    "district": null,
+    "state": "Delhi",
+    "postal_code": null,
+    "components": {
+     "house_number": "12"
+    }
+   },
+   "predicted": {
+    "house_number": "12",
+    "locality": "Karol Bagh",
+    "city": "Delhi",
+    "district": "Central Delhi",
+    "state": "Delhi"
+   },
+   "status": "ambiguous",
+   "confidence": 0.57,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": true,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {
+    "house_number": true
+   },
+   "geo_correct": true,
+   "corrected_place": true,
+   "latency_ms": 0.62
+  },
+  {
+   "id": "t095",
+   "categories": [
+    "kannada_script"
+   ],
+   "coverage_gap": false,
+   "original": "ಜಯನಗರ ಬೆಂಗಳೂರು",
+   "normalized_transcript": "jayanagara bengaluru",
+   "resolved_address": "Jayanagar, Bengaluru, Karnataka 560041, India",
+   "ground_truth": {
+    "locality": [
+     "Jayanagar"
+    ],
+    "city": "Bengaluru",
+    "district": null,
+    "state": "Karnataka",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "locality": "Jayanagar",
+    "city": "Bengaluru",
+    "district": "Bengaluru Urban",
+    "state": "Karnataka",
+    "postal_code": "560041"
+   },
+   "status": "partially_resolved",
+   "confidence": 0.835,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": true,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": true,
+   "latency_ms": 1.47
+  },
+  {
+   "id": "t096",
+   "categories": [
+    "tamil_script"
+   ],
+   "coverage_gap": false,
+   "original": "அடையார் சென்னை",
+   "normalized_transcript": "adhaiyar jhennai",
+   "resolved_address": "Jhennai, Adaiyur, Salem District, Tamil Nadu, India",
+   "ground_truth": {
+    "locality": [
+     "Adyar"
+    ],
+    "city": "Chennai",
+    "district": null,
+    "state": "Tamil Nadu",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "locality": "Adaiyur",
+    "district": "Salem",
+    "state": "Tamil Nadu"
+   },
+   "status": "ambiguous",
+   "confidence": 0.551,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": false,
+    "state": true,
+    "city": false
+   },
+   "component_checks": {},
+   "geo_correct": false,
+   "corrected_place": true,
+   "latency_ms": 12.63
+  },
+  {
+   "id": "t097",
+   "categories": [
+    "hindi_script"
+   ],
+   "coverage_gap": false,
+   "original": "गोमती नगर लखनऊ",
+   "normalized_transcript": "gomti nagar lakhanau",
+   "resolved_address": "Gomti Nagar, Lucknow, Uttar Pradesh 226010, India",
+   "ground_truth": {
+    "locality": [
+     "Gomti Nagar"
+    ],
+    "city": "Lucknow",
+    "district": null,
+    "state": "Uttar Pradesh",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "locality": "Gomti Nagar",
+    "city": "Lucknow",
+    "district": "Lucknow",
+    "state": "Uttar Pradesh",
+    "postal_code": "226010"
+   },
+   "status": "resolved",
+   "confidence": 0.926,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": true,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 1.39
+  },
+  {
+   "id": "t098",
+   "categories": [
+    "ambiguous"
+   ],
+   "coverage_gap": false,
+   "original": "gandhi nagar",
+   "normalized_transcript": "gandhi nagar",
+   "resolved_address": "Gandhinagar, Gujarat, India",
+   "ground_truth": {
+    "locality": null,
+    "city": null,
+    "district": null,
+    "state": "",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "city": "Gandhinagar",
+    "district": "Gandhinagar",
+    "state": "Gujarat"
+   },
+   "status": "partially_resolved",
+   "confidence": 0.72,
+   "needs_confirmation": true,
+   "checks": {
+    "no_invented_locality": true,
+    "expected_status": false
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 0.57
+  },
+  {
+   "id": "t099",
+   "categories": [
+    "conservative"
+   ],
+   "coverage_gap": false,
+   "original": "near the big temple, main road",
+   "normalized_transcript": "near the big temple , main road",
+   "resolved_address": null,
+   "ground_truth": {
+    "locality": null,
+    "city": null,
+    "district": null,
+    "state": "",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "landmark": "Big Temple"
+   },
+   "status": "unresolved",
+   "confidence": 0.0,
+   "needs_confirmation": true,
+   "checks": {
+    "no_invented_locality": true,
+    "expected_status": true
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 0.21
+  },
+  {
+   "id": "t100",
+   "categories": [
+    "conservative"
+   ],
+   "coverage_gap": false,
+   "original": "flat 5, second floor",
+   "normalized_transcript": "flat 5 , 2nd floor",
+   "resolved_address": "Flat 5, 2nd Floor, India",
+   "ground_truth": {
+    "locality": null,
+    "city": null,
+    "district": null,
+    "state": "",
+    "postal_code": null,
+    "components": {
+     "unit": "5",
+     "floor": "2nd Floor"
+    }
+   },
+   "predicted": {
+    "unit": "5",
+    "floor": "2nd Floor"
+   },
+   "status": "unresolved",
+   "confidence": 0.0,
+   "needs_confirmation": true,
+   "checks": {
+    "no_invented_locality": true,
+    "expected_status": true
+   },
+   "component_checks": {
+    "unit": true,
+    "floor": true
+   },
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 0.14
+  },
+  {
+   "id": "t101",
+   "categories": [
+    "ambiguous"
+   ],
+   "coverage_gap": false,
+   "original": "model town",
+   "normalized_transcript": "model town",
+   "resolved_address": "Model Town, Ludhiana District, Punjab, India",
+   "ground_truth": {
+    "locality": null,
+    "city": null,
+    "district": null,
+    "state": "",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "locality": "Model Town",
+    "district": "Ludhiana",
+    "state": "Punjab"
+   },
+   "status": "ambiguous",
+   "confidence": 0.636,
+   "needs_confirmation": true,
+   "checks": {
+    "no_invented_locality": true,
+    "expected_status": true
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 0.22
+  },
+  {
+   "id": "t102",
+   "categories": [
+    "ambiguous",
+    "landmark"
+   ],
+   "coverage_gap": false,
+   "original": "civil lines near collectorate",
+   "normalized_transcript": "civil lines near collectorate",
+   "resolved_address": "Near Collectorate, Civil Lines, Delhi, India",
+   "ground_truth": {
+    "locality": null,
+    "city": null,
+    "district": null,
+    "state": "",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "locality": "Civil Lines",
+    "landmark": "Collectorate",
+    "city": "Delhi",
+    "district": "Central Delhi",
+    "state": "Delhi"
+   },
+   "status": "ambiguous",
+   "confidence": 0.636,
+   "needs_confirmation": true,
+   "checks": {
+    "no_invented_locality": true,
+    "expected_status": true
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 0.23
+  },
+  {
+   "id": "t103",
+   "categories": [
+    "pin_conflict"
+   ],
+   "coverage_gap": false,
+   "original": "koramangala 560001",
+   "normalized_transcript": "koramangala 560001",
+   "resolved_address": "Koramangala, Bengaluru, Karnataka 560001, India",
+   "ground_truth": {
+    "locality": [
+     "Koramangala"
+    ],
+    "city": "Bengaluru",
+    "district": null,
+    "state": "Karnataka",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "locality": "Koramangala",
+    "city": "Bengaluru",
+    "district": "Bengaluru Urban",
+    "state": "Karnataka",
+    "postal_code": "560001"
+   },
+   "status": "partially_resolved",
+   "confidence": 0.786,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": true,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 0.6
+  },
+  {
+   "id": "t104",
+   "categories": [
+    "pin_conflict"
+   ],
+   "coverage_gap": false,
+   "original": "indiranagar bangalore 400001",
+   "normalized_transcript": "indiranagar bangalore 400001",
+   "resolved_address": "Indiranagar, Bengaluru, Karnataka 400001, India",
+   "ground_truth": {
+    "locality": [
+     "Indiranagar"
+    ],
+    "city": "Bengaluru",
+    "district": null,
+    "state": "Karnataka",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "locality": "Indiranagar",
+    "city": "Bengaluru",
+    "district": "Bengaluru Urban",
+    "state": "Karnataka",
+    "postal_code": "400001"
+   },
+   "status": "partially_resolved",
+   "confidence": 0.472,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": true,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": true,
+   "corrected_place": false,
+   "latency_ms": 9.81
+  },
+  {
+   "id": "t105",
+   "categories": [
+    "coverage"
+   ],
+   "coverage_gap": true,
+   "original": "btm layout 2nd stage bangalore",
+   "normalized_transcript": "btm layout 2nd stage bangalore",
+   "resolved_address": "2nd Stage, Btm Layout, Bengaluru, Karnataka, India",
+   "ground_truth": {
+    "locality": [
+     "BTM Layout"
+    ],
+    "city": "Bengaluru",
+    "district": null,
+    "state": "Karnataka",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "stage": "2nd Stage",
+    "city": "Bengaluru",
+    "district": "Bengaluru Urban",
+    "state": "Karnataka"
+   },
+   "status": "partially_resolved",
+   "confidence": 0.72,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": false,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": false,
+   "corrected_place": false,
+   "latency_ms": 9.04
+  },
+  {
+   "id": "t106",
+   "categories": [
+    "coverage"
+   ],
+   "coverage_gap": true,
+   "original": "hinjewadi phase 1 pune",
+   "normalized_transcript": "hinjewadi phase 1 pune",
+   "resolved_address": "Phase 1, Shindewadi, Pune, Maharashtra, India",
+   "ground_truth": {
+    "locality": [
+     "Hinjewadi",
+     "Hinjawadi"
+    ],
+    "city": "Pune",
+    "district": null,
+    "state": "Maharashtra",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "phase": "Phase 1",
+    "locality": "Shindewadi",
+    "city": "Pune",
+    "district": "Pune",
+    "state": "Maharashtra"
+   },
+   "status": "partially_resolved",
+   "confidence": 0.811,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": false,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": false,
+   "corrected_place": true,
+   "latency_ms": 1.89
+  },
+  {
+   "id": "t107",
+   "categories": [
+    "coverage"
+   ],
+   "coverage_gap": true,
+   "original": "koregaon park pune",
+   "normalized_transcript": "koregaon park pune",
+   "resolved_address": "Karegaon, Pune, Maharashtra, India",
+   "ground_truth": {
+    "locality": [
+     "Koregaon Park"
+    ],
+    "city": "Pune",
+    "district": null,
+    "state": "Maharashtra",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "locality": "Karegaon",
+    "city": "Pune",
+    "district": "Pune",
+    "state": "Maharashtra"
+   },
+   "status": "partially_resolved",
+   "confidence": 0.793,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": false,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": false,
+   "corrected_place": true,
+   "latency_ms": 1.6
+  },
+  {
+   "id": "t108",
+   "categories": [
+    "coverage"
+   ],
+   "coverage_gap": true,
+   "original": "indirapuram ghaziabad",
+   "normalized_transcript": "indirapuram ghaziabad",
+   "resolved_address": "Ghaziabad, Uttar Pradesh, India",
+   "ground_truth": {
+    "locality": [
+     "Indirapuram"
+    ],
+    "city": "Ghaziabad",
+    "district": null,
+    "state": "Uttar Pradesh",
+    "postal_code": null,
+    "components": {}
+   },
+   "predicted": {
+    "city": "Ghaziabad",
+    "district": "Ghaziabad",
+    "state": "Uttar Pradesh"
+   },
+   "status": "partially_resolved",
+   "confidence": 0.72,
+   "needs_confirmation": true,
+   "checks": {
+    "locality": false,
+    "state": true,
+    "city": true
+   },
+   "component_checks": {},
+   "geo_correct": false,
+   "corrected_place": false,
+   "latency_ms": 7.74
+  }
+ ]
+}

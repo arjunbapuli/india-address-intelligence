@@ -135,6 +135,11 @@ class Gazetteer:
             self._index_key(alias, KeyHit(place_id, f"alias:{alias_type}", confidence))
 
     def _index_key(self, text: str, hit: KeyHit) -> None:
+        if any(ord(ch) > 0x08FF for ch in text):
+            # Indic-script alias ("சென்னை"): index its transliteration, the same form the input normaliser produces
+            from app.intelligence.normalization.transliterate import to_latin
+
+            text = to_latin(text)[0]
         key = compact_key(text)
         if not key:
             return
