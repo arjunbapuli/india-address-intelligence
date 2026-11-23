@@ -1,0 +1,387 @@
+{
+ "_note": "Curated by the project (MIT). Canonical names follow the Government of India's official spellings; dataset_name is the spelling used in India Post's directory.",
+ "states": [
+  {
+   "name": "Andaman and Nicobar Islands",
+   "dataset_name": "ANDAMAN AND NICOBAR ISLANDS",
+   "code": "AN",
+   "type": "ut",
+   "aliases": [
+    "Andaman",
+    "Andaman Nicobar",
+    "A&N",
+    "Andaman & Nicobar",
+    "अंडमान और निकोबार"
+   ]
+  },
+  {
+   "name": "Andhra Pradesh",
+   "dataset_name": "ANDHRA PRADESH",
+   "code": "AP",
+   "type": "state",
+   "aliases": [
+    "AP",
+    "Andhra",
+    "आंध्र प्रदेश",
+    "ఆంధ్ర ప్రదేశ్"
+   ]
+  },
+  {
+   "name": "Arunachal Pradesh",
+   "dataset_name": "ARUNACHAL PRADESH",
+   "code": "AR",
+   "type": "state",
+   "aliases": [
+    "Arunachal",
+    "अरुणाचल प्रदेश"
+   ]
+  },
+  {
+   "name": "Assam",
+   "dataset_name": "ASSAM",
+   "code": "AS",
+   "type": "state",
+   "aliases": [
+    "Asom",
+    "असम",
+    "অসম"
+   ]
+  },
+  {
+   "name": "Bihar",
+   "dataset_name": "BIHAR",
+   "code": "BR",
+   "type": "state",
+   "aliases": [
+    "बिहार"
+   ]
+  },
+  {
+   "name": "Chandigarh",
+   "dataset_name": "CHANDIGARH",
+   "code": "CH",
+   "type": "ut",
+   "aliases": [
+    "चंडीगढ़"
+   ]
+  },
+  {
+   "name": "Chhattisgarh",
+   "dataset_name": "CHHATTISGARH",
+   "code": "CT",
+   "type": "state",
+   "aliases": [
+    "CG",
+    "Chattisgarh",
+    "Chhatisgarh",
+    "छत्तीसगढ़"
+   ]
+  },
+  {
+   "name": "Delhi",
+   "dataset_name": "DELHI",
+   "code": "DL",
+   "type": "ut",
+   "aliases": [
+    "NCT of Delhi",
+    "New Delhi",
+    "Dilli",
+    "Delhi NCR",
+    "दिल्ली"
+   ]
+  },
+  {
+   "name": "Goa",
+   "dataset_name": "GOA",
+   "code": "GA",
+   "type": "state",
+   "aliases": [
+    "गोवा"
+   ]
+  },
+  {
+   "name": "Gujarat",
+   "dataset_name": "GUJARAT",
+   "code": "GJ",
+   "type": "state",
+   "aliases": [
+    "Gujrat",
+    "ગુજરાત",
+    "गुजरात"
+   ]
+  },
+  {
+   "name": "Haryana",
+   "dataset_name": "HARYANA",
+   "code": "HR",
+   "type": "state",
+   "aliases": [
+    "हरियाणा"
+   ]
+  },
+  {
+   "name": "Himachal Pradesh",
+   "dataset_name": "HIMACHAL PRADESH",
+   "code": "HP",
+   "type": "state",
+   "aliases": [
+    "Himachal",
+    "हिमाचल प्रदेश"
+   ]
+  },
+  {
+   "name": "Jammu and Kashmir",
+   "dataset_name": "JAMMU AND KASHMIR",
+   "code": "JK",
+   "type": "ut",
+   "aliases": [
+    "J&K",
+    "Jammu Kashmir",
+    "Jammu & Kashmir",
+    "जम्मू और कश्मीर"
+   ]
+  },
+  {
+   "name": "Jharkhand",
+   "dataset_name": "JHARKHAND",
+   "code": "JH",
+   "type": "state",
+   "aliases": [
+    "झारखंड"
+   ]
+  },
+  {
+   "name": "Karnataka",
+   "dataset_name": "KARNATAKA",
+   "code": "KA",
+   "type": "state",
+   "aliases": [
+    "Karnatak",
+    "Karnatka",
+    "Mysore State",
+    "ಕರ್ನಾಟಕ",
+    "कर्नाटक"
+   ]
+  },
+  {
+   "name": "Kerala",
+   "dataset_name": "KERALA",
+   "code": "KL",
+   "type": "state",
+   "aliases": [
+    "Keralam",
+    "കേരളം",
+    "केरल"
+   ]
+  },
+  {
+   "name": "Ladakh",
+   "dataset_name": "LADAKH",
+   "code": "LA",
+   "type": "ut",
+   "aliases": [
+    "लद्दाख"
+   ]
+  },
+  {
+   "name": "Lakshadweep",
+   "dataset_name": "LAKSHADWEEP",
+   "code": "LD",
+   "type": "ut",
+   "aliases": [
+    "Laccadives",
+    "लक्षद्वीप"
+   ]
+  },
+  {
+   "name": "Madhya Pradesh",
+   "dataset_name": "MADHYA PRADESH",
+   "code": "MP",
+   "type": "state",
+   "aliases": [
+    "MP",
+    "मध्य प्रदेश"
+   ]
+  },
+  {
+   "name": "Maharashtra",
+   "dataset_name": "MAHARASHTRA",
+   "code": "MH",
+   "type": "state",
+   "aliases": [
+    "Maharastra",
+    "Maharashtr",
+    "महाराष्ट्र"
+   ]
+  },
+  {
+   "name": "Manipur",
+   "dataset_name": "MANIPUR",
+   "code": "MN",
+   "type": "state",
+   "aliases": [
+    "मणिपुर"
+   ]
+  },
+  {
+   "name": "Meghalaya",
+   "dataset_name": "MEGHALAYA",
+   "code": "ML",
+   "type": "state",
+   "aliases": [
+    "मेघालय"
+   ]
+  },
+  {
+   "name": "Mizoram",
+   "dataset_name": "MIZORAM",
+   "code": "MZ",
+   "type": "state",
+   "aliases": [
+    "मिज़ोरम"
+   ]
+  },
+  {
+   "name": "Nagaland",
+   "dataset_name": "NAGALAND",
+   "code": "NL",
+   "type": "state",
+   "aliases": [
+    "नागालैंड"
+   ]
+  },
+  {
+   "name": "Odisha",
+   "dataset_name": "ODISHA",
+   "code": "OR",
+   "type": "state",
+   "aliases": [
+    "Orissa",
+    "ଓଡ଼ିଶା",
+    "ओडिशा"
+   ]
+  },
+  {
+   "name": "Puducherry",
+   "dataset_name": "PUDUCHERRY",
+   "code": "PY",
+   "type": "ut",
+   "aliases": [
+    "Pondicherry",
+    "Pondy",
+    "पुडुचेरी"
+   ]
+  },
+  {
+   "name": "Punjab",
+   "dataset_name": "PUNJAB",
+   "code": "PB",
+   "type": "state",
+   "aliases": [
+    "ਪੰਜਾਬ",
+    "पंजाब"
+   ]
+  },
+  {
+   "name": "Rajasthan",
+   "dataset_name": "RAJASTHAN",
+   "code": "RJ",
+   "type": "state",
+   "aliases": [
+    "Rajastan",
+    "राजस्थान"
+   ]
+  },
+  {
+   "name": "Sikkim",
+   "dataset_name": "SIKKIM",
+   "code": "SK",
+   "type": "state",
+   "aliases": [
+    "सिक्किम"
+   ]
+  },
+  {
+   "name": "Tamil Nadu",
+   "dataset_name": "TAMIL NADU",
+   "code": "TN",
+   "type": "state",
+   "aliases": [
+    "Tamilnadu",
+    "TN",
+    "Madras State",
+    "தமிழ்நாடு",
+    "तमिलनाडु"
+   ]
+  },
+  {
+   "name": "Telangana",
+   "dataset_name": "TELANGANA",
+   "code": "TG",
+   "type": "state",
+   "aliases": [
+    "TS",
+    "Telengana",
+    "తెలంగాణ",
+    "तेलंगाना"
+   ]
+  },
+  {
+   "name": "Dadra and Nagar Haveli and Daman and Diu",
+   "dataset_name": "THE DADRA AND NAGAR HAVELI AND DAMAN AND DIU",
+   "code": "DH",
+   "type": "ut",
+   "aliases": [
+    "Dadra and Nagar Haveli",
+    "Daman and Diu",
+    "DNH",
+    "DNHDD"
+   ]
+  },
+  {
+   "name": "Tripura",
+   "dataset_name": "TRIPURA",
+   "code": "TR",
+   "type": "state",
+   "aliases": [
+    "त्रिपुरा"
+   ]
+  },
+  {
+   "name": "Uttar Pradesh",
+   "dataset_name": "UTTAR PRADESH",
+   "code": "UP",
+   "type": "state",
+   "aliases": [
+    "UP",
+    "U.P.",
+    "Uttarpradesh",
+    "उत्तर प्रदेश"
+   ]
+  },
+  {
+   "name": "Uttarakhand",
+   "dataset_name": "UTTARAKHAND",
+   "code": "UK",
+   "type": "state",
+   "aliases": [
+    "Uttaranchal",
+    "UK",
+    "उत्तराखंड"
+   ]
+  },
+  {
+   "name": "West Bengal",
+   "dataset_name": "WEST BENGAL",
+   "code": "WB",
+   "type": "state",
+   "aliases": [
+    "Bengal",
+    "Paschim Banga",
+    "WB",
+    "পশ্চিমবঙ্গ",
+    "पश्चिम बंगाल"
+   ]
+  }
+ ]
+}

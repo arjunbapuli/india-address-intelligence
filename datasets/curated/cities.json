@@ -1,0 +1,1783 @@
+{
+ "_note": "Curated by the project (MIT). Maps commonly used city names (and old/alternate names) to the India Post districts that make up the city area. A city's district list is used for consistency checks and to scope fuzzy matching; it is deliberately approximate at city edges. `infer_districts` lists districts that are entirely urban; only for those is the city filled in automatically when the user did not say it.",
+ "cities": [
+  {
+   "name": "Bengaluru",
+   "state": "KARNATAKA",
+   "districts": [
+    "BENGALURU URBAN"
+   ],
+   "aliases": [
+    "Bangalore",
+    "Banglore",
+    "Bangaluru",
+    "Bengalooru",
+    "Bengaluru City",
+    "Bangalore City",
+    "Blr",
+    "Bglr",
+    "Bnglr",
+    "बेंगलुरु",
+    "बैंगलोर",
+    "ಬೆಂಗಳೂರು"
+   ],
+   "tier": 1,
+   "infer_districts": [
+    "BENGALURU URBAN"
+   ]
+  },
+  {
+   "name": "Mysuru",
+   "state": "KARNATAKA",
+   "districts": [
+    "MYSURU"
+   ],
+   "aliases": [
+    "Mysore",
+    "ಮೈಸೂರು",
+    "मैसूर"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Mangaluru",
+   "state": "KARNATAKA",
+   "districts": [
+    "DAKSHINA KANNADA"
+   ],
+   "aliases": [
+    "Mangalore",
+    "Kudla",
+    "ಮಂಗಳೂರು"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Hubballi",
+   "state": "KARNATAKA",
+   "districts": [
+    "DHARWAD"
+   ],
+   "aliases": [
+    "Hubli",
+    "Hubli-Dharwad",
+    "ಹುಬ್ಬಳ್ಳಿ"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Dharwad",
+   "state": "KARNATAKA",
+   "districts": [
+    "DHARWAD"
+   ],
+   "aliases": [
+    "Dharwar"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Belagavi",
+   "state": "KARNATAKA",
+   "districts": [
+    "BELAGAVI"
+   ],
+   "aliases": [
+    "Belgaum"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Kalaburagi",
+   "state": "KARNATAKA",
+   "districts": [
+    "KALABURAGI"
+   ],
+   "aliases": [
+    "Gulbarga"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Davanagere",
+   "state": "KARNATAKA",
+   "districts": [
+    "DAVANGERE"
+   ],
+   "aliases": [
+    "Davangere"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Ballari",
+   "state": "KARNATAKA",
+   "districts": [
+    "BALLARI"
+   ],
+   "aliases": [
+    "Bellary"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Shivamogga",
+   "state": "KARNATAKA",
+   "districts": [
+    "SHIVAMOGGA"
+   ],
+   "aliases": [
+    "Shimoga"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Tumakuru",
+   "state": "KARNATAKA",
+   "districts": [
+    "TUMAKURU"
+   ],
+   "aliases": [
+    "Tumkur"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Udupi",
+   "state": "KARNATAKA",
+   "districts": [
+    "UDUPI"
+   ],
+   "aliases": [
+    "Manipal"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Mumbai",
+   "state": "MAHARASHTRA",
+   "districts": [
+    "MUMBAI",
+    "MUMBAI SUBURBAN"
+   ],
+   "aliases": [
+    "Bombay",
+    "Bambai",
+    "Mumbai City",
+    "मुंबई",
+    "मुम्बई",
+    "बंबई"
+   ],
+   "tier": 1,
+   "infer_districts": [
+    "MUMBAI",
+    "MUMBAI SUBURBAN"
+   ]
+  },
+  {
+   "name": "Navi Mumbai",
+   "state": "MAHARASHTRA",
+   "districts": [
+    "THANE",
+    "RAIGAD"
+   ],
+   "aliases": [
+    "New Bombay",
+    "New Mumbai"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Thane",
+   "state": "MAHARASHTRA",
+   "districts": [
+    "THANE"
+   ],
+   "aliases": [
+    "Thana",
+    "ठाणे"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Pune",
+   "state": "MAHARASHTRA",
+   "districts": [
+    "PUNE"
+   ],
+   "aliases": [
+    "Poona",
+    "Pimpri Chinchwad",
+    "पुणे"
+   ],
+   "tier": 1,
+   "infer_districts": []
+  },
+  {
+   "name": "Nagpur",
+   "state": "MAHARASHTRA",
+   "districts": [
+    "NAGPUR"
+   ],
+   "aliases": [
+    "नागपुर"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Nashik",
+   "state": "MAHARASHTRA",
+   "districts": [
+    "NASHIK"
+   ],
+   "aliases": [
+    "Nasik",
+    "नाशिक"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Chhatrapati Sambhajinagar",
+   "state": "MAHARASHTRA",
+   "districts": [
+    "AURANGABAD"
+   ],
+   "aliases": [
+    "Aurangabad",
+    "Sambhajinagar"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Solapur",
+   "state": "MAHARASHTRA",
+   "districts": [
+    "SOLAPUR"
+   ],
+   "aliases": [
+    "Sholapur"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Kolhapur",
+   "state": "MAHARASHTRA",
+   "districts": [
+    "KOLHAPUR"
+   ],
+   "aliases": [],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Amravati",
+   "state": "MAHARASHTRA",
+   "districts": [
+    "AMRAVATI"
+   ],
+   "aliases": [],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Delhi",
+   "state": "DELHI",
+   "districts": [
+    "CENTRAL",
+    "EAST",
+    "NEW DELHI",
+    "NORTH",
+    "NORTH EAST",
+    "NORTH WEST",
+    "SHAHDARA",
+    "SOUTH",
+    "SOUTH WEST",
+    "South East",
+    "WEST"
+   ],
+   "aliases": [
+    "New Delhi",
+    "Dilli",
+    "Delhi NCR",
+    "दिल्ली",
+    "नई दिल्ली"
+   ],
+   "tier": 1,
+   "infer_districts": [
+    "CENTRAL",
+    "EAST",
+    "NEW DELHI",
+    "NORTH",
+    "NORTH EAST",
+    "NORTH WEST",
+    "SHAHDARA",
+    "SOUTH",
+    "SOUTH WEST",
+    "South East",
+    "WEST"
+   ]
+  },
+  {
+   "name": "Hyderabad",
+   "state": "TELANGANA",
+   "districts": [
+    "HYDERABAD",
+    "RANGA REDDY",
+    "MEDCHAL MALKAJGIRI",
+    "SANGAREDDY"
+   ],
+   "aliases": [
+    "Hyd",
+    "Hydrabad",
+    "Haidarabad",
+    "Cyberabad",
+    "हैदराबाद",
+    "హైదరాబాద్"
+   ],
+   "tier": 1,
+   "infer_districts": [
+    "HYDERABAD"
+   ]
+  },
+  {
+   "name": "Secunderabad",
+   "state": "TELANGANA",
+   "districts": [
+    "HYDERABAD",
+    "MEDCHAL MALKAJGIRI"
+   ],
+   "aliases": [
+    "Sikandarabad"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Warangal",
+   "state": "TELANGANA",
+   "districts": [
+    "WARANGAL",
+    "HANUMAKONDA"
+   ],
+   "aliases": [],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Chennai",
+   "state": "TAMIL NADU",
+   "districts": [
+    "CHENNAI",
+    "CHENGALPATTU",
+    "KANCHIPURAM",
+    "THIRUVALLUR"
+   ],
+   "aliases": [
+    "Madras",
+    "Chenai",
+    "சென்னை",
+    "चेन्नई"
+   ],
+   "tier": 1,
+   "infer_districts": [
+    "CHENNAI"
+   ]
+  },
+  {
+   "name": "Coimbatore",
+   "state": "TAMIL NADU",
+   "districts": [
+    "COIMBATORE"
+   ],
+   "aliases": [
+    "Kovai",
+    "கோயம்புத்தூர்"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Madurai",
+   "state": "TAMIL NADU",
+   "districts": [
+    "MADURAI"
+   ],
+   "aliases": [
+    "மதுரை"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Tiruchirappalli",
+   "state": "TAMIL NADU",
+   "districts": [
+    "TIRUCHIRAPPALLI"
+   ],
+   "aliases": [
+    "Trichy",
+    "Tiruchi",
+    "Trichinopoly"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Salem",
+   "state": "TAMIL NADU",
+   "districts": [
+    "SALEM"
+   ],
+   "aliases": [],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Tiruppur",
+   "state": "TAMIL NADU",
+   "districts": [
+    "TIRUPPUR"
+   ],
+   "aliases": [
+    "Tirupur"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Vellore",
+   "state": "TAMIL NADU",
+   "districts": [
+    "VELLORE"
+   ],
+   "aliases": [],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Tirunelveli",
+   "state": "TAMIL NADU",
+   "districts": [
+    "TIRUNELVELI"
+   ],
+   "aliases": [
+    "Nellai"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Thoothukudi",
+   "state": "TAMIL NADU",
+   "districts": [
+    "TUTICORIN"
+   ],
+   "aliases": [
+    "Tuticorin"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Erode",
+   "state": "TAMIL NADU",
+   "districts": [
+    "ERODE"
+   ],
+   "aliases": [],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Kolkata",
+   "state": "WEST BENGAL",
+   "districts": [
+    "KOLKATA",
+    "24 PARAGANAS NORTH",
+    "24 PARAGANAS SOUTH",
+    "HOWRAH"
+   ],
+   "aliases": [
+    "Calcutta",
+    "Kolkatta",
+    "Kolkota",
+    "কলকাতা",
+    "कोलकाता"
+   ],
+   "tier": 1,
+   "infer_districts": [
+    "KOLKATA"
+   ]
+  },
+  {
+   "name": "Howrah",
+   "state": "WEST BENGAL",
+   "districts": [
+    "HOWRAH"
+   ],
+   "aliases": [
+    "Haora"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Siliguri",
+   "state": "WEST BENGAL",
+   "districts": [
+    "DARJEELING",
+    "JALPAIGURI"
+   ],
+   "aliases": [],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Durgapur",
+   "state": "WEST BENGAL",
+   "districts": [
+    "PASCHIM BARDHAMAN"
+   ],
+   "aliases": [],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Asansol",
+   "state": "WEST BENGAL",
+   "districts": [
+    "PASCHIM BARDHAMAN"
+   ],
+   "aliases": [],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Ahmedabad",
+   "state": "GUJARAT",
+   "districts": [
+    "AHMADABAD",
+    "GANDHINAGAR"
+   ],
+   "aliases": [
+    "Amdavad",
+    "Ahmadabad",
+    "Ahemdabad",
+    "અમદાવાદ",
+    "अहमदाबाद"
+   ],
+   "tier": 1,
+   "infer_districts": []
+  },
+  {
+   "name": "Surat",
+   "state": "GUJARAT",
+   "districts": [
+    "SURAT"
+   ],
+   "aliases": [
+    "સુરત"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Vadodara",
+   "state": "GUJARAT",
+   "districts": [
+    "VADODARA"
+   ],
+   "aliases": [
+    "Baroda"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Rajkot",
+   "state": "GUJARAT",
+   "districts": [
+    "RAJKOT"
+   ],
+   "aliases": [],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Gandhinagar",
+   "state": "GUJARAT",
+   "districts": [
+    "GANDHINAGAR"
+   ],
+   "aliases": [],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Bhavnagar",
+   "state": "GUJARAT",
+   "districts": [
+    "BHAVNAGAR"
+   ],
+   "aliases": [],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Jamnagar",
+   "state": "GUJARAT",
+   "districts": [
+    "JAMNAGAR"
+   ],
+   "aliases": [],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Jaipur",
+   "state": "RAJASTHAN",
+   "districts": [
+    "JAIPUR"
+   ],
+   "aliases": [
+    "Pink City",
+    "जयपुर"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Jodhpur",
+   "state": "RAJASTHAN",
+   "districts": [
+    "JODHPUR"
+   ],
+   "aliases": [],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Udaipur",
+   "state": "RAJASTHAN",
+   "districts": [
+    "UDAIPUR"
+   ],
+   "aliases": [],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Kota",
+   "state": "RAJASTHAN",
+   "districts": [
+    "KOTA"
+   ],
+   "aliases": [],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Ajmer",
+   "state": "RAJASTHAN",
+   "districts": [
+    "AJMER"
+   ],
+   "aliases": [],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Bikaner",
+   "state": "RAJASTHAN",
+   "districts": [
+    "BIKANER"
+   ],
+   "aliases": [],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Lucknow",
+   "state": "UTTAR PRADESH",
+   "districts": [
+    "LUCKNOW"
+   ],
+   "aliases": [
+    "Lakhnau",
+    "लखनऊ"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Kanpur",
+   "state": "UTTAR PRADESH",
+   "districts": [
+    "KANPUR NAGAR"
+   ],
+   "aliases": [
+    "Cawnpore",
+    "कानपुर"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Noida",
+   "state": "UTTAR PRADESH",
+   "districts": [
+    "GAUTAM BUDDHA NAGAR"
+   ],
+   "aliases": [
+    "Greater Noida",
+    "NOIDA",
+    "नोएडा"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Ghaziabad",
+   "state": "UTTAR PRADESH",
+   "districts": [
+    "GHAZIABAD"
+   ],
+   "aliases": [
+    "गाज़ियाबाद"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Agra",
+   "state": "UTTAR PRADESH",
+   "districts": [
+    "AGRA"
+   ],
+   "aliases": [
+    "आगरा"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Varanasi",
+   "state": "UTTAR PRADESH",
+   "districts": [
+    "VARANASI"
+   ],
+   "aliases": [
+    "Banaras",
+    "Benares",
+    "Kashi",
+    "वाराणसी"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Prayagraj",
+   "state": "UTTAR PRADESH",
+   "districts": [
+    "PRAYAGRAJ"
+   ],
+   "aliases": [
+    "Allahabad",
+    "Ilahabad",
+    "प्रयागराज"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Meerut",
+   "state": "UTTAR PRADESH",
+   "districts": [
+    "MEERUT"
+   ],
+   "aliases": [],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Bareilly",
+   "state": "UTTAR PRADESH",
+   "districts": [
+    "BAREILLY"
+   ],
+   "aliases": [],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Aligarh",
+   "state": "UTTAR PRADESH",
+   "districts": [
+    "ALIGARH"
+   ],
+   "aliases": [],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Gorakhpur",
+   "state": "UTTAR PRADESH",
+   "districts": [
+    "GORAKHPUR"
+   ],
+   "aliases": [],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Moradabad",
+   "state": "UTTAR PRADESH",
+   "districts": [
+    "MORADABAD"
+   ],
+   "aliases": [],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Ayodhya",
+   "state": "UTTAR PRADESH",
+   "districts": [
+    "AYODHYA"
+   ],
+   "aliases": [
+    "Faizabad"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Mathura",
+   "state": "UTTAR PRADESH",
+   "districts": [
+    "MATHURA"
+   ],
+   "aliases": [
+    "Vrindavan"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Jhansi",
+   "state": "UTTAR PRADESH",
+   "districts": [
+    "JHANSI"
+   ],
+   "aliases": [],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Gurugram",
+   "state": "HARYANA",
+   "districts": [
+    "GURUGRAM"
+   ],
+   "aliases": [
+    "Gurgaon",
+    "Gurgoan",
+    "गुड़गांव",
+    "गुरुग्राम"
+   ],
+   "tier": 1,
+   "infer_districts": []
+  },
+  {
+   "name": "Faridabad",
+   "state": "HARYANA",
+   "districts": [
+    "FARIDABAD"
+   ],
+   "aliases": [],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Panipat",
+   "state": "HARYANA",
+   "districts": [
+    "PANIPAT"
+   ],
+   "aliases": [],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Ambala",
+   "state": "HARYANA",
+   "districts": [
+    "AMBALA"
+   ],
+   "aliases": [],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Rohtak",
+   "state": "HARYANA",
+   "districts": [
+    "ROHTAK"
+   ],
+   "aliases": [],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Hisar",
+   "state": "HARYANA",
+   "districts": [
+    "HISAR"
+   ],
+   "aliases": [
+    "Hissar"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Karnal",
+   "state": "HARYANA",
+   "districts": [
+    "KARNAL"
+   ],
+   "aliases": [],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Sonipat",
+   "state": "HARYANA",
+   "districts": [
+    "SONIPAT"
+   ],
+   "aliases": [
+    "Sonepat"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Panchkula",
+   "state": "HARYANA",
+   "districts": [
+    "PANCHKULA"
+   ],
+   "aliases": [],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Ludhiana",
+   "state": "PUNJAB",
+   "districts": [
+    "LUDHIANA"
+   ],
+   "aliases": [],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Amritsar",
+   "state": "PUNJAB",
+   "districts": [
+    "AMRITSAR"
+   ],
+   "aliases": [
+    "ਅੰਮ੍ਰਿਤਸਰ"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Jalandhar",
+   "state": "PUNJAB",
+   "districts": [
+    "JALANDHAR"
+   ],
+   "aliases": [
+    "Jullundur"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Patiala",
+   "state": "PUNJAB",
+   "districts": [
+    "PATIALA"
+   ],
+   "aliases": [],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Mohali",
+   "state": "PUNJAB",
+   "districts": [
+    "S.A.S Nagar"
+   ],
+   "aliases": [
+    "SAS Nagar",
+    "Sahibzada Ajit Singh Nagar"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Bathinda",
+   "state": "PUNJAB",
+   "districts": [
+    "BATHINDA"
+   ],
+   "aliases": [
+    "Bhatinda"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Chandigarh",
+   "state": "CHANDIGARH",
+   "districts": [
+    "CHANDIGARH"
+   ],
+   "aliases": [
+    "Chd",
+    "चंडीगढ़"
+   ],
+   "tier": 2,
+   "infer_districts": [
+    "CHANDIGARH"
+   ]
+  },
+  {
+   "name": "Bhopal",
+   "state": "MADHYA PRADESH",
+   "districts": [
+    "BHOPAL"
+   ],
+   "aliases": [
+    "भोपाल"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Indore",
+   "state": "MADHYA PRADESH",
+   "districts": [
+    "INDORE"
+   ],
+   "aliases": [
+    "इंदौर"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Gwalior",
+   "state": "MADHYA PRADESH",
+   "districts": [
+    "GWALIOR"
+   ],
+   "aliases": [],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Jabalpur",
+   "state": "MADHYA PRADESH",
+   "districts": [
+    "JABALPUR"
+   ],
+   "aliases": [
+    "Jubbulpore"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Ujjain",
+   "state": "MADHYA PRADESH",
+   "districts": [
+    "UJJAIN"
+   ],
+   "aliases": [],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Raipur",
+   "state": "CHHATTISGARH",
+   "districts": [
+    "RAIPUR"
+   ],
+   "aliases": [],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Bhilai",
+   "state": "CHHATTISGARH",
+   "districts": [
+    "DURG"
+   ],
+   "aliases": [
+    "Durg-Bhilai"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Bilaspur (Chhattisgarh)",
+   "state": "CHHATTISGARH",
+   "districts": [
+    "BILASPUR"
+   ],
+   "aliases": [
+    "Bilaspur"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Patna",
+   "state": "BIHAR",
+   "districts": [
+    "PATNA"
+   ],
+   "aliases": [
+    "पटना"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Gaya",
+   "state": "BIHAR",
+   "districts": [
+    "GAYA"
+   ],
+   "aliases": [
+    "Bodh Gaya"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Bhagalpur",
+   "state": "BIHAR",
+   "districts": [
+    "BHAGALPUR"
+   ],
+   "aliases": [],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Muzaffarpur",
+   "state": "BIHAR",
+   "districts": [
+    "MUZAFFARPUR"
+   ],
+   "aliases": [],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Ranchi",
+   "state": "JHARKHAND",
+   "districts": [
+    "RANCHI"
+   ],
+   "aliases": [],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Jamshedpur",
+   "state": "JHARKHAND",
+   "districts": [
+    "EAST SINGHBUM"
+   ],
+   "aliases": [
+    "Tatanagar",
+    "Tata Nagar"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Dhanbad",
+   "state": "JHARKHAND",
+   "districts": [
+    "DHANBAD"
+   ],
+   "aliases": [],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Bokaro Steel City",
+   "state": "JHARKHAND",
+   "districts": [
+    "BOKARO"
+   ],
+   "aliases": [
+    "Bokaro"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Bhubaneswar",
+   "state": "ODISHA",
+   "districts": [
+    "KHORDHA"
+   ],
+   "aliases": [
+    "Bhubaneshwar",
+    "Bbsr",
+    "ଭୁବନେଶ୍ୱର"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Cuttack",
+   "state": "ODISHA",
+   "districts": [
+    "CUTTACK"
+   ],
+   "aliases": [],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Rourkela",
+   "state": "ODISHA",
+   "districts": [
+    "SUNDARGARH"
+   ],
+   "aliases": [
+    "Raurkela"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Puri",
+   "state": "ODISHA",
+   "districts": [
+    "PURI"
+   ],
+   "aliases": [],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Thiruvananthapuram",
+   "state": "KERALA",
+   "districts": [
+    "THIRUVANANTHAPURAM"
+   ],
+   "aliases": [
+    "Trivandrum",
+    "Tvm",
+    "തിരുവനന്തപുരം"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Kochi",
+   "state": "KERALA",
+   "districts": [
+    "ERNAKULAM"
+   ],
+   "aliases": [
+    "Cochin",
+    "Ernakulam",
+    "കൊച്ചി"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Kozhikode",
+   "state": "KERALA",
+   "districts": [
+    "KOZHIKODE"
+   ],
+   "aliases": [
+    "Calicut"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Thrissur",
+   "state": "KERALA",
+   "districts": [
+    "THRISSUR"
+   ],
+   "aliases": [
+    "Trichur"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Kollam",
+   "state": "KERALA",
+   "districts": [
+    "KOLLAM"
+   ],
+   "aliases": [
+    "Quilon"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Kannur",
+   "state": "KERALA",
+   "districts": [
+    "KANNUR"
+   ],
+   "aliases": [
+    "Cannanore"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Visakhapatnam",
+   "state": "ANDHRA PRADESH",
+   "districts": [
+    "VISAKHAPATANAM",
+    "Anakapalli"
+   ],
+   "aliases": [
+    "Vizag",
+    "Vishakhapatnam",
+    "Waltair",
+    "విశాఖపట్నం"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Vijayawada",
+   "state": "ANDHRA PRADESH",
+   "districts": [
+    "NTR",
+    "KRISHNA"
+   ],
+   "aliases": [
+    "Bezawada",
+    "Vijaywada"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Guntur",
+   "state": "ANDHRA PRADESH",
+   "districts": [
+    "GUNTUR"
+   ],
+   "aliases": [],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Tirupati",
+   "state": "ANDHRA PRADESH",
+   "districts": [
+    "Tirupati",
+    "CHITTOOR"
+   ],
+   "aliases": [
+    "Tirupathi"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Nellore",
+   "state": "ANDHRA PRADESH",
+   "districts": [
+    "SPSR NELLORE"
+   ],
+   "aliases": [],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Kurnool",
+   "state": "ANDHRA PRADESH",
+   "districts": [
+    "KURNOOL"
+   ],
+   "aliases": [],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Kakinada",
+   "state": "ANDHRA PRADESH",
+   "districts": [
+    "Kakinada",
+    "EAST GODAVARI"
+   ],
+   "aliases": [],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Guwahati",
+   "state": "ASSAM",
+   "districts": [
+    "KAMRUP METRO",
+    "KAMRUP"
+   ],
+   "aliases": [
+    "Gauhati",
+    "Guwahatti",
+    "গুৱাহাটী"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Dibrugarh",
+   "state": "ASSAM",
+   "districts": [
+    "DIBRUGARH"
+   ],
+   "aliases": [],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Silchar",
+   "state": "ASSAM",
+   "districts": [
+    "CACHAR"
+   ],
+   "aliases": [],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Dehradun",
+   "state": "UTTARAKHAND",
+   "districts": [
+    "DEHRADUN"
+   ],
+   "aliases": [
+    "Dehra Dun",
+    "Doon"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Haridwar",
+   "state": "UTTARAKHAND",
+   "districts": [
+    "HARIDWAR"
+   ],
+   "aliases": [
+    "Hardwar"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Rishikesh",
+   "state": "UTTARAKHAND",
+   "districts": [
+    "DEHRADUN",
+    "TEHRI GARHWAL",
+    "PAURI GARHWAL"
+   ],
+   "aliases": [],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Haldwani",
+   "state": "UTTARAKHAND",
+   "districts": [
+    "NAINITAL"
+   ],
+   "aliases": [],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Shimla",
+   "state": "HIMACHAL PRADESH",
+   "districts": [
+    "SHIMLA"
+   ],
+   "aliases": [
+    "Simla"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Dharamshala",
+   "state": "HIMACHAL PRADESH",
+   "districts": [
+    "KANGRA"
+   ],
+   "aliases": [
+    "Dharamsala",
+    "McLeod Ganj"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Manali",
+   "state": "HIMACHAL PRADESH",
+   "districts": [
+    "KULLU"
+   ],
+   "aliases": [],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Srinagar",
+   "state": "JAMMU AND KASHMIR",
+   "districts": [
+    "SRINAGAR"
+   ],
+   "aliases": [],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Jammu",
+   "state": "JAMMU AND KASHMIR",
+   "districts": [
+    "JAMMU"
+   ],
+   "aliases": [],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Leh",
+   "state": "LADAKH",
+   "districts": [
+    "LEH LADAKH"
+   ],
+   "aliases": [],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Panaji",
+   "state": "GOA",
+   "districts": [
+    "NORTH GOA"
+   ],
+   "aliases": [
+    "Panjim",
+    "Ponje"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Margao",
+   "state": "GOA",
+   "districts": [
+    "SOUTH GOA"
+   ],
+   "aliases": [
+    "Madgaon",
+    "Margaon"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Vasco da Gama",
+   "state": "GOA",
+   "districts": [
+    "SOUTH GOA"
+   ],
+   "aliases": [
+    "Vasco"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Shillong",
+   "state": "MEGHALAYA",
+   "districts": [
+    "EAST KHASI HILLS"
+   ],
+   "aliases": [],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Imphal",
+   "state": "MANIPUR",
+   "districts": [
+    "IMPHAL WEST",
+    "IMPHAL EAST"
+   ],
+   "aliases": [],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Agartala",
+   "state": "TRIPURA",
+   "districts": [
+    "West Tripura"
+   ],
+   "aliases": [],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Aizawl",
+   "state": "MIZORAM",
+   "districts": [
+    "AIZAWL"
+   ],
+   "aliases": [],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Kohima",
+   "state": "NAGALAND",
+   "districts": [
+    "KOHIMA"
+   ],
+   "aliases": [],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Dimapur",
+   "state": "NAGALAND",
+   "districts": [
+    "DIMAPUR"
+   ],
+   "aliases": [],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Itanagar",
+   "state": "ARUNACHAL PRADESH",
+   "districts": [
+    "PAPUM PARE"
+   ],
+   "aliases": [],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Gangtok",
+   "state": "SIKKIM",
+   "districts": [
+    "EAST DISTRICT"
+   ],
+   "aliases": [],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Puducherry",
+   "state": "PUDUCHERRY",
+   "districts": [
+    "PONDICHERRY"
+   ],
+   "aliases": [
+    "Pondicherry",
+    "Pondy"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Port Blair",
+   "state": "ANDAMAN AND NICOBAR ISLANDS",
+   "districts": [
+    "SOUTH ANDAMANS"
+   ],
+   "aliases": [
+    "Sri Vijaya Puram"
+   ],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Silvassa",
+   "state": "THE DADRA AND NAGAR HAVELI AND DAMAN AND DIU",
+   "districts": [
+    "DADRA AND NAGAR HAVELI"
+   ],
+   "aliases": [],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Daman",
+   "state": "THE DADRA AND NAGAR HAVELI AND DAMAN AND DIU",
+   "districts": [
+    "DAMAN"
+   ],
+   "aliases": [],
+   "tier": 2,
+   "infer_districts": []
+  },
+  {
+   "name": "Kavaratti",
+   "state": "LAKSHADWEEP",
+   "districts": [
+    "LAKSHADWEEP DISTRICT"
+   ],
+   "aliases": [],
+   "tier": 2,
+   "infer_districts": []
+  }
+ ]
+}

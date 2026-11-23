@@ -1,0 +1,89 @@
+{
+ "_note": "Curated by the project (MIT). Colloquial or alternate names for localities whose India Post office name differs. Only clear naming variants are listed (not neighbourhood->post office guesses). Each target must exist in the India Post data (checked by tests).",
+ "aliases": [
+  {
+   "alias": "Salt Lake",
+   "locality": "Bidhan Nagar",
+   "pincode": "700064",
+   "type": "alternate_name"
+  },
+  {
+   "alias": "Salt Lake City",
+   "locality": "Bidhan Nagar",
+   "pincode": "700064",
+   "type": "alternate_name"
+  },
+  {
+   "alias": "Bidhannagar",
+   "locality": "Bidhan Nagar",
+   "pincode": "700064",
+   "type": "alternate_name"
+  },
+  {
+   "alias": "T Nagar",
+   "locality": "Thygarayanagar",
+   "pincode": "600017",
+   "type": "abbreviation"
+  },
+  {
+   "alias": "Thyagaraya Nagar",
+   "locality": "Thygarayanagar",
+   "pincode": "600017",
+   "type": "alternate_name"
+  },
+  {
+   "alias": "Electronic City",
+   "locality": "Electronics City",
+   "pincode": "560100",
+   "type": "alternate_name"
+  },
+  {
+   "alias": "Malleshwaram",
+   "locality": "Malleswaram",
+   "pincode": "560003",
+   "type": "alternate_name"
+  },
+  {
+   "alias": "Marathahalli",
+   "locality": "Marathahalli Colony",
+   "pincode": "560037",
+   "type": "alternate_name"
+  },
+  {
+   "alias": "Frazer Town",
+   "locality": "Fraser Town",
+   "pincode": "560005",
+   "type": "misspelling"
+  },
+  {
+   "alias": "Varthur",
+   "locality": "Vartur",
+   "pincode": "560087",
+   "type": "alternate_name"
+  },
+  {
+   "alias": "Velachery",
+   "locality": "Velacheri",
+   "pincode": "600042",
+   "type": "alternate_name"
+  },
+  {
+   "alias": "Edappally",
+   "locality": "Edapally",
+   "pincode": "682024",
+   "type": "alternate_name"
+  },
+  {
+   "alias": "Powai",
+   "locality": "Powai Iit",
+   "pincode": "400076",
+   "type": "alternate_name"
+  },
+  {
+   "alias": "Parel",
+   "locality": "Parel",
+   "pincode": "400012",
+   "type": "alternate_name"
+  }
+ ]
+}

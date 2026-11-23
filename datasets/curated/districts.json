@@ -1,0 +1,698 @@
+{
+ "_note": "Curated by the project (MIT). Display names and former/alternate names for districts whose India Post spelling differs from common usage.",
+ "districts": {
+  "ANDHRA PRADESH|VISAKHAPATANAM": {
+   "name": "Visakhapatnam",
+   "aliases": [
+    "Vizag",
+    "Vishakhapatnam",
+    "Visakhapatanam"
+   ]
+  },
+  "ANDHRA PRADESH|Y.S.R.": {
+   "name": "YSR Kadapa",
+   "aliases": [
+    "Kadapa",
+    "Cuddapah",
+    "YSR"
+   ]
+  },
+  "ANDHRA PRADESH|SPSR NELLORE": {
+   "name": "Sri Potti Sriramulu Nellore",
+   "aliases": [
+    "Nellore",
+    "SPSR Nellore"
+   ]
+  },
+  "ANDHRA PRADESH|ANANTAPUR": {
+   "name": "Anantapur",
+   "aliases": [
+    "Anantapuramu"
+   ]
+  },
+  "ANDHRA PRADESH|NTR": {
+   "name": "NTR",
+   "aliases": [
+    "NTR District"
+   ]
+  },
+  "WEST BENGAL|24 PARAGANAS NORTH": {
+   "name": "North 24 Parganas",
+   "aliases": [
+    "24 Parganas North",
+    "Uttar 24 Pargana"
+   ]
+  },
+  "WEST BENGAL|24 PARAGANAS SOUTH": {
+   "name": "South 24 Parganas",
+   "aliases": [
+    "24 Parganas South",
+    "Dakshin 24 Pargana"
+   ]
+  },
+  "WEST BENGAL|DINAJPUR DAKSHIN": {
+   "name": "Dakshin Dinajpur",
+   "aliases": [
+    "South Dinajpur"
+   ]
+  },
+  "WEST BENGAL|DINAJPUR UTTAR": {
+   "name": "Uttar Dinajpur",
+   "aliases": [
+    "North Dinajpur"
+   ]
+  },
+  "WEST BENGAL|MEDINIPUR EAST": {
+   "name": "Purba Medinipur",
+   "aliases": [
+    "East Midnapore",
+    "East Medinipur"
+   ]
+  },
+  "WEST BENGAL|MEDINIPUR WEST": {
+   "name": "Paschim Medinipur",
+   "aliases": [
+    "West Midnapore",
+    "West Medinipur"
+   ]
+  },
+  "WEST BENGAL|COOCHBEHAR": {
+   "name": "Cooch Behar",
+   "aliases": [
+    "Koch Bihar"
+   ]
+  },
+  "WEST BENGAL|MALDAH": {
+   "name": "Malda",
+   "aliases": [
+    "Maldah"
+   ]
+  },
+  "WEST BENGAL|HOOGHLY": {
+   "name": "Hooghly",
+   "aliases": [
+    "Hugli"
+   ]
+  },
+  "KARNATAKA|BENGALURU URBAN": {
+   "name": "Bengaluru Urban",
+   "aliases": [
+    "Bangalore Urban",
+    "Bangalore"
+   ]
+  },
+  "KARNATAKA|BENGALURU RURAL": {
+   "name": "Bengaluru Rural",
+   "aliases": [
+    "Bangalore Rural"
+   ]
+  },
+  "KARNATAKA|MYSURU": {
+   "name": "Mysuru",
+   "aliases": [
+    "Mysore"
+   ]
+  },
+  "KARNATAKA|BELAGAVI": {
+   "name": "Belagavi",
+   "aliases": [
+    "Belgaum"
+   ]
+  },
+  "KARNATAKA|KALABURAGI": {
+   "name": "Kalaburagi",
+   "aliases": [
+    "Gulbarga"
+   ]
+  },
+  "KARNATAKA|BALLARI": {
+   "name": "Ballari",
+   "aliases": [
+    "Bellary"
+   ]
+  },
+  "KARNATAKA|SHIVAMOGGA": {
+   "name": "Shivamogga",
+   "aliases": [
+    "Shimoga"
+   ]
+  },
+  "KARNATAKA|TUMAKURU": {
+   "name": "Tumakuru",
+   "aliases": [
+    "Tumkur"
+   ]
+  },
+  "KARNATAKA|VIJAYAPURA": {
+   "name": "Vijayapura",
+   "aliases": [
+    "Bijapur"
+   ]
+  },
+  "KARNATAKA|CHIKKAMAGALURU": {
+   "name": "Chikkamagaluru",
+   "aliases": [
+    "Chikmagalur"
+   ]
+  },
+  "KARNATAKA|DAKSHINA KANNADA": {
+   "name": "Dakshina Kannada",
+   "aliases": [
+    "South Canara",
+    "Mangalore District"
+   ]
+  },
+  "KARNATAKA|UTTARA KANNADA": {
+   "name": "Uttara Kannada",
+   "aliases": [
+    "North Canara",
+    "Karwar District"
+   ]
+  },
+  "KARNATAKA|VIJAYNAGAR": {
+   "name": "Vijayanagara",
+   "aliases": [
+    "Vijaynagar"
+   ]
+  },
+  "HARYANA|GURUGRAM": {
+   "name": "Gurugram",
+   "aliases": [
+    "Gurgaon"
+   ]
+  },
+  "HARYANA|NUH": {
+   "name": "Nuh",
+   "aliases": [
+    "Mewat"
+   ]
+  },
+  "UTTAR PRADESH|PRAYAGRAJ": {
+   "name": "Prayagraj",
+   "aliases": [
+    "Allahabad"
+   ]
+  },
+  "UTTAR PRADESH|AYODHYA": {
+   "name": "Ayodhya",
+   "aliases": [
+    "Faizabad"
+   ]
+  },
+  "UTTAR PRADESH|GAUTAM BUDDHA NAGAR": {
+   "name": "Gautam Buddha Nagar",
+   "aliases": [
+    "GB Nagar",
+    "Noida District"
+   ]
+  },
+  "UTTAR PRADESH|KHERI": {
+   "name": "Lakhimpur Kheri",
+   "aliases": [
+    "Kheri"
+   ]
+  },
+  "UTTAR PRADESH|KUSHI NAGAR": {
+   "name": "Kushinagar",
+   "aliases": [
+    "Kushi Nagar"
+   ]
+  },
+  "UTTAR PRADESH|SANT KABEER NAGAR": {
+   "name": "Sant Kabir Nagar",
+   "aliases": []
+  },
+  "UTTAR PRADESH|BHADOHI": {
+   "name": "Bhadohi",
+   "aliases": [
+    "Sant Ravidas Nagar"
+   ]
+  },
+  "GUJARAT|AHMADABAD": {
+   "name": "Ahmedabad",
+   "aliases": [
+    "Ahmadabad",
+    "Amdavad"
+   ]
+  },
+  "GUJARAT|DOHAD": {
+   "name": "Dahod",
+   "aliases": [
+    "Dohad"
+   ]
+  },
+  "GUJARAT|MAHESANA": {
+   "name": "Mehsana",
+   "aliases": [
+    "Mahesana"
+   ]
+  },
+  "GUJARAT|KACHCHH": {
+   "name": "Kutch",
+   "aliases": [
+    "Kachchh"
+   ]
+  },
+  "GUJARAT|BANAS KANTHA": {
+   "name": "Banaskantha",
+   "aliases": [
+    "Banas Kantha"
+   ]
+  },
+  "GUJARAT|SABAR KANTHA": {
+   "name": "Sabarkantha",
+   "aliases": [
+    "Sabar Kantha"
+   ]
+  },
+  "GUJARAT|PANCH MAHALS": {
+   "name": "Panchmahal",
+   "aliases": [
+    "Panch Mahals"
+   ]
+  },
+  "MAHARASHTRA|AURANGABAD": {
+   "name": "Aurangabad",
+   "aliases": [
+    "Chhatrapati Sambhajinagar",
+    "Sambhajinagar"
+   ]
+  },
+  "MAHARASHTRA|OSMANABAD": {
+   "name": "Osmanabad",
+   "aliases": [
+    "Dharashiv"
+   ]
+  },
+  "MAHARASHTRA|AHMEDNAGAR": {
+   "name": "Ahmednagar",
+   "aliases": [
+    "Ahilyanagar"
+   ]
+  },
+  "MAHARASHTRA|BEED": {
+   "name": "Beed",
+   "aliases": [
+    "Bid"
+   ]
+  },
+  "MAHARASHTRA|GONDIA": {
+   "name": "Gondia",
+   "aliases": [
+    "Gondiya"
+   ]
+  },
+  "MAHARASHTRA|MUMBAI": {
+   "name": "Mumbai City",
+   "aliases": [
+    "Mumbai",
+    "Bombay"
+   ]
+  },
+  "MAHARASHTRA|MUMBAI SUBURBAN": {
+   "name": "Mumbai Suburban",
+   "aliases": [
+    "Bombay Suburban"
+   ]
+  },
+  "TAMIL NADU|TUTICORIN": {
+   "name": "Thoothukudi",
+   "aliases": [
+    "Tuticorin"
+   ]
+  },
+  "TAMIL NADU|THE NILGIRIS": {
+   "name": "The Nilgiris",
+   "aliases": [
+    "Nilgiris",
+    "Ooty District"
+   ]
+  },
+  "TAMIL NADU|KANNIYAKUMARI": {
+   "name": "Kanniyakumari",
+   "aliases": [
+    "Kanyakumari"
+   ]
+  },
+  "TAMIL NADU|TIRUCHIRAPPALLI": {
+   "name": "Tiruchirappalli",
+   "aliases": [
+    "Trichy",
+    "Tiruchi"
+   ]
+  },
+  "TAMIL NADU|VILLUPURAM": {
+   "name": "Viluppuram",
+   "aliases": [
+    "Villupuram"
+   ]
+  },
+  "TAMIL NADU|THIRUVALLUR": {
+   "name": "Tiruvallur",
+   "aliases": [
+    "Thiruvallur"
+   ]
+  },
+  "TAMIL NADU|Tirupathur": {
+   "name": "Tirupattur",
+   "aliases": [
+    "Tirupathur"
+   ]
+  },
+  "KERALA|THIRUVANANTHAPURAM": {
+   "name": "Thiruvananthapuram",
+   "aliases": [
+    "Trivandrum"
+   ]
+  },
+  "KERALA|ERNAKULAM": {
+   "name": "Ernakulam",
+   "aliases": [
+    "Kochi District",
+    "Cochin District"
+   ]
+  },
+  "KERALA|KOZHIKODE": {
+   "name": "Kozhikode",
+   "aliases": [
+    "Calicut"
+   ]
+  },
+  "KERALA|THRISSUR": {
+   "name": "Thrissur",
+   "aliases": [
+    "Trichur"
+   ]
+  },
+  "KERALA|KOLLAM": {
+   "name": "Kollam",
+   "aliases": [
+    "Quilon"
+   ]
+  },
+  "KERALA|ALAPPUZHA": {
+   "name": "Alappuzha",
+   "aliases": [
+    "Alleppey"
+   ]
+  },
+  "KERALA|KANNUR": {
+   "name": "Kannur",
+   "aliases": [
+    "Cannanore"
+   ]
+  },
+  "KERALA|PALAKKAD": {
+   "name": "Palakkad",
+   "aliases": [
+    "Palghat"
+   ]
+  },
+  "TELANGANA|RANGA REDDY": {
+   "name": "Ranga Reddy",
+   "aliases": [
+    "Rangareddy",
+    "RR District"
+   ]
+  },
+  "TELANGANA|MEDCHAL MALKAJGIRI": {
+   "name": "Medchal-Malkajgiri",
+   "aliases": [
+    "Medchal",
+    "Malkajgiri"
+   ]
+  },
+  "TELANGANA|JANGOAN": {
+   "name": "Jangaon",
+   "aliases": [
+    "Jangoan",
+    "Jangaon"
+   ]
+  },
+  "ODISHA|KHORDHA": {
+   "name": "Khordha",
+   "aliases": [
+    "Khurda",
+    "Khurdha"
+   ]
+  },
+  "ODISHA|BALESHWAR": {
+   "name": "Balasore",
+   "aliases": [
+    "Baleshwar"
+   ]
+  },
+  "ODISHA|KENDUJHAR": {
+   "name": "Keonjhar",
+   "aliases": [
+    "Kendujhar"
+   ]
+  },
+  "ODISHA|ANUGUL": {
+   "name": "Angul",
+   "aliases": [
+    "Anugul"
+   ]
+  },
+  "ODISHA|SONEPUR": {
+   "name": "Subarnapur",
+   "aliases": [
+    "Sonepur"
+   ]
+  },
+  "ODISHA|JAJAPUR": {
+   "name": "Jajpur",
+   "aliases": [
+    "Jajapur"
+   ]
+  },
+  "JHARKHAND|EAST SINGHBUM": {
+   "name": "East Singhbhum",
+   "aliases": [
+    "Purbi Singhbhum",
+    "Jamshedpur District"
+   ]
+  },
+  "JHARKHAND|WEST SINGHBHUM": {
+   "name": "West Singhbhum",
+   "aliases": [
+    "Pashchimi Singhbhum",
+    "Chaibasa"
+   ]
+  },
+  "BIHAR|PURBI CHAMPARAN": {
+   "name": "Purvi Champaran",
+   "aliases": [
+    "East Champaran",
+    "Motihari"
+   ]
+  },
+  "BIHAR|PASHCHIM CHAMPARAN": {
+   "name": "Pashchim Champaran",
+   "aliases": [
+    "West Champaran",
+    "Bettiah"
+   ]
+  },
+  "BIHAR|KAIMUR (BHABUA)": {
+   "name": "Kaimur",
+   "aliases": [
+    "Bhabua",
+    "Kaimur (Bhabua)"
+   ]
+  },
+  "MADHYA PRADESH|HOSHANGABAD": {
+   "name": "Narmadapuram",
+   "aliases": [
+    "Hoshangabad"
+   ]
+  },
+  "MADHYA PRADESH|EAST NIMAR": {
+   "name": "Khandwa",
+   "aliases": [
+    "East Nimar"
+   ]
+  },
+  "MADHYA PRADESH|KHARGONE": {
+   "name": "Khargone",
+   "aliases": [
+    "West Nimar"
+   ]
+  },
+  "RAJASTHAN|GANGANAGAR": {
+   "name": "Sri Ganganagar",
+   "aliases": [
+    "Ganganagar"
+   ]
+  },
+  "RAJASTHAN|CHITTORGARH": {
+   "name": "Chittorgarh",
+   "aliases": [
+    "Chittaurgarh"
+   ]
+  },
+  "UTTARAKHAND|RUDRA PRAYAG": {
+   "name": "Rudraprayag",
+   "aliases": [
+    "Rudra Prayag"
+   ]
+  },
+  "UTTARAKHAND|UTTAR KASHI": {
+   "name": "Uttarkashi",
+   "aliases": [
+    "Uttar Kashi"
+   ]
+  },
+  "UTTARAKHAND|UDAM SINGH NAGAR": {
+   "name": "Udham Singh Nagar",
+   "aliases": [
+    "Udam Singh Nagar"
+   ]
+  },
+  "HIMACHAL PRADESH|LAHUL AND SPITI": {
+   "name": "Lahaul and Spiti",
+   "aliases": [
+    "Lahul and Spiti"
+   ]
+  },
+  "PUNJAB|S.A.S Nagar": {
+   "name": "SAS Nagar",
+   "aliases": [
+    "Mohali",
+    "Sahibzada Ajit Singh Nagar"
+   ]
+  },
+  "PUNJAB|Shahid Bhagat Singh Nagar": {
+   "name": "Shaheed Bhagat Singh Nagar",
+   "aliases": [
+    "Nawanshahr",
+    "SBS Nagar"
+   ]
+  },
+  "PUNJAB|FIROZEPUR": {
+   "name": "Firozpur",
+   "aliases": [
+    "Ferozepur",
+    "Firozepur"
+   ]
+  },
+  "PUNJAB|RUPNAGAR": {
+   "name": "Rupnagar",
+   "aliases": [
+    "Ropar"
+   ]
+  },
+  "ASSAM|MARIGAON": {
+   "name": "Morigaon",
+   "aliases": [
+    "Marigaon"
+   ]
+  },
+  "ASSAM|SIVASAGAR": {
+   "name": "Sivasagar",
+   "aliases": [
+    "Sibsagar"
+   ]
+  },
+  "SIKKIM|EAST DISTRICT": {
+   "name": "Gangtok",
+   "aliases": [
+    "East Sikkim",
+    "East District"
+   ]
+  },
+  "SIKKIM|NORTH DISTRICT": {
+   "name": "Mangan",
+   "aliases": [
+    "North Sikkim",
+    "North District"
+   ]
+  },
+  "SIKKIM|SOUTH DISTRICT": {
+   "name": "Namchi",
+   "aliases": [
+    "South Sikkim",
+    "South District"
+   ]
+  },
+  "SIKKIM|WEST DISTRICT": {
+   "name": "Gyalshing",
+   "aliases": [
+    "West Sikkim",
+    "West District"
+   ]
+  },
+  "PUDUCHERRY|PONDICHERRY": {
+   "name": "Puducherry",
+   "aliases": [
+    "Pondicherry"
+   ]
+  },
+  "LADAKH|LEH LADAKH": {
+   "name": "Leh",
+   "aliases": [
+    "Leh Ladakh"
+   ]
+  },
+  "LAKSHADWEEP|LAKSHADWEEP DISTRICT": {
+   "name": "Lakshadweep",
+   "aliases": []
+  },
+  "ANDAMAN AND NICOBAR ISLANDS|SOUTH ANDAMANS": {
+   "name": "South Andaman",
+   "aliases": [
+    "South Andamans"
+   ]
+  },
+  "ANDAMAN AND NICOBAR ISLANDS|NICOBARS": {
+   "name": "Nicobar",
+   "aliases": [
+    "Nicobars"
+   ]
+  },
+  "DELHI|CENTRAL": {
+   "name": "Central Delhi",
+   "aliases": []
+  },
+  "DELHI|EAST": {
+   "name": "East Delhi",
+   "aliases": []
+  },
+  "DELHI|NORTH": {
+   "name": "North Delhi",
+   "aliases": []
+  },
+  "DELHI|NORTH EAST": {
+   "name": "North East Delhi",
+   "aliases": []
+  },
+  "DELHI|NORTH WEST": {
+   "name": "North West Delhi",
+   "aliases": []
+  },
+  "DELHI|SOUTH": {
+   "name": "South Delhi",
+   "aliases": []
+  },
+  "DELHI|SOUTH WEST": {
+   "name": "South West Delhi",
+   "aliases": []
+  },
+  "DELHI|South East": {
+   "name": "South East Delhi",
+   "aliases": []
+  },
+  "DELHI|WEST": {
+   "name": "West Delhi",
+   "aliases": []
+  },
+  "DELHI|SHAHDARA": {
+   "name": "Shahdara",
+   "aliases": []
+  },
+  "DELHI|NEW DELHI": {
+   "name": "New Delhi",
+   "aliases": []
+  }
+ }
+}
