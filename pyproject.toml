@@ -56,6 +56,7 @@ addopts = "-q"
 markers = ["slow: tests that load the full India-wide gazetteer"]
 
 [tool.mypy]
+plugins = ["pydantic.mypy"]
 python_version = "3.12"
 ignore_missing_imports = true
 check_untyped_defs = false

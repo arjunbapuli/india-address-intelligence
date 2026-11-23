@@ -1,0 +1,34 @@
+# Local stack: Postgres + API. `docker compose up`, then open http://localhost:8000/docs
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: address
+      POSTGRES_PASSWORD: address
+      POSTGRES_DB: address_intel
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U address -d address_intel"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  api:
+    build: .
+    depends_on:
+      db:
+        condition: service_healthy
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      DATABASE_URL: postgresql://address:address@db:5432/address_intel
+      ENVIRONMENT: ${ENVIRONMENT:-development}
+      # Local default key; override in .env. Leave API_KEYS empty to disable auth in development.
+      API_KEYS: ${API_KEYS:-local-dev-key}
+    ports:
+      - "8000:8000"
+
+volumes:
+  pgdata:

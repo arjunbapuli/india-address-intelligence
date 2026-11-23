@@ -29,13 +29,16 @@ def test_ingestion_counts_and_provenance(seeded_db):
 
 
 def test_curated_cities_reference_real_districts(gazetteer):
-    data = json.loads((CURATED / "cities.json").read_text())["cities"]
-    for c in data:
-        for d in c["districts"]:
-            # every district a city points to must exist in the India Post data (after display-name mapping)
-            matches = [p for p in gazetteer.places.values() if p.type == "district"
-                       and (p.state or "").upper().replace("THE ", "") in c["state"].replace("THE ", "")]
-            assert matches, c["name"]
+    """Every district a curated city points to must exist in the India Post data."""
+    from app.geography.ingestion.curated import load_curated
+
+    cur = load_curated(CURATED)
+    known = {(p.state, p.name) for p in gazetteer.places.values() if p.type == "district"}
+    for c in cur.cities:
+        state = cur.state_names[c["state"]]
+        for d in c["districts"] + c.get("infer_districts", []):
+            display = cur.district_names.get((c["state"], d), d.title())
+            assert (state, display) in known or any(s == state and n.lower() == d.lower() for s, n in known), (c["name"], d)
     assert all(info.districts for info in gazetteer.cities.values())
 
 

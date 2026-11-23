@@ -221,19 +221,21 @@ class Gazetteer:
             cols = (GeoEntity.id, GeoEntity.entity_type, GeoEntity.name, GeoEntity.state_name,
                     GeoEntity.district_name, GeoEntity.city_name, GeoEntity.pincode, GeoEntity.latitude,
                     GeoEntity.longitude, GeoEntity.source_id, GeoEntity.source_confidence, GeoEntity.attributes)
-            ents = [
-                {"id": r[0], "entity_type": r[1], "name": r[2], "state_name": r[3], "district_name": r[4],
-                 "city_name": r[5], "pincode": r[6], "latitude": r[7], "longitude": r[8],
-                 "source_key": src_key.get(r[9]), "source_confidence": r[10], "attributes": r[11]}
-                for r in s.execute(select(*cols).where(GeoEntity.is_active.is_(True))).all()
-            ]
             als = [
                 {"entity_id": r[0], "alias": r[1], "alias_type": r[2], "confidence": r[3]}
                 for r in s.execute(select(GeoAlias.entity_id, GeoAlias.alias, GeoAlias.alias_type,
                                           GeoAlias.confidence)).all()
             ]
-        g = cls.from_records(ents, als, source_meta)
+            ents = (
+                {"id": r[0], "entity_type": r[1], "name": r[2], "state_name": r[3], "district_name": r[4],
+                 "city_name": r[5], "pincode": r[6], "latitude": r[7], "longitude": r[8],
+                 "source_key": src_key.get(r[9]), "source_confidence": r[10], "attributes": r[11]}
+                for r in s.execute(select(*cols).where(GeoEntity.is_active.is_(True))
+                                   .execution_options(yield_per=5000))
+            )
+            g = cls.from_records(ents, als, source_meta)
         g.stats.load_seconds = round(time.perf_counter() - t0, 2)
+        _release_memory()
         log_event(log, "gazetteer_loaded", entities=len(g.places), aliases=len(als), seconds=g.stats.load_seconds)
         return g
 
@@ -319,6 +321,19 @@ class Gazetteer:
             "localities_with_coordinates": self.stats.localities_with_coordinates,
             "sources": self.stats.sources,
         }
+
+
+def _release_memory() -> None:
+    """Return freed heap pages to the OS after the one-off load (glibc only; no-op elsewhere)."""
+    import gc
+
+    gc.collect()
+    try:
+        import ctypes
+
+        ctypes.CDLL("libc.so.6").malloc_trim(0)
+    except Exception:  # pragma: no cover - non-glibc platforms
+        pass
 
 
 _gazetteer: Gazetteer | None = None

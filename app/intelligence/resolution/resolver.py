@@ -437,11 +437,11 @@ class AddressResolver:
             if hasattr(comp, k) and v:
                 setattr(comp, k, v)
                 ver[k] = "unverified"
-        for c in corrections:
-            if c.type == "transcription_fix":
+        for corr in corrections:
+            if corr.type == "transcription_fix":
                 for k in ("sector", "phase", "block", "stage", "floor", "lane", "pocket", "house_number"):
                     v = getattr(comp, k)
-                    if v and c.corrected.split()[-1] in v.split():
+                    if v and corr.corrected.split()[-1] in v.split():
                         ver[k] = "corrected"
 
         level = "none"
@@ -686,7 +686,7 @@ class AddressResolver:
             if lm.generic:
                 warnings.append(f"landmark '{lm.text}' is generic and cannot be used to locate the address")
 
-        conf_in.corrections_transcription = sum(1 for c in corrections if c.type == "transcription_fix")
+        conf_in.corrections_transcription = sum(1 for corr in corrections if corr.type == "transcription_fix")
         conf_in.corrections_spelling = n_spelling
         conf_in.min_spelling_similarity = min_sim
         conf_in.uncertainty_markers = len(nz.uncertainty_markers)
@@ -712,7 +712,7 @@ class AddressResolver:
 
         needs_confirmation = (
             cres.status not in ("exact_match", "resolved")
-            or any(c.type in ("transcription_fix", "spelling_correction") for c in corrections)
+            or any(corr.type in ("transcription_fix", "spelling_correction") for corr in corrections)
             or bool(nz.uncertainty_markers)
             or any(v == "conflict" for v in ver.values())
             or from_landmark
@@ -762,10 +762,10 @@ class AddressResolver:
         for i in range(len(tokens) - n):
             if tokens[i:i + n] == words:
                 nxt = tokens[i + n]
-                if nxt in ("east", "west", "north", "south") or re.fullmatch(r"\d{1,2}|i{1,3}|iv", nxt):
-                    if nxt in unparsed:
-                        unparsed.remove(nxt)
-                        return nxt.title() if nxt.isalpha() and nxt not in ("i", "ii", "iii", "iv") else nxt.upper()
+                is_suffix = nxt in ("east", "west", "north", "south") or re.fullmatch(r"\d{1,2}|i{1,3}|iv", nxt)
+                if is_suffix and nxt in unparsed:
+                    unparsed.remove(nxt)
+                    return nxt.title() if nxt.isalpha() and nxt not in ("i", "ii", "iii", "iv") else nxt.upper()
         return None
 
     def _admin_places_for(self, m: Mention) -> list[tuple[Place, Candidate]]:
@@ -821,10 +821,10 @@ class AddressResolver:
         elif status == "unresolved":
             qs.append(M.ClarificationQuestion(field="locality",
                                               question="Could you tell me the area or locality name and the city?"))
-        for c in corrections:
-            if c.type == "spelling_correction" and c.stage == "matching":
-                qs.append(M.ClarificationQuestion(field="locality", question=f"Did you mean {c.corrected}?",
-                                                  options=[c.corrected]))
+        for corr in corrections:
+            if corr.type == "spelling_correction" and corr.stage == "matching":
+                qs.append(M.ClarificationQuestion(field="locality", question=f"Did you mean {corr.corrected}?",
+                                                  options=[corr.corrected]))
                 break
         if "house_number" in missing:
             qs.append(M.ClarificationQuestion(field="house_number",
