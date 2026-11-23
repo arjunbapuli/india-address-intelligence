@@ -18,6 +18,7 @@ from dataclasses import dataclass, field
 from rapidfuzz import fuzz
 
 from app.geography.gazetteer import Gazetteer
+from app.intelligence.normalization.vocabulary import COMMON_WORDS
 from app.intelligence.phonetics.indic import phonetic_similarity
 from app.intelligence.text import compact_key, is_generic_only
 
@@ -57,29 +58,39 @@ def _hits_to_candidates(g: Gazetteer, text: str, hits) -> list[Candidate]:
 
 
 def lookup_window(g: Gazetteer, words: list[str], allow_fuzzy: bool, scope_keys: dict[str, list[int]] | None,
-                  fuzzy_cutoff_global: float = 88.0, fuzzy_cutoff_scoped: float = 80.0) -> tuple[str, list[Candidate]]:
+                  fuzzy_cutoff_global: float = 88.0, fuzzy_cutoff_scoped: float = 80.0, skip_exact: bool = False
+                  ) -> tuple[str, list[Candidate]]:
     """Look up one n-gram. Returns (match_type, candidates)."""
     text = " ".join(words)
     key = compact_key(text)
     if not key or is_generic_only(words):
         return "none", []
-    hits = g.lookup_exact(text)
+    hits = [] if skip_exact else g.lookup_exact(text)
     if hits:
         return "exact", _hits_to_candidates(g, text, hits)
-    if len(key) < 4:
+    if len(key) < 4 or all(w in COMMON_WORDS for w in words):
         return "none", []
-    # Phonetic
-    ph = g.lookup_phonetic(text)
+    # Phonetic. Unscoped (India-wide) phonetic matches need a longer key and higher string
+    # similarity: short skeletons collide with thousands of village names.
+    scoped = scope_keys is not None
+    scope_ids = {pid for ids in scope_keys.values() for pid in ids} if scope_keys else set()
+    min_len, min_sim = (4, 0.6) if scoped else (5, 0.78)
+    ph = g.lookup_phonetic_keys(text) if len(key) >= min_len else []
     if ph:
-        cands = []
-        for pid in dict.fromkeys(ph):
+        best: dict[int, Candidate] = {}
+        for pid, mkey in ph:
             p = g.places[pid]
-            sim = max(fuzz.ratio(key, compact_key(p.name)) / 100.0, 0.0)
-            psim = phonetic_similarity(text, p.name)
-            if sim >= 0.6 or psim >= 0.95:
-                cands.append(Candidate(pid, "phonetic", round(0.5 * sim + 0.5 * psim, 3), matched_key=compact_key(p.name)))
-        if cands:
-            return "phonetic", cands
+            if scoped and pid not in scope_ids and p.type not in ("city", "district", "state"):
+                continue
+            sim = fuzz.ratio(key, mkey) / 100.0
+            if sim < min_sim:
+                continue
+            psim = phonetic_similarity(text, mkey)
+            c = Candidate(pid, "phonetic", round(0.5 * sim + 0.5 * psim, 3), matched_key=mkey)
+            if pid not in best or c.similarity > best[pid].similarity:
+                best[pid] = c
+        if best:
+            return "phonetic", list(best.values())
     if not allow_fuzzy:
         return "none", []
     cands = []

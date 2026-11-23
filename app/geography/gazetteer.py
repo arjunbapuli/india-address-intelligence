@@ -89,7 +89,7 @@ class Gazetteer:
     def __init__(self) -> None:
         self.places: dict[int, Place] = {}
         self.exact: dict[str, list[KeyHit]] = defaultdict(list)
-        self.phonetic: dict[str, list[int]] = defaultdict(list)
+        self.phonetic: dict[str, list[tuple[int, str]]] = defaultdict(list)  # key -> [(place_id, matched name key)]
         self.key_list: list[str] = []
         self._key_set: set[str] = set()
         self.sorted_keys: list[str] = []
@@ -146,8 +146,9 @@ class Gazetteer:
             self.key_list.append(key)
         if len(key) >= 3 and not key.isdigit():
             pk = indic_phonetic_key(text)
-            if pk and hit.place_id not in self.phonetic[pk][-3:]:
-                self.phonetic[pk].append(hit.place_id)
+            entry = (hit.place_id, key)
+            if pk and entry not in self.phonetic[pk][-3:]:
+                self.phonetic[pk].append(entry)
 
     def finalize(self) -> None:
         self.sorted_keys = sorted(self._key_set)
@@ -236,6 +237,10 @@ class Gazetteer:
         return list(self.exact.get(compact_key(text), ()))
 
     def lookup_phonetic(self, text: str) -> list[int]:
+        return [pid for pid, _ in self.lookup_phonetic_keys(text)]
+
+    def lookup_phonetic_keys(self, text: str) -> list[tuple[int, str]]:
+        """[(place_id, compact key of the name/alias that produced the phonetic match)]"""
         pk = indic_phonetic_key(text)
         return list(self.phonetic.get(pk, ())) if pk else []
 

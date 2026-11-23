@@ -25,12 +25,13 @@ import time
 from dataclasses import dataclass, field
 
 from app.core.config import Settings, get_settings
-from app.geography.gazetteer import Gazetteer, Place
+from app.geography.gazetteer import Gazetteer, Place, haversine_km
 from app.intelligence.confidence.engine import ConfidenceInputs, compute_confidence
 from app.intelligence.extraction.rules import Extraction, LandmarkMention, Span, extract, landmark_from_span
 from app.intelligence.matching.matcher import ADMIN, LOCAL, Candidate, Mention, find_mentions, lookup_window
 from app.intelligence.normalization.normalizer import Correction as NCorrection
 from app.intelligence.normalization.normalizer import NormalizedInput, normalize
+from app.intelligence.normalization.vocabulary import COMMON_WORDS
 from app.intelligence.ranking.ranker import (
     AdminContext,
     ScoredCandidate,
@@ -98,6 +99,16 @@ class AddressResolver:
                 ctx, admin_mentions = self._admin_context(mentions, ex, hints, warnings)
 
         locality_mentions = [m for m in mentions if not self._is_admin_mention(m)]
+        # An exact name match elsewhere in India must not hide an approximate match inside the city
+        # the user named ("indra nagar bangalore": exact 'Indra Nagar' exists in other states).
+        if scope:
+            scope_ids = {pid for ids in scope.values() for pid in ids}
+            for m in locality_mentions:
+                if m.start < 0 or any(c.place_id in scope_ids for c in m.candidates):
+                    continue
+                words = nz.tokens[m.start:m.end]
+                _, extra = lookup_window(g, words, allow_fuzzy=True, scope_keys=scope, skip_exact=True)
+                m.candidates.extend(c for c in extra if c.place_id in scope_ids)
 
         # Landmark text as a last resort locality source ("near Koramangala")
         from_landmark = False
@@ -192,6 +203,8 @@ class AddressResolver:
         local_exact = [c for c in m.candidates if g.places[c.place_id].type in LOCAL and c.match_type == "exact"]
         if any(c.match_type == "exact" for c in admin):
             return True
+        if any(c.match_type == "alias" and g.places[c.place_id].type == "city" for c in admin):
+            return True  # curated city names (Bombay, Gurgaon, Calcutta) beat same-named villages
         if any(c.match_type == "alias" for c in admin):
             # 'Vijay Nagar' is an alias of a district but the exact name of many localities: prefer localities
             return not local_exact
@@ -305,19 +318,32 @@ class AddressResolver:
                 mentions.append(Mention(-1, -1, f"[llm] {val}", cands))
         return mentions, True
 
-    def _landmark_support(self, p: Place, landmarks: list[LandmarkMention]) -> float | None:
-        """1.0 if a named landmark the user mentioned exists within 3 km of the candidate (needs OSM data)."""
-        if not landmarks or p.lat is None or p.lon is None or not self.g.stats.entities.get("landmark"):
+    def _match_landmark(self, p: Place, landmarks: list[LandmarkMention], radius_km: float = 3.0
+                        ) -> tuple[Place, LandmarkMention, str, float] | None:
+        """Find a known landmark (OSM data) near candidate `p` matching what the user said.
+        Exact name/alias > phonetic > fuzzy; only landmarks within `radius_km` count."""
+        g = self.g
+        if not landmarks or p.lat is None or p.lon is None or not g.stats.entities.get("landmark"):
             return None
+        best = None
         for lm in landmarks:
-            if lm.generic:
+            if lm.generic or not lm.text:
                 continue
-            key = compact_key(lm.text)
-            for other, _d in self.g.nearby(p.lat, p.lon, 3.0, types=("landmark",)):
-                ok = compact_key(other.name)
-                if ok == key or (len(key) >= 4 and (key in ok or ok in key)):
-                    return 1.0
-        return None
+            words = lm.text.lower().split()
+            mt, cands = lookup_window(g, words, allow_fuzzy=True, scope_keys=None, fuzzy_cutoff_global=85.0)
+            for c in cands:
+                lp = g.places[c.place_id]
+                if lp.type != "landmark" or lp.lat is None or lp.lon is None:
+                    continue
+                if haversine_km(p.lat, p.lon, lp.lat, lp.lon) > radius_km:
+                    continue
+                if best is None or c.similarity > best[3]:
+                    best = (lp, lm, c.match_type, c.similarity)
+        return best
+
+    def _landmark_support(self, p: Place, landmarks: list[LandmarkMention]) -> float | None:
+        """1.0 if a named landmark the user mentioned exists near the candidate (needs OSM landmark data)."""
+        return 1.0 if self._match_landmark(p, landmarks) else None
 
     def _score_localities(self, mentions: list[Mention], ctx: AdminContext, landmarks: list[LandmarkMention],
                           from_landmark: bool) -> list[ScoredCandidate]:
@@ -477,7 +503,7 @@ class AddressResolver:
                     else:
                         pin_conflict = "same_district"
                     warnings.append(f"PIN {ctx.pincode} does not match {p.name} (India Post lists {p.pincode})")
-            elif p.pincode and not is_ambiguous and self._pin_unambiguous(p):
+            elif p.pincode and p.source == "india_post" and not is_ambiguous and self._pin_unambiguous(p):
                 comp.postal_code = p.pincode
                 ver["postal_code"] = "inferred"
                 corrections.append(M.Correction(original="", corrected=p.pincode, type="inference",
@@ -557,14 +583,36 @@ class AddressResolver:
             for alt in ranked[: s.max_alternatives]:
                 alternatives.append(self._candidate_model(alt))
 
+        # ---- street verification against OSM streets near the locality (when imported)
+        if top is not None and comp.street and top.place.lat is not None and g.stats.entities.get("street"):
+            def _sk(x: str) -> str:
+                return compact_key(re.sub(r"\b(road|rd|street|st|main)\b", "", x.lower()))
+            want = _sk(comp.street.split(",")[0])
+            for sp, _d in g.nearby(top.place.lat, top.place.lon, 3.0, types=("street",)):
+                if want and _sk(sp.name) == want:
+                    comp.street = sp.name if "," not in comp.street else comp.street
+                    ver["street"] = "verified"
+                    break
+
         # ---- landmark
         named = [lm for lm in ex.landmarks if lm.text]
         if named:
             lm = named[0]
             comp.landmark = lm.text
             ver["landmark"] = "unverified"
-            if top is not None and top.features.get("landmark") == 1.0:
-                ver["landmark"] = "verified"
+            found = self._match_landmark(top.place, ex.landmarks) if top is not None else None
+            if found is not None:
+                lp, lm_used, mt, sim = found
+                comp.landmark = lp.name
+                if mt in ("exact",) and compact_key(lm_used.text) == compact_key(lp.name):
+                    ver["landmark"] = "verified"
+                else:
+                    ver["landmark"] = "corrected"
+                    corrections.append(M.Correction(
+                        original=lm_used.text, corrected=lp.name,
+                        type="entity_expansion" if mt in ("exact", "alias") else "spelling_correction",
+                        reason=f"known landmark within 3 km of {top.place.name} ({mt}, similarity {sim:.2f})",
+                        stage="matching"))
             if lm.generic:
                 warnings.append(f"landmark '{lm.text}' is generic and cannot be used to locate the address")
 
@@ -757,6 +805,8 @@ class AddressResolver:
         if c.landmark:
             parts.append(f"Near {c.landmark}")
         for u in unparsed:
+            if all(w in COMMON_WORDS for w in u.split()):
+                continue  # chatter ("the place with") is reported in unparsed_text, not printed on a label
             parts.append(" ".join(acronyms.get(w, w) for w in smart_title(u).split()))
         if c.sub_locality:
             parts.append(c.sub_locality)

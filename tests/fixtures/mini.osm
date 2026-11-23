@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="handwritten-test-fixture">
+  <!-- Synthetic test fixture in OSM XML format (not real OSM data). Coordinates near HSR Layout, Bengaluru. -->
+  <node id="1" lat="12.9116" lon="77.6389">
+    <tag k="name" v="National Institute of Fashion Technology"/>
+    <tag k="amenity" v="college"/>
+    <tag k="short_name" v="NIFT Bengaluru"/>
+  </node>
+  <node id="2" lat="12.9121" lon="77.6446">
+    <tag k="name" v="Agara Lake"/>
+    <tag k="leisure" v="park"/>
+  </node>
+  <node id="3" lat="12.9166" lon="77.6101">
+    <tag k="place" v="neighbourhood"/>
+    <tag k="name" v="BTM Layout"/>
+    <tag k="name:kn" v="ಬಿಟಿಎಂ ಲೇಔಟ್"/>
+  </node>
+  <node id="4" lat="12.9200" lon="77.6400"/>
+  <node id="5" lat="12.9150" lon="77.6400"/>
+  <node id="6" lat="12.9100" lon="77.6400"/>
+  <way id="100">
+    <nd ref="4"/><nd ref="5"/><nd ref="6"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="14th Main Road"/>
+  </way>
+  <node id="7" lat="28.6315" lon="77.2167">
+    <tag k="name" v="Some Unnamed Shop Without Tags"/>
+  </node>
+</osm>
